@@ -1,3 +1,4 @@
+import { __ } from "@wordpress/i18n";
 import { useBlockProps, RichText } from "@wordpress/block-editor";
 
 import "./editor.scss";
@@ -10,7 +11,7 @@ export default function Edit(props) {
 		<div {...useBlockProps()}>
 			<RichText
 				tagName="p"
-				placeholder="Votre texte ici"
+				placeholder={__("Your text here", "capitainewp")}
 				value={content}
 				onChange={(content) => setAttributes({ content })}
 			/>

@@ -100,5 +100,37 @@ return array(
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
+	),
+	'4.toolbar' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'capitainewp/toolbar',
+		'version' => '1.0',
+		'title' => '4. Toolbar',
+		'category' => 'capitainewp',
+		'icon' => 'warning',
+		'description' => 'Un bloc d’alerte avec plusieurs styles.',
+		'keywords' => array(
+			'attention',
+			'alerte',
+			'conseil',
+			'éviter',
+			'succès'
+		),
+		'attributes' => array(
+			'content' => array(
+				'type' => 'string',
+				'source' => 'html',
+				'selector' => 'p'
+			),
+			'type' => array(
+				'type' => 'string',
+				'default' => 'advice'
+			)
+		),
+		'textdomain' => 'capitainewp',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
 	)
 );

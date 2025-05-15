@@ -15,10 +15,8 @@
  */
 
 
-# Important pour sécurier le plugin contre une exécution directe
-if (! defined('ABSPATH')) {
-	exit;
-}
+# Important pour sécuriser le plugin contre une exécution directe
+defined('ABSPATH') || exit;
 
 
 # Déclarer automatiquement les blocs dans l'éditeur
@@ -50,3 +48,23 @@ function capitainewp_register_block_categories($categories)
 	);
 }
 add_filter('block_categories_all', 'capitainewp_register_block_categories');
+
+
+# Hook le theme.json pour ajouter les styles
+function capitaine_filter_theme_json($theme_json)
+{
+	# Récupérer les données du theme.json
+	$data = $theme_json->get_data();
+
+	# Insérer nos nouvelles couleurs dans la section custom
+	$data['settings']['custom']['alert'] = [
+		'advice' => '#83bd71',
+		'warning' => '#ffc334',
+		'avoid' => '#ff2952',
+		'info' => '#48add8',
+	];
+
+	# Mettre à jour les données du theme.json
+	return $theme_json->update_with($data);
+}
+add_filter('wp_theme_json_data_theme', 'capitaine_filter_theme_json');
