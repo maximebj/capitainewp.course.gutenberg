@@ -2,20 +2,20 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/1.base/block.json":
-/*!*******************************!*\
-  !*** ./src/1.base/block.json ***!
-  \*******************************/
+/***/ "./src/2.supports/block.json":
+/*!***********************************!*\
+  !*** ./src/2.supports/block.json ***!
+  \***********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/base","version":"1.0","title":"1. Bloc de base","category":"capitainewp","icon":"smiley","description":"Bloc de base fourni avec le package Create Block.","example":{},"supports":{"html":false},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/supports","version":"1.0","title":"2. Supports","category":"capitainewp","icon":"art","description":"Ajouter des fonctionnalités supplémentaires à un bloc.","example":{},"supports":{"align":["wide","full"],"color":{"background":true,"text":true,"link":true,"button":true,"heading":true,"gradients":true},"spacing":{"padding":true,"margin":true,"blockGap":true},"typography":{"fontSize":true,"lineHeight":true,"textAlign":true},"background":{"backgroundImage":true,"backgroundSize":true},"dimensions":{"minHeight":true},"position":{"sticky":true},"shadow":true,"html":false,"anchor":true,"customClassName":false},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 
-/***/ "./src/1.base/edit.js":
-/*!****************************!*\
-  !*** ./src/1.base/edit.js ***!
-  \****************************/
+/***/ "./src/2.supports/edit.js":
+/*!********************************!*\
+  !*** ./src/2.supports/edit.js ***!
+  \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -26,7 +26,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./editor.scss */ "./src/1.base/editor.scss");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./editor.scss */ "./src/2.supports/editor.scss");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
 
@@ -34,18 +34,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Edit() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(),
-    children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Capitainewp – hello from the editor!", "capitainewp")
+    children: "Ce bloc poss\xE8de plein d\u2019options nativement\xA0!"
   });
 }
 
 /***/ }),
 
-/***/ "./src/1.base/editor.scss":
-/*!********************************!*\
-  !*** ./src/1.base/editor.scss ***!
-  \********************************/
+/***/ "./src/2.supports/editor.scss":
+/*!************************************!*\
+  !*** ./src/2.supports/editor.scss ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -54,19 +54,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/1.base/index.js":
-/*!*****************************!*\
-  !*** ./src/1.base/index.js ***!
-  \*****************************/
+/***/ "./src/2.supports/index.js":
+/*!*********************************!*\
+  !*** ./src/2.supports/index.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/1.base/style.scss");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/1.base/edit.js");
-/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/1.base/save.js");
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/1.base/block.json");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/2.supports/style.scss");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/2.supports/edit.js");
+/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/2.supports/save.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/2.supports/block.json");
 
 
 
@@ -79,10 +79,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/1.base/save.js":
-/*!****************************!*\
-  !*** ./src/1.base/save.js ***!
-  \****************************/
+/***/ "./src/2.supports/save.js":
+/*!********************************!*\
+  !*** ./src/2.supports/save.js ***!
+  \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -96,18 +96,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function save() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save(),
-    children: "Capitainewp – hello from the saved content!"
+    children: "Ce bloc poss\xE8de plein d\u2019options nativement\xA0!"
   });
 }
 
 /***/ }),
 
-/***/ "./src/1.base/style.scss":
-/*!*******************************!*\
-  !*** ./src/1.base/style.scss ***!
-  \*******************************/
+/***/ "./src/2.supports/style.scss":
+/*!***********************************!*\
+  !*** ./src/2.supports/style.scss ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -266,8 +266,8 @@ module.exports = window["ReactJSXRuntime"];
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"1.base/index": 0,
-/******/ 			"1.base/style-index": 0
+/******/ 			"2.supports/index": 0,
+/******/ 			"2.supports/style-index": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -317,7 +317,7 @@ module.exports = window["ReactJSXRuntime"];
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["1.base/style-index"], () => (__webpack_require__("./src/1.base/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["2.supports/style-index"], () => (__webpack_require__("./src/2.supports/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
