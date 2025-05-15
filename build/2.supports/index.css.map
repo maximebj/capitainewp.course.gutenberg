@@ -1,1 +1,0 @@
-{"version":3,"file":"2.supports/index.css","mappings":";;;AAAA;EACC;AACD,C","sources":["webpack://capitainewp.course.gutenberg.bases/./src/2.supports/editor.scss"],"sourcesContent":[".wp-block-capitainewp-base {\n\tborder: 1px dotted #f00;\n}\n"],"names":[],"sourceRoot":""}

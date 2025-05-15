@@ -76,5 +76,29 @@ return array(
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
+	),
+	'3.richtext' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'capitainewp/richtext',
+		'version' => '1.0',
+		'title' => '3. Richtext',
+		'category' => 'capitainewp',
+		'icon' => 'edit',
+		'description' => 'Un bloc administrable grâce au composant RichText.',
+		'attributes' => array(
+			'content' => array(
+				'type' => 'string',
+				'source' => 'html',
+				'selector' => 'p'
+			)
+		),
+		'example' => array(
+			'content' => '<p>Un bloc Richtext</p>'
+		),
+		'textdomain' => 'capitainewp',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
 	)
 );
