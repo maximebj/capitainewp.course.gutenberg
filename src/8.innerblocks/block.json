@@ -3,7 +3,7 @@
 	"apiVersion": 3,
 	"name": "capitainewp/innerblocks",
 	"version": "1.0",
-	"title": "8. Innerblocks",
+	"title": "08. Innerblocks",
 	"category": "capitainewp",
 	"icon": "insert",
 	"description": "Un bloc dans lequel on peut insérer d'autres blocs.",

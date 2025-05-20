@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "capitainewp/inspector",
   "version": "1.0",
-  "title": "5. Inspecteur",
+  "title": "05. Inspector",
   "category": "capitainewp",
   "icon": "analytics",
   "description": "Un bloc avec des options dans l’inspecteur.",

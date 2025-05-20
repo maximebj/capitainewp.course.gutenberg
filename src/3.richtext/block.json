@@ -3,7 +3,7 @@
 	"apiVersion": 3,
 	"name": "capitainewp/richtext",
 	"version": "1.0",
-	"title": "3. Richtext",
+	"title": "03. Richtext",
 	"category": "capitainewp",
 	"icon": "edit",
 	"description": "Un bloc administrable grâce au composant RichText.",

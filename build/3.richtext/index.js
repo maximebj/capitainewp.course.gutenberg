@@ -8,7 +8,7 @@
   \***********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/richtext","version":"1.0","title":"3. Richtext","category":"capitainewp","icon":"edit","description":"Un bloc administrable grâce au composant RichText.","attributes":{"content":{"type":"string","source":"html","selector":"p"}},"example":{"content":"<p>Un bloc Richtext</p>"},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/richtext","version":"1.0","title":"03. Richtext","category":"capitainewp","icon":"edit","description":"Un bloc administrable grâce au composant RichText.","attributes":{"content":{"type":"string","source":"html","selector":"p"}},"example":{"content":"<p>Un bloc Richtext</p>"},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 

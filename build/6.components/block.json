@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "capitainewp/components",
   "version": "1.0",
-  "title": "6. Composants",
+  "title": "06. Components",
   "category": "capitainewp",
   "icon": "screenoptions",
   "description": "Le bloc inspecteur mais avec des composants pour un code plus lisible.",

@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "capitainewp/repeater",
+	"version": "1.0",
+	"title": "09. Répéteur",
+	"category": "capitainewp",
+	"icon": "list-view",
+	"description": "Un bloc dans lequel on peut insérer un seul type de bloc plusieurs fois.",
+	"textdomain": "capitainewp",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

@@ -3,7 +3,7 @@
 	"apiVersion": 3,
 	"name": "capitainewp/supports",
 	"version": "1.0",
-	"title": "2. Supports",
+	"title": "02. Supports",
 	"category": "capitainewp",
 	"icon": "art",
 	"description": "Ajouter des fonctionnalités supplémentaires à un bloc.",

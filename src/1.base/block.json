@@ -3,7 +3,7 @@
 	"apiVersion": 3,
 	"name": "capitainewp/base",
 	"version": "1.0",
-	"title": "1. Bloc de base",
+	"title": "01. Base",
 	"category": "capitainewp",
 	"icon": "smiley",
 	"description": "Bloc de base fourni avec le package Create Block.",
