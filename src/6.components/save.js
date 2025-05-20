@@ -15,13 +15,13 @@ export default function save(props) {
 
 	return (
 		<div {...useBlockProps.save()}>
-			<div className="wp-block-capitainewp-inspector__icon">{emoji}</div>
-			<div className="wp-block-capitainewp-inspector__content">
+			<div className="wp-block-capitainewp-components__icon">{emoji}</div>
+			<div className="wp-block-capitainewp-components__content">
 				{hasTag && (
 					<RichText.Content
 						tagName="div"
 						value={tag}
-						className="wp-block-capitainewp-inspector__tag"
+						className="wp-block-capitainewp-components__tag"
 						style={{
 							backgroundColor: tagColor,
 							color: tagTextColor,
@@ -32,12 +32,12 @@ export default function save(props) {
 				<RichText.Content
 					tagName="h2"
 					value={title}
-					className="wp-block-capitainewp-inspector__title"
+					className="wp-block-capitainewp-components__title"
 				/>
 				<RichText.Content
 					tagName="p"
 					value={description}
-					className="wp-block-capitainewp-inspector__description"
+					className="wp-block-capitainewp-components__description"
 				/>
 			</div>
 		</div>

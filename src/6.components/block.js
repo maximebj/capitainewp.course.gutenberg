@@ -16,12 +16,12 @@ export default function Block(props) {
 
 	return (
 		<div {...useBlockProps()}>
-			<div className="wp-block-capitainewp-inspector__icon">{emoji}</div>
-			<div className="wp-block-capitainewp-inspector__content">
+			<div className="wp-block-capitainewp-components__icon">{emoji}</div>
+			<div className="wp-block-capitainewp-components__content">
 				{hasTag && (
 					<RichText
 						tagName="div"
-						className="wp-block-capitainewp-inspector__tag"
+						className="wp-block-capitainewp-components__tag"
 						style={{
 							backgroundColor: tagColor,
 							color: tagTextColor,
@@ -33,14 +33,14 @@ export default function Block(props) {
 				)}
 				<RichText
 					tagName="h2"
-					className="wp-block-capitainewp-inspector__title"
+					className="wp-block-capitainewp-components__title"
 					placeholder={__("Your text here", "capitainewp")}
 					value={title}
 					onChange={(title) => setAttributes({ title })}
 				/>
 				<RichText
 					tagName="p"
-					className="wp-block-capitainewp-inspector__description"
+					className="wp-block-capitainewp-components__description"
 					placeholder={__("Your text here", "capitainewp")}
 					value={description}
 					onChange={(description) => setAttributes({ description })}

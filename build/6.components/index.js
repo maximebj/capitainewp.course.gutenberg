@@ -39,13 +39,13 @@ function Block(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(),
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      className: "wp-block-capitainewp-inspector__icon",
+      className: "wp-block-capitainewp-components__icon",
       children: emoji
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "wp-block-capitainewp-inspector__content",
+      className: "wp-block-capitainewp-components__content",
       children: [hasTag && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
         tagName: "div",
-        className: "wp-block-capitainewp-inspector__tag",
+        className: "wp-block-capitainewp-components__tag",
         style: {
           backgroundColor: tagColor,
           color: tagTextColor,
@@ -57,7 +57,7 @@ function Block(props) {
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
         tagName: "h2",
-        className: "wp-block-capitainewp-inspector__title",
+        className: "wp-block-capitainewp-components__title",
         placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your text here", "capitainewp"),
         value: title,
         onChange: title => setAttributes({
@@ -65,7 +65,7 @@ function Block(props) {
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
         tagName: "p",
-        className: "wp-block-capitainewp-inspector__description",
+        className: "wp-block-capitainewp-components__description",
         placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your text here", "capitainewp"),
         value: description,
         onChange: description => setAttributes({
@@ -276,14 +276,14 @@ function save(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
     ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save(),
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "wp-block-capitainewp-inspector__icon",
+      className: "wp-block-capitainewp-components__icon",
       children: emoji
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "wp-block-capitainewp-inspector__content",
+      className: "wp-block-capitainewp-components__content",
       children: [hasTag && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
         tagName: "div",
         value: tag,
-        className: "wp-block-capitainewp-inspector__tag",
+        className: "wp-block-capitainewp-components__tag",
         style: {
           backgroundColor: tagColor,
           color: tagTextColor,
@@ -292,11 +292,11 @@ function save(props) {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
         tagName: "h2",
         value: title,
-        className: "wp-block-capitainewp-inspector__title"
+        className: "wp-block-capitainewp-components__title"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
         tagName: "p",
         value: description,
-        className: "wp-block-capitainewp-inspector__description"
+        className: "wp-block-capitainewp-components__description"
       })]
     })]
   });
