@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "capitainewp/dynamic",
+  "version": "1.0",
+  "title": "10. Dynamic",
+  "category": "capitainewp",
+  "icon": "book",
+  "description": "Un bloc qui récupère ses données dynamiquement.",
+  "attributes": {
+    "number": {
+      "type": "number",
+      "default": 3
+    }
+  },
+  "textdomain": "capitainewp",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

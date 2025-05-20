@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "capitainewp/inspector",
+  "version": "1.0",
+  "title": "05. Inspector",
+  "category": "capitainewp",
+  "icon": "analytics",
+  "description": "Un bloc avec des options dans l’inspecteur.",
+  "attributes": {
+    "emoji": {
+      "type": "string",
+      "default": "😃"
+    },
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": ".wp-block-capitainewp-inspector__title"
+    },
+    "description": {
+      "type": "string",
+      "source": "html",
+      "selector": ".wp-block-capitainewp-inspector__description"
+    },
+    "hasTag": {
+      "type": "boolean",
+      "default": true
+    },
+    "tag": {
+      "type": "string",
+      "source": "html",
+      "selector": ".wp-block-capitainewp-inspector__tag",
+      "default": "New"
+    },
+    "tagColor": {
+      "type": "string",
+      "default": "var(--wp--preset--color--accent-2)"
+    },
+    "tagTextColor": {
+      "type": "string",
+      "default": "var(--wp--preset--color--accent-3)"
+    },
+    "tagRadius": {
+      "type": "number",
+      "default": 5
+    }
+  },
+  "supports": {
+    "color": {
+      "background": true
+    }
+  },
+  "textdomain": "capitainewp",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

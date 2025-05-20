@@ -1,0 +1,1 @@
+{"version":3,"file":"07.media/style-index.css","mappings":";;;AAAA;EACC;EACA;AACD,C","sources":["webpack://capitainewp.course.gutenberg.bases/./src/07.media/style.scss"],"sourcesContent":[".wp-block-capitainewp-media img {\n\tmax-width: 100%;\n\theight: auto;\n}\n"],"names":[],"sourceRoot":""}

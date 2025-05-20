@@ -1,0 +1,1 @@
+{"version":3,"file":"01.first/style-index.css","mappings":";;;AAAA;EACC;EACA;EACA;AACD,C","sources":["webpack://capitainewp.course.gutenberg.bases/./src/01.first/style.scss"],"sourcesContent":[".wp-block-capitainewp-base {\n\tbackground-color: #21759b;\n\tcolor: #fff;\n\tpadding: 2px;\n}\n"],"names":[],"sourceRoot":""}
