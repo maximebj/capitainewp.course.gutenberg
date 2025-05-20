@@ -2,20 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/5.inspector/block.json":
-/*!************************************!*\
-  !*** ./src/5.inspector/block.json ***!
-  \************************************/
-/***/ ((module) => {
-
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/inspector","version":"1.0","title":"5. Inspecteur","category":"capitainewp","icon":"analytics","description":"Un bloc avec des options dans l’inspecteur.","attributes":{"emoji":{"type":"string","default":"😃"},"title":{"type":"string","source":"html","selector":".wp-block-capitainewp-inspector__title"},"description":{"type":"string","source":"html","selector":".wp-block-capitainewp-inspector__description"},"hasTag":{"type":"boolean","default":true},"tag":{"type":"string","source":"html","selector":".wp-block-capitainewp-inspector__tag","default":"New"},"tagColor":{"type":"string","default":"var(--wp--preset--color--accent-2)"},"tagTextColor":{"type":"string","default":"var(--wp--preset--color--accent-3)"},"tagRadius":{"type":"number","default":5}},"supports":{"color":{"background":true}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
-
-/***/ }),
-
-/***/ "./src/5.inspector/edit.js":
-/*!*********************************!*\
-  !*** ./src/5.inspector/edit.js ***!
-  \*********************************/
+/***/ "./src/7.media/edit.js":
+/*!*****************************!*\
+  !*** ./src/7.media/edit.js ***!
+  \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -28,7 +18,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/5.inspector/editor.scss");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/7.media/editor.scss");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
 
@@ -39,114 +29,77 @@ __webpack_require__.r(__webpack_exports__);
 function Edit(props) {
   const {
     attributes,
-    setAttributes
+    setAttributes,
+    isSelected
   } = props;
   const {
-    title,
-    description,
-    hasTag,
-    tag,
-    emoji,
-    tagColor,
-    tagTextColor,
-    tagRadius
+    pictureID,
+    pictureURL,
+    pictureAlt
   } = attributes;
-  const allowedEmojis = ["😃", "♥️", "✅", "⚠️", "🚀"];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(),
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-        className: "wp-block-capitainewp-inspector__icon",
-        children: emoji
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-        className: "wp-block-capitainewp-inspector__content",
-        children: [hasTag && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
-          tagName: "div",
-          className: "wp-block-capitainewp-inspector__tag",
-          style: {
-            backgroundColor: tagColor,
-            color: tagTextColor,
-            borderRadius: `${tagRadius}px`
-          },
-          value: tag,
-          onChange: tag => setAttributes({
-            tag
+
+  // Gestion de la sélection de l'image
+  const onSelectImage = picture => {
+    console.log(picture); // Afficher les informations récupérées de l'image
+
+    setAttributes({
+      pictureID: picture.id,
+      pictureURL: picture.url,
+      pictureAlt: picture.alt
+    });
+  };
+
+  // Effacement des données de l'image
+  const onRemoveImage = () => {
+    setAttributes({
+      pictureID: null,
+      pictureURL: null,
+      pictureAlt: null
+    });
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(),
+    children: !pictureID ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.MediaUploadCheck, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.MediaUpload, {
+        onSelect: onSelectImage,
+        allowedTypes: ["image"],
+        value: pictureID,
+        render: ({
+          open
+        }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Placeholder, {
+          icon: "images-alt",
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Photo", "capitainewp"),
+          instructions: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Select a picture", "capitainewp"),
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
+            variant: "primary",
+            isLarge: true,
+            onClick: open,
+            icon: "upload",
+            children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Import", "capitainewp")
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
-          tagName: "h2",
-          className: "wp-block-capitainewp-inspector__title",
-          placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your text here", "capitainewp"),
-          value: title,
-          onChange: title => setAttributes({
-            title
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
-          tagName: "p",
-          className: "wp-block-capitainewp-inspector__description",
-          placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your text here", "capitainewp"),
-          value: description,
-          onChange: description => setAttributes({
-            description
-          })
-        })]
-      })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Emoji", "capitainewp"),
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
-          onChange: emoji => setAttributes({
-            emoji
-          }),
-          value: emoji,
-          isBlock: true,
-          children: allowedEmojis.map(option => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
-            label: option,
-            value: option
-          }))
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Tag", "capitainewp"),
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Show tag", "capitainewp"),
-          checked: hasTag,
-          onChange: () => setAttributes({
-            hasTag: !hasTag
-          })
-        }), hasTag && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Radius", "capitainewp"),
-          value: tagRadius,
-          onChange: tagRadius => setAttributes({
-            tagRadius
-          }),
-          min: 0,
-          max: 50
-        })]
-      }), hasTag && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PanelColorSettings, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Tag colors", "capitainewp"),
-        colorSettings: [{
-          value: tagColor,
-          onChange: tagColor => setAttributes({
-            tagColor
-          }),
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Tag color", "capitainewp")
-        }, {
-          value: tagTextColor,
-          onChange: tagTextColor => setAttributes({
-            tagTextColor
-          }),
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Tag text color", "capitainewp")
-        }]
+      })
+    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
+      className: "capitaine-image-wrapper",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+        src: pictureURL,
+        alt: pictureAlt
+      }), isSelected && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
+        className: "capitaine-remove-image",
+        onClick: onRemoveImage,
+        icon: "dismiss",
+        children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Remove picture", "capitainewp")
       })]
-    })]
+    })
   });
 }
 
 /***/ }),
 
-/***/ "./src/5.inspector/editor.scss":
-/*!*************************************!*\
-  !*** ./src/5.inspector/editor.scss ***!
-  \*************************************/
+/***/ "./src/7.media/editor.scss":
+/*!*********************************!*\
+  !*** ./src/7.media/editor.scss ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -155,45 +108,46 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/5.inspector/index.js":
-/*!**********************************!*\
-  !*** ./src/5.inspector/index.js ***!
-  \**********************************/
+/***/ "./src/7.media/index.js":
+/*!******************************!*\
+  !*** ./src/7.media/index.js ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/5.inspector/style.scss");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/5.inspector/edit.js");
-/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/5.inspector/save.js");
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/5.inspector/block.json");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/7.media/style.scss");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/7.media/edit.js");
+/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/7.media/save.js");
 
 
 
 
-
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_4__.name, {
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("capitainewp/media", {
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_3__["default"]
 });
 
 /***/ }),
 
-/***/ "./src/5.inspector/save.js":
-/*!*********************************!*\
-  !*** ./src/5.inspector/save.js ***!
-  \*********************************/
+/***/ "./src/7.media/save.js":
+/*!*****************************!*\
+  !*** ./src/7.media/save.js ***!
+  \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ save)
 /* harmony export */ });
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 function save(props) {
@@ -201,50 +155,25 @@ function save(props) {
     attributes
   } = props;
   const {
-    title,
-    description,
-    hasTag,
-    tag,
-    emoji,
-    tagColor,
-    tagTextColor,
-    tagRadius
+    pictureID,
+    pictureURL,
+    pictureAlt
   } = attributes;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-    ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save(),
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "wp-block-capitainewp-inspector__icon",
-      children: emoji
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "wp-block-capitainewp-inspector__content",
-      children: [hasTag && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
-        tagName: "div",
-        value: tag,
-        className: "wp-block-capitainewp-inspector__tag",
-        style: {
-          backgroundColor: tagColor,
-          color: tagTextColor,
-          borderRadius: `${tagRadius}px`
-        }
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
-        tagName: "h2",
-        value: title,
-        className: "wp-block-capitainewp-inspector__title"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
-        tagName: "p",
-        value: description,
-        className: "wp-block-capitainewp-inspector__description"
-      })]
-    })]
+  return pictureID && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+    ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save(),
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+      src: pictureURL,
+      alt: pictureAlt
+    })
   });
 }
 
 /***/ }),
 
-/***/ "./src/5.inspector/style.scss":
-/*!************************************!*\
-  !*** ./src/5.inspector/style.scss ***!
-  \************************************/
+/***/ "./src/7.media/style.scss":
+/*!********************************!*\
+  !*** ./src/7.media/style.scss ***!
+  \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -413,8 +342,8 @@ module.exports = window["ReactJSXRuntime"];
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"5.inspector/index": 0,
-/******/ 			"5.inspector/style-index": 0
+/******/ 			"7.media/index": 0,
+/******/ 			"7.media/style-index": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -464,7 +393,7 @@ module.exports = window["ReactJSXRuntime"];
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["5.inspector/style-index"], () => (__webpack_require__("./src/5.inspector/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["7.media/style-index"], () => (__webpack_require__("./src/7.media/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

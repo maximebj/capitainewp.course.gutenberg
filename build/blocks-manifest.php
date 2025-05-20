@@ -246,5 +246,37 @@ return array(
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
+	),
+	'7.media' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 2,
+		'name' => 'capitainewp/media',
+		'version' => '1.0',
+		'title' => '7. Média',
+		'icon' => 'camera',
+		'category' => 'capitainewp',
+		'description' => 'Un bloc avec le composant Media',
+		'attributes' => array(
+			'pictureID' => array(
+				'type' => 'number',
+				'default' => null
+			),
+			'pictureURL' => array(
+				'type' => 'string',
+				'source' => 'attribute',
+				'attribute' => 'src',
+				'selector' => 'img'
+			),
+			'pictureAlt' => array(
+				'type' => 'string',
+				'source' => 'attribute',
+				'attribute' => 'alt',
+				'selector' => 'img'
+			)
+		),
+		'textdomain' => 'capitainewp',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
 	)
 );

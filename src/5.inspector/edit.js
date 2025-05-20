@@ -66,7 +66,7 @@ export default function Edit(props) {
 			</div>
 
 			<InspectorControls>
-				<PanelBody title={__("Emoji", "capitainewp-gut-bases")}>
+				<PanelBody title={__("Emoji", "capitainewp")}>
 					<ToggleGroupControl
 						onChange={(emoji) => setAttributes({ emoji })}
 						value={emoji}
@@ -78,15 +78,15 @@ export default function Edit(props) {
 					</ToggleGroupControl>
 				</PanelBody>
 
-				<PanelBody title={__("Tag", "capitainewp-gut-bases")}>
+				<PanelBody title={__("Tag", "capitainewp")}>
 					<ToggleControl
-						label={__("Show tag", "capitainewp-gut-bases")}
+						label={__("Show tag", "capitainewp")}
 						checked={hasTag}
 						onChange={() => setAttributes({ hasTag: !hasTag })}
 					/>
 					{hasTag && (
 						<RangeControl
-							label={__("Radius", "capitainewp-gut-bases")}
+							label={__("Radius", "capitainewp")}
 							value={tagRadius}
 							onChange={(tagRadius) => setAttributes({ tagRadius })}
 							min={0}
@@ -97,17 +97,17 @@ export default function Edit(props) {
 
 				{hasTag && (
 					<PanelColorSettings
-						title={__("Tag colors", "capitainewp-gut-bases")}
+						title={__("Tag colors", "capitainewp")}
 						colorSettings={[
 							{
 								value: tagColor,
 								onChange: (tagColor) => setAttributes({ tagColor }),
-								label: __("Tag color", "capitainewp-gut-bases"),
+								label: __("Tag color", "capitainewp"),
 							},
 							{
 								value: tagTextColor,
 								onChange: (tagTextColor) => setAttributes({ tagTextColor }),
-								label: __("Tag text color", "capitainewp-gut-bases"),
+								label: __("Tag text color", "capitainewp"),
 							},
 						]}
 					/>
