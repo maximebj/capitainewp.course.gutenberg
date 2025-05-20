@@ -724,7 +724,7 @@ return array(
 		'icon' => 'book',
 		'description' => 'Un bloc qui récupère ses données dynamiquement.',
 		'attributes' => array(
-			'number' => array(
+			'numberOfPosts' => array(
 				'type' => 'number',
 				'default' => 3
 			)
@@ -732,7 +732,8 @@ return array(
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
-		'style' => 'file:./style-index.css'
+		'style' => 'file:./style-index.css',
+		'render' => 'file:./render.php'
 	),
 	'10.dynamic' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
