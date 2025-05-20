@@ -132,5 +132,62 @@ return array(
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
+	),
+	'5.inspector' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'capitainewp/inspector',
+		'version' => '1.0',
+		'title' => '5. Inspecteur',
+		'category' => 'capitainewp',
+		'icon' => 'analytics',
+		'description' => 'Un bloc avec des options dans l’inspecteur.',
+		'attributes' => array(
+			'emoji' => array(
+				'type' => 'string',
+				'default' => '😃'
+			),
+			'title' => array(
+				'type' => 'string',
+				'source' => 'html',
+				'selector' => '.wp-block-capitainewp-inspector__title'
+			),
+			'description' => array(
+				'type' => 'string',
+				'source' => 'html',
+				'selector' => '.wp-block-capitainewp-inspector__description'
+			),
+			'hasTag' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'tag' => array(
+				'type' => 'string',
+				'source' => 'html',
+				'selector' => '.wp-block-capitainewp-inspector__tag',
+				'default' => 'New'
+			),
+			'tagColor' => array(
+				'type' => 'string',
+				'default' => 'var(--wp--preset--color--accent-2)'
+			),
+			'tagTextColor' => array(
+				'type' => 'string',
+				'default' => 'var(--wp--preset--color--accent-3)'
+			),
+			'tagRadius' => array(
+				'type' => 'number',
+				'default' => 5
+			)
+		),
+		'supports' => array(
+			'color' => array(
+				'background' => true
+			)
+		),
+		'textdomain' => 'capitainewp',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
 	)
 );
