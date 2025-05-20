@@ -189,5 +189,62 @@ return array(
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
+	),
+	'6.components' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'capitainewp/components',
+		'version' => '1.0',
+		'title' => '6. Composants',
+		'category' => 'capitainewp',
+		'icon' => 'screenoptions',
+		'description' => 'Le bloc inspecteur mais avec des composants pour un code plus lisible.',
+		'attributes' => array(
+			'emoji' => array(
+				'type' => 'string',
+				'default' => '😃'
+			),
+			'title' => array(
+				'type' => 'string',
+				'source' => 'html',
+				'selector' => '.wp-block-capitainewp-components__title'
+			),
+			'description' => array(
+				'type' => 'string',
+				'source' => 'html',
+				'selector' => '.wp-block-capitainewp-components__description'
+			),
+			'hasTag' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'tag' => array(
+				'type' => 'string',
+				'source' => 'html',
+				'selector' => '.wp-block-capitainewp-components__tag',
+				'default' => 'New'
+			),
+			'tagColor' => array(
+				'type' => 'string',
+				'default' => 'var(--wp--preset--color--accent-2)'
+			),
+			'tagTextColor' => array(
+				'type' => 'string',
+				'default' => 'var(--wp--preset--color--accent-3)'
+			),
+			'tagRadius' => array(
+				'type' => 'number',
+				'default' => 5
+			)
+		),
+		'supports' => array(
+			'color' => array(
+				'background' => true
+			)
+		),
+		'textdomain' => 'capitainewp',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
 	)
 );
