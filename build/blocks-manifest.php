@@ -382,7 +382,7 @@ return array(
 		'apiVersion' => 3,
 		'name' => 'capitainewp/select',
 		'version' => '1.0',
-		'title' => 'useSelect',
+		'title' => 'Select',
 		'category' => 'capitainewp',
 		'icon' => 'superhero-alt',
 		'description' => 'Un bloc qui récupère des données depuis l’éditeur de blocs.',
