@@ -8,14 +8,14 @@ import "./editor.scss";
 export default function Edit() {
 	const data = useSelect((select) => {
 		return {
-			postType: select("core").getPostType("post"),
 			site: select("core").getSite(),
+			plugins: select("core").getPlugins(),
 			theme: select("core").getCurrentTheme(),
+			postType: select("core").getPostType("post"),
 			user: select("core").getCurrentUser(),
 			posts: select("core").getEntityRecords("postType", "post"),
 			settings: select("core/block-editor").getSettings(),
 			blocks: select("core/block-editor").getBlocks(),
-			plugins: select("core").getPlugins(),
 		};
 	}, []);
 
@@ -24,7 +24,7 @@ export default function Edit() {
 	return (
 		<>
 			<div {...useBlockProps()}>
-				<p>Regardez la console pour voir les données</p>
+				<p>Ouvrez la console pour afficher les données</p>
 			</div>
 		</>
 	);

@@ -39,14 +39,14 @@ __webpack_require__.r(__webpack_exports__);
 function Edit() {
   const data = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_2__.useSelect)(select => {
     return {
-      postType: select("core").getPostType("post"),
       site: select("core").getSite(),
+      plugins: select("core").getPlugins(),
       theme: select("core").getCurrentTheme(),
+      postType: select("core").getPostType("post"),
       user: select("core").getCurrentUser(),
       posts: select("core").getEntityRecords("postType", "post"),
       settings: select("core/block-editor").getSettings(),
-      blocks: select("core/block-editor").getBlocks(),
-      plugins: select("core").getPlugins()
+      blocks: select("core/block-editor").getBlocks()
     };
   }, []);
   console.log(data);
@@ -54,7 +54,7 @@ function Edit() {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(),
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
-        children: "Regardez la console pour voir les donn\xE9es"
+        children: "Ouvrez la console pour afficher les donn\xE9es"
       })
     })
   });
