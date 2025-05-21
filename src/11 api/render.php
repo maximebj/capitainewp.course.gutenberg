@@ -4,39 +4,34 @@
 $block_props = get_block_wrapper_attributes();
 
 # Récupérer le nombre de posts à afficher
-$number_of_posts = $attributes['numberOfPosts'];
+$show_count = $attributes['showCount'];
+$hide_empty = $attributes['hideEmpty'];
 
-# Créer une requête pour récupérer les posts
+# Créer une requête pour récupérer les catégories
 $args = [
-  'post_type' => 'post',
-  'posts_per_page' => $number_of_posts,
+  'hide_empty' => $hide_empty,
 ];
 
-$query = new WP_Query($args);
+$categories = get_categories($args);
 
-# Si aucun post n'est trouvé, on ne rend rien
-if (!$query->have_posts()) {
+# Si aucune catégorie n'est trouvée, on ne rend rien
+if (empty($categories)) {
   return;
 }
 
 ?>
 <div <?php echo $block_props; ?>>
-  <h2><?php _e('Latest posts', 'capitainewp'); ?></h2>
-  <ul class="wp-block-capitainewp-dynamic__list">
-    <?php while ($query->have_posts()) : $query->the_post(); ?>
-      <li class="wp-block-capitainewp-dynamic__post">
-        <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'full'); ?>
-        <h3><?php the_title(); ?></h3>
-        <div class="wp-block-capitainewp-dynamic__excerpt">
-          <?php the_excerpt(); ?>
-        </div>
-        <p class="wp-block-capitainewp-dynamic__meta">
-          <?php _e('Published on', 'capitainewp'); ?>
-          <?php the_date(); ?>
-          <?php _e('by', 'capitainewp'); ?>
-          <?php the_author(); ?>
-        </p>
+  <h2><?php _e('Categories', 'capitainewp'); ?></h2>
+  <ul>
+    <?php foreach ($categories as $category) : ?>
+      <li>
+        <a href="<?php echo esc_url($category->link); ?>">
+          <?php echo esc_html($category->name); ?>
+          <?php if ($show_count) : ?>
+            (<?php echo esc_html($category->count); ?>)
+          <?php endif; ?>
+        </a>
       </li>
-    <?php endwhile; ?>
+    <?php endforeach; ?>
   </ul>
 </div>

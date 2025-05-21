@@ -6,11 +6,11 @@ export default function CatList(props) {
 	if (!categories) return null;
 
 	return (
-		<div className="wp-block-capitainewp-api__list">
+		<div>
 			<h2>{__("Categories", "capitainewp")}</h2>
 			<ul>
 				{categories.map((category) => (
-					<li key={category.id} className="wp-block-capitainewp-api__post">
+					<li key={category.id}>
 						<a href={category.link}>
 							{category.name}
 							{showCount && ` (${category.count})`}

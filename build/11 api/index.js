@@ -35,12 +35,10 @@ function CatList(props) {
   } = props;
   if (!categories) return null;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-    className: "wp-block-capitainewp-api__list",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
       children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Categories", "capitainewp")
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("ul", {
       children: categories.map(category => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
-        className: "wp-block-capitainewp-api__post",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
           href: category.link,
           children: [category.name, showCount && ` (${category.count})`]
