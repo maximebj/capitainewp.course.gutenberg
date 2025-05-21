@@ -99,7 +99,7 @@ function Edit(props) {
       path: `/wp/v2/categories?hide_empty=${hideEmpty}`
     }).then(categories => {
       setCategories(categories);
-      console.log(categories);
+      //console.log(categories);
     });
   }, [hideEmpty]);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {

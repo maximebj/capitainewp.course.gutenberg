@@ -376,5 +376,19 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
 		'render' => 'file:./render.php'
+	),
+	'12 select' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'capitainewp/select',
+		'version' => '1.0',
+		'title' => 'useSelect',
+		'category' => 'capitainewp',
+		'icon' => 'superhero-alt',
+		'description' => 'Un bloc qui récupère des données depuis l’éditeur de blocs.',
+		'textdomain' => 'capitainewp',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
 	)
 );

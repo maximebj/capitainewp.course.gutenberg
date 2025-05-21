@@ -20,7 +20,7 @@ export default function Edit(props) {
 			path: `/wp/v2/categories?hide_empty=${hideEmpty}`,
 		}).then((categories) => {
 			setCategories(categories);
-			console.log(categories);
+			//console.log(categories);
 		});
 	}, [hideEmpty]);
 
