@@ -1,10 +1,4 @@
-.wp-block-capitainewp-dynamic__list {
-	display: flex;
-	flex-direction: column;
-	gap: var(--wp--preset--spacing--40);
-	list-style-type: none;
-	padding: 0;
-
+.wp-block-capitainewp-dynamic {
 	h2 {
 		margin: 0;
 	}
@@ -17,6 +11,14 @@
 		max-width: 100%;
 		height: auto;
 	}
+}
+
+.wp-block-capitainewp-dynamic__list {
+	display: flex;
+	flex-direction: column;
+	gap: var(--wp--preset--spacing--40);
+	list-style-type: none;
+	padding: 0;
 }
 
 .wp-block-capitainewp-dynamic__meta {

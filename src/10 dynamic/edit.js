@@ -3,7 +3,7 @@ import { useBlockProps, InspectorControls } from "@wordpress/block-editor";
 import { PanelBody, RangeControl } from "@wordpress/components";
 import { useEntityRecords } from "@wordpress/core-data";
 
-import Loading from "./loading";
+import Loading from "../shared/loading";
 import PostList from "./posts";
 
 import "./editor.scss";
@@ -17,7 +17,7 @@ export default function Edit(props) {
 		_embed: true,
 	});
 
-	console.log(hasResolved, records);
+	//console.log(hasResolved, records);
 
 	return (
 		<>

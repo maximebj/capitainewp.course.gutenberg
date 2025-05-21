@@ -351,5 +351,30 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
 		'render' => 'file:./render.php'
+	),
+	'11 api' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'capitainewp/api',
+		'version' => '1.0',
+		'title' => 'API Fetch',
+		'category' => 'capitainewp',
+		'icon' => 'category',
+		'description' => 'Un bloc qui récupère ses données via l’API REST de WordPress.',
+		'attributes' => array(
+			'hideEmpty' => array(
+				'type' => 'boolean',
+				'default' => false
+			),
+			'showCount' => array(
+				'type' => 'boolean',
+				'default' => false
+			)
+		),
+		'textdomain' => 'capitainewp',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'render' => 'file:./render.php'
 	)
 );
