@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "capitainewp/transforms",
+	"version": "1.0",
+	"title": "Transforms",
+	"category": "capitainewp",
+	"icon": "update",
+	"description": "Un bloc qui se transforme en un autre.",
+	"attributes": {
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		}
+	},
+	"example": {
+		"content": "<p>Je suis un bloc transformable.</p>"
+	},
+	"textdomain": "capitainewp",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

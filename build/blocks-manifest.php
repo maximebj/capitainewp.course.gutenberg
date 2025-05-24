@@ -31,9 +31,6 @@ return array(
 		'category' => 'capitainewp',
 		'icon' => 'art',
 		'description' => 'Ajouter des fonctionnalités supplémentaires à un bloc.',
-		'example' => array(
-			
-		),
 		'supports' => array(
 			'align' => array(
 				'wide',
@@ -68,9 +65,12 @@ return array(
 				'sticky' => true
 			),
 			'shadow' => true,
-			'html' => false,
+			'multiple' => false,
 			'anchor' => true,
-			'customClassName' => false
+			'customClassName' => false,
+			'className' => true,
+			'html' => false,
+			'reusable' => true
 		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
@@ -386,6 +386,30 @@ return array(
 		'category' => 'capitainewp',
 		'icon' => 'superhero-alt',
 		'description' => 'Un bloc qui récupère des données depuis l’éditeur de blocs.',
+		'textdomain' => 'capitainewp',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
+	),
+	'14 transforms' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'capitainewp/transforms',
+		'version' => '1.0',
+		'title' => 'Transforms',
+		'category' => 'capitainewp',
+		'icon' => 'update',
+		'description' => 'Un bloc qui se transforme en un autre.',
+		'attributes' => array(
+			'content' => array(
+				'type' => 'string',
+				'source' => 'html',
+				'selector' => 'p'
+			)
+		),
+		'example' => array(
+			'content' => '<p>Je suis un bloc transformable.</p>'
+		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',

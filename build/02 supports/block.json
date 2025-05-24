@@ -7,7 +7,6 @@
   "category": "capitainewp",
   "icon": "art",
   "description": "Ajouter des fonctionnalités supplémentaires à un bloc.",
-  "example": {},
   "supports": {
     "align": [
       "wide",
@@ -42,9 +41,12 @@
       "sticky": true
     },
     "shadow": true,
-    "html": false,
+    "multiple": false,
     "anchor": true,
-    "customClassName": false
+    "customClassName": false,
+    "className": true,
+    "html": false,
+    "reusable": true
   },
   "textdomain": "capitainewp",
   "editorScript": "file:./index.js",

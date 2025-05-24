@@ -19,7 +19,7 @@ export default function Edit() {
 		};
 	}, []);
 
-	console.log(data);
+	//console.log(data);
 
 	return (
 		<>

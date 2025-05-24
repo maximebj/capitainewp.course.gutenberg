@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name:       Capitaine WP • Formation Gutenberg V4
+ * Plugin Name:       Capitaine WP • Blocs • Formation Gutenberg V4
  * Description:       Les blocs de la formation Gutenberg 2025 de Capitaine WP
  * Version:           4.0
  * Requires at least: 6.7
@@ -51,7 +51,7 @@ add_filter('block_categories_all', 'capitainewp_register_block_categories');
 
 
 # Hook le theme.json pour ajouter les styles
-function capitaine_filter_theme_json($theme_json)
+function capitainewp_filter_theme_json($theme_json)
 {
 	# Récupérer les données du theme.json
 	$data = $theme_json->get_data();
@@ -67,4 +67,4 @@ function capitaine_filter_theme_json($theme_json)
 	# Mettre à jour les données du theme.json
 	return $theme_json->update_with($data);
 }
-add_filter('wp_theme_json_data_theme', 'capitaine_filter_theme_json');
+add_filter('wp_theme_json_data_theme', 'capitainewp_filter_theme_json');
