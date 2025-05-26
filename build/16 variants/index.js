@@ -26,12 +26,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/16 variants/editor.scss");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
-
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./editor.scss */ "./src/16 variants/editor.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
@@ -48,9 +45,9 @@ function Edit(props) {
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
     className: `is-type-${type}`
   });
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
     ...blockProps,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
       tagName: "p",
       value: content,
       onChange: content => setAttributes({
@@ -88,6 +85,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/16 variants/edit.js");
 /* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/16 variants/save.js");
 /* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/16 variants/block.json");
+/* harmony import */ var _variations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./variations */ "./src/16 variants/variations.js");
+
 
 
 
@@ -96,52 +95,7 @@ __webpack_require__.r(__webpack_exports__);
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_4__.name, {
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_3__["default"],
-  variations: [{
-    name: "capitainewp/variants-advice",
-    title: "Advice",
-    description: "Un bloc affichant un conseil.",
-    attributes: {
-      content: "Advice",
-      type: "advice"
-    },
-    isDefault: true,
-    scope: ["block", "inserter", "transform"],
-    isActive: ["type"],
-    icon: "yes-alt"
-  }, {
-    name: "capitainewp/variants-warning",
-    title: "Warning",
-    description: "Un bloc affichant un avertissement.",
-    attributes: {
-      content: "Warning",
-      type: "warning"
-    },
-    scope: ["block", "inserter", "transform"],
-    isActive: ["type"],
-    icon: "warning"
-  }, {
-    name: "capitainewp/variants-avoid",
-    title: "Avoid",
-    description: "Un bloc affichant une alerte danger.",
-    attributes: {
-      content: "Avoid",
-      type: "avoid"
-    },
-    scope: ["block", "inserter", "transform"],
-    isActive: ["type"],
-    icon: "dismiss"
-  }, {
-    name: "capitainewp/variants-informations",
-    title: "Information",
-    description: "Un bloc affichant une information.",
-    attributes: {
-      content: "Information",
-      type: "info"
-    },
-    scope: ["block", "inserter", "transform"],
-    isActive: ["type"],
-    icon: "info"
-  }]
+  variations: _variations__WEBPACK_IMPORTED_MODULE_5__["default"]
 });
 
 /***/ }),
@@ -196,6 +150,66 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/16 variants/variations.js":
+/*!***************************************!*\
+  !*** ./src/16 variants/variations.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const variations = [{
+  name: "capitainewp/variants-advice",
+  title: "Advice",
+  description: "Un bloc affichant un conseil.",
+  attributes: {
+    content: "Advice",
+    type: "advice"
+  },
+  isDefault: true,
+  scope: ["block", "inserter", "transform"],
+  isActive: ["type"],
+  icon: "yes-alt"
+}, {
+  name: "capitainewp/variants-warning",
+  title: "Warning",
+  description: "Un bloc affichant un avertissement.",
+  attributes: {
+    content: "Warning",
+    type: "warning"
+  },
+  scope: ["block", "inserter", "transform"],
+  isActive: ["type"],
+  icon: "warning"
+}, {
+  name: "capitainewp/variants-avoid",
+  title: "Avoid",
+  description: "Un bloc affichant une alerte danger.",
+  attributes: {
+    content: "Avoid",
+    type: "avoid"
+  },
+  scope: ["block", "inserter", "transform"],
+  isActive: ["type"],
+  icon: "dismiss"
+}, {
+  name: "capitainewp/variants-informations",
+  title: "Information",
+  description: "Un bloc affichant une information.",
+  attributes: {
+    content: "Information",
+    type: "info"
+  },
+  scope: ["block", "inserter", "transform"],
+  isActive: ["type"],
+  icon: "info"
+}];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (variations);
+
+/***/ }),
+
 /***/ "@wordpress/block-editor":
 /*!*************************************!*\
   !*** external ["wp","blockEditor"] ***!
@@ -213,16 +227,6 @@ module.exports = window["wp"]["blockEditor"];
 /***/ ((module) => {
 
 module.exports = window["wp"]["blocks"];
-
-/***/ }),
-
-/***/ "@wordpress/components":
-/*!************************************!*\
-  !*** external ["wp","components"] ***!
-  \************************************/
-/***/ ((module) => {
-
-module.exports = window["wp"]["components"];
 
 /***/ }),
 
