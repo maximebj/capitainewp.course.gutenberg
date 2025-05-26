@@ -108,7 +108,7 @@ return array(
 		'version' => '1.0',
 		'title' => 'Toolbar',
 		'category' => 'capitainewp',
-		'icon' => 'warning',
+		'icon' => 'bell',
 		'description' => 'Un bloc d’alerte avec plusieurs styles.',
 		'keywords' => array(
 			'attention',
@@ -429,6 +429,38 @@ return array(
 				'type' => 'string',
 				'source' => 'html',
 				'selector' => 'li'
+			)
+		),
+		'textdomain' => 'capitainewp',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
+	),
+	'16 variants' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'capitainewp/variants',
+		'version' => '1.0',
+		'title' => 'Variants',
+		'category' => 'capitainewp',
+		'icon' => 'bell',
+		'description' => 'Un bloc d’alerte avec plusieurs variantes.',
+		'keywords' => array(
+			'attention',
+			'alerte',
+			'conseil',
+			'éviter',
+			'succès'
+		),
+		'attributes' => array(
+			'content' => array(
+				'type' => 'string',
+				'source' => 'html',
+				'selector' => 'p'
+			),
+			'type' => array(
+				'type' => 'string',
+				'default' => 'advice'
 			)
 		),
 		'textdomain' => 'capitainewp',
