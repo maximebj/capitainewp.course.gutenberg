@@ -425,10 +425,10 @@ return array(
 		'icon' => 'migrate',
 		'description' => 'Un bloc qui a évolué avec le temps.',
 		'attributes' => array(
-			'content' => array(
+			'item' => array(
 				'type' => 'string',
 				'source' => 'html',
-				'selector' => 'p'
+				'selector' => 'li'
 			)
 		),
 		'textdomain' => 'capitainewp',
