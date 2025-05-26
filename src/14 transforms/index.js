@@ -21,5 +21,16 @@ registerBlockType(metadata.name, {
 				},
 			},
 		],
+		to: [
+			{
+				type: "block",
+				blocks: ["core/paragraph"],
+				transform: ({ content }) => {
+					return createBlock("core/paragraph", {
+						content,
+					});
+				},
+			},
+		],
 	},
 });

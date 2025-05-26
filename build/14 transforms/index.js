@@ -100,6 +100,17 @@ __webpack_require__.r(__webpack_exports__);
           content
         });
       }
+    }],
+    to: [{
+      type: "block",
+      blocks: ["core/paragraph"],
+      transform: ({
+        content
+      }) => {
+        return (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.createBlock)("core/paragraph", {
+          content
+        });
+      }
     }]
   }
 });
