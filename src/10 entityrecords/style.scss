@@ -1,4 +1,4 @@
-.wp-block-capitainewp-dynamic {
+.wp-block-capitainewp-entityrecords {
 	h2 {
 		margin: 0;
 	}
@@ -13,7 +13,7 @@
 	}
 }
 
-.wp-block-capitainewp-dynamic__list {
+.wp-block-capitainewp-entityrecords__list {
 	display: flex;
 	flex-direction: column;
 	gap: var(--wp--preset--spacing--40);
@@ -21,6 +21,6 @@
 	padding: 0;
 }
 
-.wp-block-capitainewp-dynamic__meta {
+.wp-block-capitainewp-entityrecords__meta {
 	font-size: var(--wp--preset--font-size--small);
 }

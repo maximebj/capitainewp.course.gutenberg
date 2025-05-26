@@ -22,15 +22,15 @@ if (!$query->have_posts()) {
 ?>
 <div <?php echo $block_props; ?>>
   <h2><?php _e('Latest posts', 'capitainewp'); ?></h2>
-  <ul class="wp-block-capitainewp-dynamic__list">
+  <ul class="wp-block-capitainewp-entityrecords__list">
     <?php while ($query->have_posts()) : $query->the_post(); ?>
-      <li class="wp-block-capitainewp-dynamic__post">
+      <li class="wp-block-capitainewp-entityrecords__post">
         <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'full'); ?>
         <h3><?php the_title(); ?></h3>
-        <div class="wp-block-capitainewp-dynamic__excerpt">
+        <div class="wp-block-capitainewp-entityrecords__excerpt">
           <?php the_excerpt(); ?>
         </div>
-        <p class="wp-block-capitainewp-dynamic__meta">
+        <p class="wp-block-capitainewp-entityrecords__meta">
           <?php _e('Published on', 'capitainewp'); ?>
           <?php the_date(); ?>
           <?php _e('by', 'capitainewp'); ?>

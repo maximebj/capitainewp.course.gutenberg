@@ -2,20 +2,20 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/10 dynamic/block.json":
-/*!***********************************!*\
-  !*** ./src/10 dynamic/block.json ***!
-  \***********************************/
+/***/ "./src/10 entityrecords/block.json":
+/*!*****************************************!*\
+  !*** ./src/10 entityrecords/block.json ***!
+  \*****************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/dynamic","version":"1.0","title":"Dynamic","category":"capitainewp","icon":"book","description":"Un bloc qui récupère ses données dynamiquement.","attributes":{"numberOfPosts":{"type":"number","default":3}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/entityrecords","version":"1.0","title":"Entity Records","category":"capitainewp","icon":"book","description":"Un bloc qui récupère ses données dynamiquement.","attributes":{"numberOfPosts":{"type":"number","default":3}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ }),
 
-/***/ "./src/10 dynamic/edit.js":
-/*!********************************!*\
-  !*** ./src/10 dynamic/edit.js ***!
-  \********************************/
+/***/ "./src/10 entityrecords/edit.js":
+/*!**************************************!*\
+  !*** ./src/10 entityrecords/edit.js ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -31,8 +31,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_core_data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/core-data */ "@wordpress/core-data");
 /* harmony import */ var _wordpress_core_data__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_core_data__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _shared_loading__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../shared/loading */ "./src/shared/loading.js");
-/* harmony import */ var _posts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./posts */ "./src/10 dynamic/posts.js");
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./editor.scss */ "./src/10 dynamic/editor.scss");
+/* harmony import */ var _posts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./posts */ "./src/10 entityrecords/posts.js");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./editor.scss */ "./src/10 entityrecords/editor.scss");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__);
 
@@ -89,10 +89,10 @@ function Edit(props) {
 
 /***/ }),
 
-/***/ "./src/10 dynamic/editor.scss":
-/*!************************************!*\
-  !*** ./src/10 dynamic/editor.scss ***!
-  \************************************/
+/***/ "./src/10 entityrecords/editor.scss":
+/*!******************************************!*\
+  !*** ./src/10 entityrecords/editor.scss ***!
+  \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -101,19 +101,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/10 dynamic/index.js":
-/*!*********************************!*\
-  !*** ./src/10 dynamic/index.js ***!
-  \*********************************/
+/***/ "./src/10 entityrecords/index.js":
+/*!***************************************!*\
+  !*** ./src/10 entityrecords/index.js ***!
+  \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/10 dynamic/style.scss");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/10 dynamic/edit.js");
-/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/10 dynamic/save.js");
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/10 dynamic/block.json");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/10 entityrecords/style.scss");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/10 entityrecords/edit.js");
+/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/10 entityrecords/save.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/10 entityrecords/block.json");
 
 
 
@@ -126,10 +126,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/10 dynamic/posts.js":
-/*!*********************************!*\
-  !*** ./src/10 dynamic/posts.js ***!
-  \*********************************/
+/***/ "./src/10 entityrecords/posts.js":
+/*!***************************************!*\
+  !*** ./src/10 entityrecords/posts.js ***!
+  \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -154,21 +154,21 @@ function PostList(props) {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
       children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Latest posts", "capitainewp")
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("ul", {
-      className: "wp-block-capitainewp-dynamic__list",
+      className: "wp-block-capitainewp-entityrecords__list",
       children: posts.map(post => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("li", {
-        className: "wp-block-capitainewp-dynamic__post",
+        className: "wp-block-capitainewp-entityrecords__post",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
           src: post._embedded["wp:featuredmedia"][0].source_url,
           alt: post._embedded["wp:featuredmedia"][0].alt
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
           children: post.title.raw
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-          className: "wp-block-capitainewp-dynamic__excerpt",
+          className: "wp-block-capitainewp-entityrecords__excerpt",
           dangerouslySetInnerHTML: {
             __html: post.excerpt.rendered
           }
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
-          className: "wp-block-capitainewp-dynamic__meta",
+          className: "wp-block-capitainewp-entityrecords__meta",
           children: [(0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Published on", "capitainewp"), " ", (0,_wordpress_date__WEBPACK_IMPORTED_MODULE_1__.dateI18n)((0,_wordpress_date__WEBPACK_IMPORTED_MODULE_1__.getSettings)().formats.date, post.date), " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("by", "capitainewp"), " ", post._embedded.author[0].name]
         })]
       }, post.id))
@@ -178,10 +178,10 @@ function PostList(props) {
 
 /***/ }),
 
-/***/ "./src/10 dynamic/save.js":
-/*!********************************!*\
-  !*** ./src/10 dynamic/save.js ***!
-  \********************************/
+/***/ "./src/10 entityrecords/save.js":
+/*!**************************************!*\
+  !*** ./src/10 entityrecords/save.js ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -194,10 +194,10 @@ function save() {
 
 /***/ }),
 
-/***/ "./src/10 dynamic/style.scss":
-/*!***********************************!*\
-  !*** ./src/10 dynamic/style.scss ***!
-  \***********************************/
+/***/ "./src/10 entityrecords/style.scss":
+/*!*****************************************!*\
+  !*** ./src/10 entityrecords/style.scss ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -429,8 +429,8 @@ module.exports = window["ReactJSXRuntime"];
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"10 dynamic/index": 0,
-/******/ 			"10 dynamic/style-index": 0
+/******/ 			"10 entityrecords/index": 0,
+/******/ 			"10 entityrecords/style-index": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -480,7 +480,7 @@ module.exports = window["ReactJSXRuntime"];
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["10 dynamic/style-index"], () => (__webpack_require__("./src/10 dynamic/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["10 entityrecords/style-index"], () => (__webpack_require__("./src/10 entityrecords/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

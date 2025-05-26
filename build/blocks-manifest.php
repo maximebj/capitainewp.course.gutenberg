@@ -331,12 +331,12 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'10 dynamic' => array(
+	'10 entityrecords' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'capitainewp/dynamic',
+		'name' => 'capitainewp/entityrecords',
 		'version' => '1.0',
-		'title' => 'Dynamic',
+		'title' => 'Entity Records',
 		'category' => 'capitainewp',
 		'icon' => 'book',
 		'description' => 'Un bloc qui récupère ses données dynamiquement.',
@@ -462,6 +462,48 @@ return array(
 				'type' => 'string',
 				'default' => 'advice'
 			)
+		),
+		'textdomain' => 'capitainewp',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
+	),
+	'17 context consumer' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'capitainewp/context-consumer',
+		'version' => '1.0',
+		'title' => 'Context Consumer',
+		'description' => 'Un bloc enfant qui consomme le contexte du parent.',
+		'category' => 'capitainewp',
+		'icon' => 'star-empty',
+		'parent' => array(
+			'capitainewp/context-provider'
+		),
+		'usesContext' => array(
+			'capitainewp/lastPostId'
+		),
+		'textdomain' => 'capitainewp',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
+	),
+	'17 context provider' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'capitainewp/context-provider',
+		'version' => '1.0',
+		'title' => 'Context Provider',
+		'category' => 'capitainewp',
+		'icon' => 'star-filled',
+		'description' => 'Un bloc parent qui fournit un contexte à ses enfants.',
+		'attributes' => array(
+			'lastPostId' => array(
+				'type' => 'number'
+			)
+		),
+		'providesContext' => array(
+			'capitainewp/lastPostId' => 'lastPostId'
 		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
