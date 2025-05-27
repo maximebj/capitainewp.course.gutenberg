@@ -1,0 +1,18 @@
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/15 interactivity/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+.wp-block-capitainewp-interactivity__categories {
+  display: flex;
+  gap: 8px;
+  list-style-type: none;
+  padding: 0;
+}
+.wp-block-capitainewp-interactivity__categories li {
+  font-size: var(--wp--preset--font-size--small);
+  border: 1.5px solid #000;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
