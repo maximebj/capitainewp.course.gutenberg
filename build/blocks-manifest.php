@@ -94,7 +94,9 @@ return array(
 			)
 		),
 		'example' => array(
-			'content' => '<p>Un bloc Richtext</p>'
+			'attributes' => array(
+				'content' => '<p>Un bloc Richtext</p>'
+			)
 		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
@@ -126,6 +128,12 @@ return array(
 			'type' => array(
 				'type' => 'string',
 				'default' => 'advice'
+			)
+		),
+		'example' => array(
+			'attributes' => array(
+				'content' => '<p>Un bloc d’alerte avec plusieurs styles.</p>',
+				'type' => 'advice'
 			)
 		),
 		'textdomain' => 'capitainewp',
@@ -185,6 +193,18 @@ return array(
 				'background' => true
 			)
 		),
+		'example' => array(
+			'attributes' => array(
+				'emoji' => '😃',
+				'title' => 'Le titre du bloc.',
+				'description' => 'Une description digne de ce nom.',
+				'hasTag' => true,
+				'tag' => 'Nouveau',
+				'tagColor' => 'var(--wp--preset--color--accent-2)',
+				'tagTextColor' => 'var(--wp--preset--color--accent-3)',
+				'tagRadius' => 5
+			)
+		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
@@ -242,6 +262,18 @@ return array(
 				'background' => true
 			)
 		),
+		'example' => array(
+			'attributes' => array(
+				'emoji' => '♥️',
+				'title' => 'Le titre du bloc.',
+				'description' => 'Une description digne de ce nom.',
+				'hasTag' => true,
+				'tag' => 'Nouveau',
+				'tagColor' => 'var(--wp--preset--color--accent-3)',
+				'tagTextColor' => 'var(--wp--preset--color--accent-2)',
+				'tagRadius' => 10
+			)
+		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
@@ -272,6 +304,13 @@ return array(
 				'source' => 'attribute',
 				'attribute' => 'alt',
 				'selector' => 'img'
+			)
+		),
+		'example' => array(
+			'attributes' => array(
+				'pictureID' => 73,
+				'pictureURL' => 'http://gutenberg.local/wp-content/uploads/2018/04/photo-1450696714834-bb5b4aee70d3.jpeg',
+				'pictureAlt' => 'Une feuille avec des gouttes d’eau'
 			)
 		),
 		'textdomain' => 'capitainewp',

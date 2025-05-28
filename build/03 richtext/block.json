@@ -15,7 +15,9 @@
     }
   },
   "example": {
-    "content": "<p>Un bloc Richtext</p>"
+    "attributes": {
+      "content": "<p>Un bloc Richtext</p>"
+    }
   },
   "textdomain": "capitainewp",
   "editorScript": "file:./index.js",

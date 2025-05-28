@@ -8,7 +8,7 @@
   \***********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/toolbar","version":"1.0","title":"Toolbar","category":"capitainewp","icon":"bell","description":"Un bloc d’alerte avec plusieurs styles.","keywords":["attention","alerte","conseil","éviter","succès"],"attributes":{"content":{"type":"string","source":"html","selector":"p"},"type":{"type":"string","default":"advice"}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/toolbar","version":"1.0","title":"Toolbar","category":"capitainewp","icon":"bell","description":"Un bloc d’alerte avec plusieurs styles.","keywords":["attention","alerte","conseil","éviter","succès"],"attributes":{"content":{"type":"string","source":"html","selector":"p"},"type":{"type":"string","default":"advice"}},"example":{"attributes":{"content":"<p>Un bloc d’alerte avec plusieurs styles.</p>","type":"advice"}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 

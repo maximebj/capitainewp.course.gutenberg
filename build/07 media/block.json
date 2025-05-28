@@ -25,6 +25,13 @@
       "selector": "img"
     }
   },
+  "example": {
+    "attributes": {
+      "pictureID": 73,
+      "pictureURL": "http://gutenberg.local/wp-content/uploads/2018/04/photo-1450696714834-bb5b4aee70d3.jpeg",
+      "pictureAlt": "Une feuille avec des gouttes d’eau"
+    }
+  },
   "textdomain": "capitainewp",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",

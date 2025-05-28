@@ -50,6 +50,18 @@
       "background": true
     }
   },
+  "example": {
+    "attributes": {
+      "emoji": "♥️",
+      "title": "Le titre du bloc.",
+      "description": "Une description digne de ce nom.",
+      "hasTag": true,
+      "tag": "Nouveau",
+      "tagColor": "var(--wp--preset--color--accent-3)",
+      "tagTextColor": "var(--wp--preset--color--accent-2)",
+      "tagRadius": 10
+    }
+  },
   "textdomain": "capitainewp",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
