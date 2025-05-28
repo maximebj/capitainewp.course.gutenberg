@@ -10,5 +10,27 @@
 		padding: 8px 12px;
 		border-radius: 20px;
 		cursor: pointer;
+		transition: all 0.2s ease;
+
+		&:not(.is-active):hover {
+			background-color: var(--wp--preset--color--accent-2);
+		}
+
+		&.is-active {
+			background-color: #000;
+			color: #fff;
+		}
+
+		&.is-hidden {
+			display: none;
+		}
+	}
+}
+
+.wp-block-capitainewp-interactivity__posts {
+	li {
+		&:not(.is-shown) {
+			display: none;
+		}
 	}
 }

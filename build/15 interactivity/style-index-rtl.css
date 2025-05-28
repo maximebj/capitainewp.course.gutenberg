@@ -13,4 +13,19 @@
   padding: 8px 12px;
   border-radius: 20px;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+.wp-block-capitainewp-interactivity__categories li:not(.is-active):hover {
+  background-color: var(--wp--preset--color--accent-2);
+}
+.wp-block-capitainewp-interactivity__categories li.is-active {
+  background-color: #000;
+  color: #fff;
+}
+.wp-block-capitainewp-interactivity__categories li.is-hidden {
+  display: none;
+}
+
+.wp-block-capitainewp-interactivity__posts li:not(.is-shown) {
+  display: none;
 }

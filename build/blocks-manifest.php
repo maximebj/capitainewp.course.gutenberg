@@ -445,6 +445,9 @@ return array(
 		'category' => 'capitainewp',
 		'icon' => 'book',
 		'description' => 'Un bloc qui utilise l’inteactivity API.',
+		'supports' => array(
+			'interactivity' => true
+		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
@@ -525,29 +528,5 @@ return array(
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
-	),
-	'test' => array(
-		'$schema' => 'https://schemas.wp.org/trunk/block.json',
-		'apiVersion' => 3,
-		'name' => 'capitainewp/test',
-		'version' => '1.0',
-		'title' => 'Test',
-		'category' => 'capitainewp',
-		'icon' => 'book',
-		'description' => 'Un bloc test.',
-		'attributes' => array(
-			'numberOfPosts' => array(
-				'type' => 'number',
-				'default' => 3
-			)
-		),
-		'supports' => array(
-			'interactivity' => true
-		),
-		'textdomain' => 'capitainewp',
-		'editorScript' => 'file:./index.js',
-		'editorStyle' => 'file:./index.css',
-		'style' => 'file:./style-index.css',
-		'viewScriptModule' => 'file:./view.js'
 	)
 );
