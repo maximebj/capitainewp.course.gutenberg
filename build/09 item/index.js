@@ -41,7 +41,7 @@ function CheckIcon() {
   \********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/item","version":"1.0","title":"Enfant du répéteur","category":"capitainewp","icon":"yes-alt","parent":["capitainewp/repeater"],"description":"bloc enfant du répéteur.","attributes":{"content":{"type":"string","source":"html","selector":"p"}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/item","version":"1.0","title":"Enfant du répéteur","category":"capitainewp","icon":"yes-alt","parent":["capitainewp/repeater"],"description":"bloc enfant du répéteur.","attributes":{"content":{"type":"string","source":"html","selector":"p"}},"example":{"attributes":{"content":"Un élément de la liste"}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 

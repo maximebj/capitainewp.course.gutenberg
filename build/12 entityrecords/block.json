@@ -5,12 +5,17 @@
   "version": "1.0",
   "title": "Entity Records",
   "category": "capitainewp",
-  "icon": "book",
+  "icon": "clipboard",
   "description": "Un bloc qui récupère ses données dynamiquement.",
   "attributes": {
     "numberOfPosts": {
       "type": "number",
       "default": 3
+    }
+  },
+  "example": {
+    "attributes": {
+      "numberOfPosts": 3
     }
   },
   "textdomain": "capitainewp",

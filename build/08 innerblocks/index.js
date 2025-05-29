@@ -8,7 +8,7 @@
   \***************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/innerblocks","version":"1.0","title":"Innerblocks","category":"capitainewp","icon":"insert","description":"Un bloc dans lequel on peut insérer d\'autres blocs.","textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/innerblocks","version":"1.0","title":"Innerblocks","category":"capitainewp","icon":"insert","description":"Un bloc dans lequel on peut insérer d\'autres blocs.","example":{"innerBlocks":[{"name":"core/heading","attributes":{"content":"Un titre"}},{"name":"core/paragraph","attributes":{"content":"Un bloc dans lequel on peut insérer d\'autres blocs."}}]},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 

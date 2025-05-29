@@ -72,6 +72,9 @@ return array(
 			'html' => false,
 			'reusable' => true
 		),
+		'example' => array(
+			
+		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
@@ -327,6 +330,22 @@ return array(
 		'category' => 'capitainewp',
 		'icon' => 'insert',
 		'description' => 'Un bloc dans lequel on peut insérer d\'autres blocs.',
+		'example' => array(
+			'innerBlocks' => array(
+				array(
+					'name' => 'core/heading',
+					'attributes' => array(
+						'content' => 'Un titre'
+					)
+				),
+				array(
+					'name' => 'core/paragraph',
+					'attributes' => array(
+						'content' => 'Un bloc dans lequel on peut insérer d\'autres blocs.'
+					)
+				)
+			)
+		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
@@ -351,6 +370,11 @@ return array(
 				'selector' => 'p'
 			)
 		),
+		'example' => array(
+			'attributes' => array(
+				'content' => 'Un élément de la liste'
+			)
+		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
@@ -365,6 +389,28 @@ return array(
 		'category' => 'capitainewp',
 		'icon' => 'list-view',
 		'description' => 'Un bloc dans lequel on peut insérer un seul type de bloc plusieurs fois.',
+		'example' => array(
+			'innerBlocks' => array(
+				array(
+					'name' => 'capitainewp/item',
+					'attributes' => array(
+						'content' => 'Un élément de la liste'
+					)
+				),
+				array(
+					'name' => 'capitainewp/item',
+					'attributes' => array(
+						'content' => 'Un élément de la liste'
+					)
+				),
+				array(
+					'name' => 'capitainewp/item',
+					'attributes' => array(
+						'content' => 'Un élément de la liste'
+					)
+				)
+			)
+		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
@@ -387,7 +433,9 @@ return array(
 			)
 		),
 		'example' => array(
-			'content' => '<p>Je suis un bloc transformable.</p>'
+			'attributes' => array(
+				'content' => '<p>Je suis un bloc transformable.</p>'
+			)
 		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
@@ -410,6 +458,11 @@ return array(
 				'selector' => 'li'
 			)
 		),
+		'example' => array(
+			'attributes' => array(
+				'item' => 'Un bloc qui gère sa dépréciation.'
+			)
+		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
@@ -422,12 +475,17 @@ return array(
 		'version' => '1.0',
 		'title' => 'Entity Records',
 		'category' => 'capitainewp',
-		'icon' => 'book',
+		'icon' => 'clipboard',
 		'description' => 'Un bloc qui récupère ses données dynamiquement.',
 		'attributes' => array(
 			'numberOfPosts' => array(
 				'type' => 'number',
 				'default' => 3
+			)
+		),
+		'example' => array(
+			'attributes' => array(
+				'numberOfPosts' => 3
 			)
 		),
 		'textdomain' => 'capitainewp',
@@ -455,6 +513,12 @@ return array(
 				'default' => false
 			)
 		),
+		'example' => array(
+			'attributes' => array(
+				'hideEmpty' => false,
+				'showCount' => true
+			)
+		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
@@ -470,6 +534,9 @@ return array(
 		'category' => 'capitainewp',
 		'icon' => 'superhero-alt',
 		'description' => 'Un bloc qui récupère des données depuis l’éditeur de blocs.',
+		'example' => array(
+			
+		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
@@ -486,6 +553,9 @@ return array(
 		'description' => 'Un bloc qui utilise l’inteactivity API.',
 		'supports' => array(
 			'interactivity' => true
+		),
+		'example' => array(
+			
 		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',
@@ -551,7 +621,7 @@ return array(
 		'apiVersion' => 3,
 		'name' => 'capitainewp/context-provider',
 		'version' => '1.0',
-		'title' => 'Context Provider',
+		'title' => 'Context',
 		'category' => 'capitainewp',
 		'icon' => 'star-filled',
 		'description' => 'Un bloc parent qui fournit un contexte à ses enfants.',
@@ -562,6 +632,11 @@ return array(
 		),
 		'providesContext' => array(
 			'capitainewp/lastPostId' => 'lastPostId'
+		),
+		'example' => array(
+			'attributes' => array(
+				'lastPostId' => 339
+			)
 		),
 		'textdomain' => 'capitainewp',
 		'editorScript' => 'file:./index.js',

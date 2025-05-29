@@ -8,7 +8,7 @@
   \********************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/context-provider","version":"1.0","title":"Context Provider","category":"capitainewp","icon":"star-filled","description":"Un bloc parent qui fournit un contexte à ses enfants.","attributes":{"lastPostId":{"type":"number"}},"providesContext":{"capitainewp/lastPostId":"lastPostId"},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/context-provider","version":"1.0","title":"Context","category":"capitainewp","icon":"star-filled","description":"Un bloc parent qui fournit un contexte à ses enfants.","attributes":{"lastPostId":{"type":"number"}},"providesContext":{"capitainewp/lastPostId":"lastPostId"},"example":{"attributes":{"lastPostId":339}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 

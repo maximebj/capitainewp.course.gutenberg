@@ -15,7 +15,9 @@
 		}
 	},
 	"example": {
-		"content": "<p>Je suis un bloc transformable.</p>"
+		"attributes": {
+			"content": "<p>Je suis un bloc transformable.</p>"
+		}
 	},
 	"textdomain": "capitainewp",
 	"editorScript": "file:./index.js",

@@ -8,7 +8,7 @@
   \**************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/deprecated","version":"1.0","title":"Deprecated","category":"capitainewp","icon":"migrate","description":"Un bloc qui a évolué avec le temps.","attributes":{"item":{"type":"string","source":"html","selector":"li"}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/deprecated","version":"1.0","title":"Deprecated","category":"capitainewp","icon":"migrate","description":"Un bloc qui a évolué avec le temps.","attributes":{"item":{"type":"string","source":"html","selector":"li"}},"example":{"attributes":{"item":"Un bloc qui gère sa dépréciation."}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 

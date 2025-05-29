@@ -8,7 +8,7 @@
   \*****************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/entityrecords","version":"1.0","title":"Entity Records","category":"capitainewp","icon":"book","description":"Un bloc qui récupère ses données dynamiquement.","attributes":{"numberOfPosts":{"type":"number","default":3}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/entityrecords","version":"1.0","title":"Entity Records","category":"capitainewp","icon":"clipboard","description":"Un bloc qui récupère ses données dynamiquement.","attributes":{"numberOfPosts":{"type":"number","default":3}},"example":{"attributes":{"numberOfPosts":3}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ }),
 

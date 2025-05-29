@@ -11,6 +11,12 @@ const variations = [
 		scope: ["block", "inserter", "transform"],
 		isActive: ["type"],
 		icon: "yes-alt",
+		example: {
+			attributes: {
+				content: "Un conseil",
+				type: "advice",
+			},
+		},
 	},
 	{
 		name: "capitainewp/variants-warning",
@@ -23,11 +29,17 @@ const variations = [
 		scope: ["block", "inserter", "transform"],
 		isActive: ["type"],
 		icon: "warning",
+		example: {
+			attributes: {
+				content: "Un avertissement",
+				type: "warning",
+			},
+		},
 	},
 	{
 		name: "capitainewp/variants-avoid",
 		title: "Avoid",
-		description: "Un bloc affichant une alerte danger.",
+		description: "Un bloc affichant une mise en garde.",
 		attributes: {
 			content: "Avoid",
 			type: "avoid",
@@ -35,6 +47,12 @@ const variations = [
 		scope: ["block", "inserter", "transform"],
 		isActive: ["type"],
 		icon: "dismiss",
+		example: {
+			attributes: {
+				content: "Une mise en garde",
+				type: "avoid",
+			},
+		},
 	},
 	{
 		name: "capitainewp/variants-informations",
@@ -47,6 +65,12 @@ const variations = [
 		scope: ["block", "inserter", "transform"],
 		isActive: ["type"],
 		icon: "info",
+		example: {
+			attributes: {
+				content: "Une information",
+				type: "info",
+			},
+		},
 	},
 ];
 

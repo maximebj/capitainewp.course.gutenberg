@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "capitainewp/context-provider",
   "version": "1.0",
-  "title": "Context Provider",
+  "title": "Context",
   "category": "capitainewp",
   "icon": "star-filled",
   "description": "Un bloc parent qui fournit un contexte à ses enfants.",
@@ -14,6 +14,11 @@
   },
   "providesContext": {
     "capitainewp/lastPostId": "lastPostId"
+  },
+  "example": {
+    "attributes": {
+      "lastPostId": 339
+    }
   },
   "textdomain": "capitainewp",
   "editorScript": "file:./index.js",

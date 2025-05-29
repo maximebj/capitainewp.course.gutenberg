@@ -8,7 +8,7 @@
   \*******************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/api","version":"1.0","title":"API Fetch","category":"capitainewp","icon":"category","description":"Un bloc qui récupère ses données via l’API REST de WordPress.","attributes":{"hideEmpty":{"type":"boolean","default":false},"showCount":{"type":"boolean","default":false}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/api","version":"1.0","title":"API Fetch","category":"capitainewp","icon":"category","description":"Un bloc qui récupère ses données via l’API REST de WordPress.","attributes":{"hideEmpty":{"type":"boolean","default":false},"showCount":{"type":"boolean","default":false}},"example":{"attributes":{"hideEmpty":false,"showCount":true}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ }),
 

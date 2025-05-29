@@ -171,7 +171,13 @@ const variations = [{
   isDefault: true,
   scope: ["block", "inserter", "transform"],
   isActive: ["type"],
-  icon: "yes-alt"
+  icon: "yes-alt",
+  example: {
+    attributes: {
+      content: "Un conseil",
+      type: "advice"
+    }
+  }
 }, {
   name: "capitainewp/variants-warning",
   title: "Warning",
@@ -182,18 +188,30 @@ const variations = [{
   },
   scope: ["block", "inserter", "transform"],
   isActive: ["type"],
-  icon: "warning"
+  icon: "warning",
+  example: {
+    attributes: {
+      content: "Un avertissement",
+      type: "warning"
+    }
+  }
 }, {
   name: "capitainewp/variants-avoid",
   title: "Avoid",
-  description: "Un bloc affichant une alerte danger.",
+  description: "Un bloc affichant une mise en garde.",
   attributes: {
     content: "Avoid",
     type: "avoid"
   },
   scope: ["block", "inserter", "transform"],
   isActive: ["type"],
-  icon: "dismiss"
+  icon: "dismiss",
+  example: {
+    attributes: {
+      content: "Une mise en garde",
+      type: "avoid"
+    }
+  }
 }, {
   name: "capitainewp/variants-informations",
   title: "Information",
@@ -204,7 +222,13 @@ const variations = [{
   },
   scope: ["block", "inserter", "transform"],
   isActive: ["type"],
-  icon: "info"
+  icon: "info",
+  example: {
+    attributes: {
+      content: "Une information",
+      type: "info"
+    }
+  }
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (variations);
 
