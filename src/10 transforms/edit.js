@@ -11,7 +11,7 @@ export default function Edit(props) {
 		<div {...useBlockProps()}>
 			<RichText
 				tagName="p"
-				placeholder={__("Your text here", "capitainewp")}
+				placeholder={__("Your text here", "capitainewp-blocks")}
 				value={content}
 				onChange={(content) => setAttributes({ content })}
 			/>

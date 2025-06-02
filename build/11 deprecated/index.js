@@ -8,7 +8,7 @@
   \**************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/deprecated","version":"1.0","title":"Deprecated","category":"capitainewp","icon":"migrate","description":"Un bloc qui a évolué avec le temps.","attributes":{"item":{"type":"string","source":"html","selector":"li"}},"example":{"attributes":{"item":"Un bloc qui gère sa dépréciation."}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/deprecated","version":"1.0","title":"Deprecated","category":"capitainewp","icon":"migrate","description":"Un bloc qui a évolué avec le temps.","attributes":{"item":{"type":"string","source":"html","selector":"li"}},"example":{"attributes":{"item":"Un bloc qui gère sa dépréciation."}},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 
@@ -45,7 +45,7 @@ function Edit(props) {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(),
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
       tagName: "li",
-      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your text here", "capitainewp"),
+      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your text here", "capitainewp-blocks"),
       value: item,
       onChange: item => setAttributes({
         item

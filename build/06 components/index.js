@@ -58,7 +58,7 @@ function Block(props) {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
         tagName: "h2",
         className: "wp-block-capitainewp-components__title",
-        placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your text here", "capitainewp"),
+        placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your text here", "capitainewp-blocks"),
         value: title,
         onChange: title => setAttributes({
           title
@@ -66,7 +66,7 @@ function Block(props) {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
         tagName: "p",
         className: "wp-block-capitainewp-components__description",
-        placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your text here", "capitainewp"),
+        placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your text here", "capitainewp-blocks"),
         value: description,
         onChange: description => setAttributes({
           description
@@ -84,7 +84,7 @@ function Block(props) {
   \**************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/components","version":"1.0","title":"Components","category":"capitainewp","icon":"screenoptions","description":"Le bloc inspecteur mais avec des composants pour un code plus lisible.","attributes":{"emoji":{"type":"string","default":"😃"},"title":{"type":"string","source":"html","selector":".wp-block-capitainewp-components__title"},"description":{"type":"string","source":"html","selector":".wp-block-capitainewp-components__description"},"hasTag":{"type":"boolean","default":true},"tag":{"type":"string","source":"html","selector":".wp-block-capitainewp-components__tag","default":"New"},"tagColor":{"type":"string","default":"var(--wp--preset--color--accent-2)"},"tagTextColor":{"type":"string","default":"var(--wp--preset--color--accent-3)"},"tagRadius":{"type":"number","default":5}},"supports":{"color":{"background":true}},"example":{"attributes":{"emoji":"♥️","title":"Le titre du bloc.","description":"Une description digne de ce nom.","hasTag":true,"tag":"Nouveau","tagColor":"var(--wp--preset--color--accent-3)","tagTextColor":"var(--wp--preset--color--accent-2)","tagRadius":10}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/components","version":"1.0","title":"Components","category":"capitainewp","icon":"screenoptions","description":"Le bloc inspecteur mais avec des composants pour un code plus lisible.","attributes":{"emoji":{"type":"string","default":"😃"},"title":{"type":"string","source":"html","selector":".wp-block-capitainewp-components__title"},"description":{"type":"string","source":"html","selector":".wp-block-capitainewp-components__description"},"hasTag":{"type":"boolean","default":true},"tag":{"type":"string","source":"html","selector":".wp-block-capitainewp-components__tag","default":"New"},"tagColor":{"type":"string","default":"var(--wp--preset--color--accent-2)"},"tagTextColor":{"type":"string","default":"var(--wp--preset--color--accent-3)"},"tagRadius":{"type":"number","default":5}},"supports":{"color":{"background":true}},"example":{"attributes":{"emoji":"♥️","title":"Le titre du bloc.","description":"Une description digne de ce nom.","hasTag":true,"tag":"Nouveau","tagColor":"var(--wp--preset--color--accent-3)","tagTextColor":"var(--wp--preset--color--accent-2)","tagRadius":10}},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 

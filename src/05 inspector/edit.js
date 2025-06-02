@@ -51,14 +51,14 @@ export default function Edit(props) {
 					<RichText
 						tagName="h2"
 						className="wp-block-capitainewp-inspector__title"
-						placeholder={__("Your text here", "capitainewp")}
+						placeholder={__("Your text here", "capitainewp-blocks")}
 						value={title}
 						onChange={(title) => setAttributes({ title })}
 					/>
 					<RichText
 						tagName="p"
 						className="wp-block-capitainewp-inspector__description"
-						placeholder={__("Your text here", "capitainewp")}
+						placeholder={__("Your text here", "capitainewp-blocks")}
 						value={description}
 						onChange={(description) => setAttributes({ description })}
 					/>
@@ -66,7 +66,7 @@ export default function Edit(props) {
 			</div>
 
 			<InspectorControls>
-				<PanelBody title={__("Emoji", "capitainewp")}>
+				<PanelBody title={__("Emoji", "capitainewp-blocks")}>
 					<ToggleGroupControl
 						onChange={(emoji) => setAttributes({ emoji })}
 						value={emoji}
@@ -78,15 +78,15 @@ export default function Edit(props) {
 					</ToggleGroupControl>
 				</PanelBody>
 
-				<PanelBody title={__("Tag", "capitainewp")}>
+				<PanelBody title={__("Tag", "capitainewp-blocks")}>
 					<ToggleControl
-						label={__("Show tag", "capitainewp")}
+						label={__("Show tag", "capitainewp-blocks")}
 						checked={hasTag}
 						onChange={() => setAttributes({ hasTag: !hasTag })}
 					/>
 					{hasTag && (
 						<RangeControl
-							label={__("Radius", "capitainewp")}
+							label={__("Radius", "capitainewp-blocks")}
 							value={tagRadius}
 							onChange={(tagRadius) => setAttributes({ tagRadius })}
 							min={0}
@@ -97,17 +97,17 @@ export default function Edit(props) {
 
 				{hasTag && (
 					<PanelColorSettings
-						title={__("Tag colors", "capitainewp")}
+						title={__("Tag colors", "capitainewp-blocks")}
 						colorSettings={[
 							{
 								value: tagColor,
 								onChange: (tagColor) => setAttributes({ tagColor }),
-								label: __("Tag color", "capitainewp"),
+								label: __("Tag color", "capitainewp-blocks"),
 							},
 							{
 								value: tagTextColor,
 								onChange: (tagTextColor) => setAttributes({ tagTextColor }),
-								label: __("Tag text color", "capitainewp"),
+								label: __("Tag text color", "capitainewp-blocks"),
 							},
 						]}
 					/>

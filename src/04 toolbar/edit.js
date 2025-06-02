@@ -15,22 +15,22 @@ export default function Edit(props) {
 	const options = [
 		{
 			slug: "advice",
-			label: __("Advice", "capitainewp"),
+			label: __("Advice", "capitainewp-blocks"),
 			icon: "yes-alt",
 		},
 		{
 			slug: "warning",
-			label: __("Warning", "capitainewp"),
+			label: __("Warning", "capitainewp-blocks"),
 			icon: "warning",
 		},
 		{
 			slug: "avoid",
-			label: __("Avoid", "capitainewp"),
+			label: __("Avoid", "capitainewp-blocks"),
 			icon: "dismiss",
 		},
 		{
 			slug: "info",
-			label: __("Information", "capitainewp"),
+			label: __("Information", "capitainewp-blocks"),
 			icon: "info",
 		},
 	];
@@ -57,7 +57,7 @@ export default function Edit(props) {
 			<div {...blockProps}>
 				<RichText
 					tagName="p"
-					placeholder={__("Your alert here", "capitainewp")}
+					placeholder={__("Your alert here", "capitainewp-blocks")}
 					value={content}
 					onChange={(content) => setAttributes({ content })}
 				/>

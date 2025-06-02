@@ -8,7 +8,7 @@
   \*****************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/entityrecords","version":"1.0","title":"Entity Records","category":"capitainewp","icon":"clipboard","description":"Un bloc qui récupère ses données dynamiquement.","attributes":{"numberOfPosts":{"type":"number","default":3}},"example":{"attributes":{"numberOfPosts":3}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/entityrecords","version":"1.0","title":"Entity Records","category":"capitainewp","icon":"clipboard","description":"Un bloc qui récupère ses données dynamiquement.","attributes":{"numberOfPosts":{"type":"number","default":3}},"example":{"attributes":{"numberOfPosts":3}},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ }),
 
@@ -65,16 +65,16 @@ function Edit(props) {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
       ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(),
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_shared_loading__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Loading posts…", "capitainewp"),
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Loading posts…", "capitainewp-blocks"),
         show: !hasResolved
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_posts__WEBPACK_IMPORTED_MODULE_5__["default"], {
         posts: records
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Settings", "capitainewp"),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Settings", "capitainewp-blocks"),
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Number of posts", "capitainewp"),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Number of posts", "capitainewp-blocks"),
           value: numberOfPosts,
           onChange: numberOfPosts => setAttributes({
             numberOfPosts
@@ -152,7 +152,7 @@ function PostList(props) {
   if (!posts) return null;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
-      children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Latest posts", "capitainewp")
+      children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Latest posts", "capitainewp-blocks")
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("ul", {
       className: "wp-block-capitainewp-entityrecords__list",
       children: posts.map(post => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("li", {
@@ -169,7 +169,7 @@ function PostList(props) {
           }
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
           className: "wp-block-capitainewp-entityrecords__meta",
-          children: [(0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Published on", "capitainewp"), " ", (0,_wordpress_date__WEBPACK_IMPORTED_MODULE_1__.dateI18n)((0,_wordpress_date__WEBPACK_IMPORTED_MODULE_1__.getSettings)().formats.date, post.date), " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("by", "capitainewp"), " ", post._embedded.author[0].name]
+          children: [(0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Published on", "capitainewp-blocks"), " ", (0,_wordpress_date__WEBPACK_IMPORTED_MODULE_1__.dateI18n)((0,_wordpress_date__WEBPACK_IMPORTED_MODULE_1__.getSettings)().formats.date, post.date), " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("by", "capitainewp-blocks"), " ", post._embedded.author[0].name]
         })]
       }, post.id))
     })]

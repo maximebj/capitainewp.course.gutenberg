@@ -8,7 +8,7 @@
   \*************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/inspector","version":"1.0","title":"Inspector","category":"capitainewp","icon":"analytics","description":"Un bloc avec des options dans l’inspecteur.","attributes":{"emoji":{"type":"string","default":"😃"},"title":{"type":"string","source":"html","selector":".wp-block-capitainewp-inspector__title"},"description":{"type":"string","source":"html","selector":".wp-block-capitainewp-inspector__description"},"hasTag":{"type":"boolean","default":true},"tag":{"type":"string","source":"html","selector":".wp-block-capitainewp-inspector__tag","default":"New"},"tagColor":{"type":"string","default":"var(--wp--preset--color--accent-2)"},"tagTextColor":{"type":"string","default":"var(--wp--preset--color--accent-3)"},"tagRadius":{"type":"number","default":5}},"supports":{"color":{"background":true}},"example":{"attributes":{"emoji":"😃","title":"Le titre du bloc.","description":"Une description digne de ce nom.","hasTag":true,"tag":"Nouveau","tagColor":"var(--wp--preset--color--accent-2)","tagTextColor":"var(--wp--preset--color--accent-3)","tagRadius":5}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/inspector","version":"1.0","title":"Inspector","category":"capitainewp","icon":"analytics","description":"Un bloc avec des options dans l’inspecteur.","attributes":{"emoji":{"type":"string","default":"😃"},"title":{"type":"string","source":"html","selector":".wp-block-capitainewp-inspector__title"},"description":{"type":"string","source":"html","selector":".wp-block-capitainewp-inspector__description"},"hasTag":{"type":"boolean","default":true},"tag":{"type":"string","source":"html","selector":".wp-block-capitainewp-inspector__tag","default":"New"},"tagColor":{"type":"string","default":"var(--wp--preset--color--accent-2)"},"tagTextColor":{"type":"string","default":"var(--wp--preset--color--accent-3)"},"tagRadius":{"type":"number","default":5}},"supports":{"color":{"background":true}},"example":{"attributes":{"emoji":"😃","title":"Le titre du bloc.","description":"Une description digne de ce nom.","hasTag":true,"tag":"Nouveau","tagColor":"var(--wp--preset--color--accent-2)","tagTextColor":"var(--wp--preset--color--accent-3)","tagRadius":5}},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 
@@ -75,7 +75,7 @@ function Edit(props) {
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
           tagName: "h2",
           className: "wp-block-capitainewp-inspector__title",
-          placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your text here", "capitainewp"),
+          placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your text here", "capitainewp-blocks"),
           value: title,
           onChange: title => setAttributes({
             title
@@ -83,7 +83,7 @@ function Edit(props) {
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
           tagName: "p",
           className: "wp-block-capitainewp-inspector__description",
-          placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your text here", "capitainewp"),
+          placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your text here", "capitainewp-blocks"),
           value: description,
           onChange: description => setAttributes({
             description
@@ -92,7 +92,7 @@ function Edit(props) {
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Emoji", "capitainewp"),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Emoji", "capitainewp-blocks"),
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           onChange: emoji => setAttributes({
             emoji
@@ -105,15 +105,15 @@ function Edit(props) {
           }))
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Tag", "capitainewp"),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Tag", "capitainewp-blocks"),
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Show tag", "capitainewp"),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Show tag", "capitainewp-blocks"),
           checked: hasTag,
           onChange: () => setAttributes({
             hasTag: !hasTag
           })
         }), hasTag && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Radius", "capitainewp"),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Radius", "capitainewp-blocks"),
           value: tagRadius,
           onChange: tagRadius => setAttributes({
             tagRadius
@@ -122,19 +122,19 @@ function Edit(props) {
           max: 50
         })]
       }), hasTag && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PanelColorSettings, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Tag colors", "capitainewp"),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Tag colors", "capitainewp-blocks"),
         colorSettings: [{
           value: tagColor,
           onChange: tagColor => setAttributes({
             tagColor
           }),
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Tag color", "capitainewp")
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Tag color", "capitainewp-blocks")
         }, {
           value: tagTextColor,
           onChange: tagTextColor => setAttributes({
             tagTextColor
           }),
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Tag text color", "capitainewp")
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Tag text color", "capitainewp-blocks")
         }]
       })]
     })]

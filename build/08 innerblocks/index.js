@@ -8,7 +8,7 @@
   \***************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/innerblocks","version":"1.0","title":"Innerblocks","category":"capitainewp","icon":"insert","description":"Un bloc dans lequel on peut insérer d\'autres blocs.","example":{"innerBlocks":[{"name":"core/heading","attributes":{"content":"Un titre"}},{"name":"core/paragraph","attributes":{"content":"Un bloc dans lequel on peut insérer d\'autres blocs."}}]},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/innerblocks","version":"1.0","title":"Innerblocks","category":"capitainewp","icon":"insert","description":"Un bloc dans lequel on peut insérer d\'autres blocs.","example":{"innerBlocks":[{"name":"core/heading","attributes":{"content":"Un titre"}},{"name":"core/paragraph","attributes":{"content":"Un bloc dans lequel on peut insérer d\'autres blocs."}}]},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 
@@ -39,9 +39,9 @@ function Edit() {
 
   // Template de blocs
   const BASE_TEMPLATE = [["core/image", {}], ["core/heading", {
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your title here", "capitainewp")
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your title here", "capitainewp-blocks")
   }], ["core/paragraph", {
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your content here", "capitainewp")
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your content here", "capitainewp-blocks")
   }]];
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(),

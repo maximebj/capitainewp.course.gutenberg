@@ -8,7 +8,7 @@
   \************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/repeater","version":"1.0","title":"Répéteur","category":"capitainewp","icon":"list-view","description":"Un bloc dans lequel on peut insérer un seul type de bloc plusieurs fois.","example":{"innerBlocks":[{"name":"capitainewp/item","attributes":{"content":"Un élément de la liste"}},{"name":"capitainewp/item","attributes":{"content":"Un élément de la liste"}},{"name":"capitainewp/item","attributes":{"content":"Un élément de la liste"}}]},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/repeater","version":"1.0","title":"Répéteur","category":"capitainewp","icon":"list-view","description":"Un bloc dans lequel on peut insérer un seul type de bloc plusieurs fois.","example":{"innerBlocks":[{"name":"capitainewp/item","attributes":{"content":"Un élément de la liste"}},{"name":"capitainewp/item","attributes":{"content":"Un élément de la liste"}},{"name":"capitainewp/item","attributes":{"content":"Un élément de la liste"}}]},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 

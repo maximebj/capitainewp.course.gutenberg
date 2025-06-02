@@ -8,7 +8,7 @@
   "icon": "superhero-alt",
   "description": "Un bloc qui récupère des données depuis l’éditeur de blocs.",
   "example": {},
-  "textdomain": "capitainewp",
+  "textdomain": "capitainewp-blocks",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css"

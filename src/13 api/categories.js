@@ -7,7 +7,7 @@ export default function CatList(props) {
 
 	return (
 		<div>
-			<h2>{__("Categories", "capitainewp")}</h2>
+			<h2>{__("Categories", "capitainewp-blocks")}</h2>
 			<ul>
 				{categories.map((category) => (
 					<li key={category.id}>

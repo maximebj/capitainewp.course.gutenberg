@@ -8,7 +8,7 @@
   \**********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/select","version":"1.0","title":"Select","category":"capitainewp","icon":"superhero-alt","description":"Un bloc qui récupère des données depuis l’éditeur de blocs.","example":{},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/select","version":"1.0","title":"Select","category":"capitainewp","icon":"superhero-alt","description":"Un bloc qui récupère des données depuis l’éditeur de blocs.","example":{},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 

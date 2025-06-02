@@ -8,7 +8,7 @@
   \***********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/toolbar","version":"1.0","title":"Toolbar","category":"capitainewp","icon":"bell","description":"Un bloc d’alerte avec plusieurs styles.","keywords":["attention","alerte","conseil","éviter","succès"],"attributes":{"content":{"type":"string","source":"html","selector":"p"},"type":{"type":"string","default":"advice"}},"example":{"attributes":{"content":"<p>Un bloc d’alerte avec plusieurs styles.</p>","type":"advice"}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/toolbar","version":"1.0","title":"Toolbar","category":"capitainewp","icon":"bell","description":"Un bloc d’alerte avec plusieurs styles.","keywords":["attention","alerte","conseil","éviter","succès"],"attributes":{"content":{"type":"string","source":"html","selector":"p"},"type":{"type":"string","default":"advice"}},"example":{"attributes":{"content":"<p>Un bloc d’alerte avec plusieurs styles.</p>","type":"advice"}},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 
@@ -47,19 +47,19 @@ function Edit(props) {
   } = attributes;
   const options = [{
     slug: "advice",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Advice", "capitainewp"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Advice", "capitainewp-blocks"),
     icon: "yes-alt"
   }, {
     slug: "warning",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Warning", "capitainewp"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Warning", "capitainewp-blocks"),
     icon: "warning"
   }, {
     slug: "avoid",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Avoid", "capitainewp"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Avoid", "capitainewp-blocks"),
     icon: "dismiss"
   }, {
     slug: "info",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Information", "capitainewp"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Information", "capitainewp-blocks"),
     icon: "info"
   }];
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
@@ -82,7 +82,7 @@ function Edit(props) {
       ...blockProps,
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
         tagName: "p",
-        placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your alert here", "capitainewp"),
+        placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your alert here", "capitainewp-blocks"),
         value: content,
         onChange: content => setAttributes({
           content

@@ -34,14 +34,14 @@ export default function Block(props) {
 				<RichText
 					tagName="h2"
 					className="wp-block-capitainewp-components__title"
-					placeholder={__("Your text here", "capitainewp")}
+					placeholder={__("Your text here", "capitainewp-blocks")}
 					value={title}
 					onChange={(title) => setAttributes({ title })}
 				/>
 				<RichText
 					tagName="p"
 					className="wp-block-capitainewp-components__description"
-					placeholder={__("Your text here", "capitainewp")}
+					placeholder={__("Your text here", "capitainewp-blocks")}
 					value={description}
 					onChange={(description) => setAttributes({ description })}
 				/>

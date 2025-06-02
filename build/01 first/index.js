@@ -8,7 +8,7 @@
   \*********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/base","version":"1.0","title":"First","category":"capitainewp","icon":"smiley","description":"Bloc de base fourni avec le package Create Block.","example":{},"supports":{"html":false},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/base","version":"1.0","title":"First","category":"capitainewp","icon":"smiley","description":"Bloc de base fourni avec le package Create Block.","example":{},"supports":{"html":false},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ }),
 
@@ -36,7 +36,7 @@ __webpack_require__.r(__webpack_exports__);
 function Edit() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(),
-    children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Capitainewp – hello from the editor!", "capitainewp")
+    children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Capitainewp – hello from the editor!", "capitainewp-blocks")
   });
 }
 

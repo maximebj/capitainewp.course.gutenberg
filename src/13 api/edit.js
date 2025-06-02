@@ -28,21 +28,21 @@ export default function Edit(props) {
 		<>
 			<div {...useBlockProps()}>
 				<Loading
-					label={__("Loading categories…", "capitainewp")}
+					label={__("Loading categories…", "capitainewp-blocks")}
 					show={categories === null}
 				/>
 				<CatList categories={categories} showCount={showCount} />
 			</div>
 
 			<InspectorControls>
-				<PanelBody title={__("Settings", "capitainewp")}>
+				<PanelBody title={__("Settings", "capitainewp-blocks")}>
 					<ToggleControl
-						label={__("Hide empty categories", "capitainewp")}
+						label={__("Hide empty categories", "capitainewp-blocks")}
 						checked={hideEmpty}
 						onChange={(hideEmpty) => setAttributes({ hideEmpty })}
 					/>
 					<ToggleControl
-						label={__("Show count", "capitainewp")}
+						label={__("Show count", "capitainewp-blocks")}
 						checked={showCount}
 						onChange={(showCount) => setAttributes({ showCount })}
 					/>

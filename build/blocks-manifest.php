@@ -16,7 +16,7 @@ return array(
 		'supports' => array(
 			'html' => false
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
@@ -75,7 +75,7 @@ return array(
 		'example' => array(
 			
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
@@ -101,7 +101,7 @@ return array(
 				'content' => '<p>Un bloc Richtext</p>'
 			)
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
@@ -139,7 +139,7 @@ return array(
 				'type' => 'advice'
 			)
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
@@ -208,7 +208,7 @@ return array(
 				'tagRadius' => 5
 			)
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
@@ -277,7 +277,7 @@ return array(
 				'tagRadius' => 10
 			)
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
@@ -316,7 +316,7 @@ return array(
 				'pictureAlt' => 'Une feuille avec des gouttes d’eau'
 			)
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
@@ -346,7 +346,7 @@ return array(
 				)
 			)
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
@@ -375,7 +375,7 @@ return array(
 				'content' => 'Un élément de la liste'
 			)
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
@@ -411,7 +411,7 @@ return array(
 				)
 			)
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
@@ -437,7 +437,7 @@ return array(
 				'content' => '<p>Je suis un bloc transformable.</p>'
 			)
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
@@ -463,7 +463,7 @@ return array(
 				'item' => 'Un bloc qui gère sa dépréciation.'
 			)
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
@@ -488,7 +488,7 @@ return array(
 				'numberOfPosts' => 3
 			)
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
@@ -519,7 +519,7 @@ return array(
 				'showCount' => true
 			)
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
@@ -537,7 +537,7 @@ return array(
 		'example' => array(
 			
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
@@ -557,7 +557,7 @@ return array(
 		'example' => array(
 			
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
@@ -591,7 +591,7 @@ return array(
 				'default' => 'advice'
 			)
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
@@ -611,7 +611,7 @@ return array(
 		'usesContext' => array(
 			'capitainewp/lastPostId'
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
@@ -638,7 +638,7 @@ return array(
 				'lastPostId' => 339
 			)
 		),
-		'textdomain' => 'capitainewp',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'

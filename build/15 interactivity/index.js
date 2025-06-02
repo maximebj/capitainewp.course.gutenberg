@@ -8,7 +8,7 @@
   \*****************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/interactivity","version":"1.0","title":"Interactivity","category":"capitainewp","icon":"book","description":"Un bloc qui utilise l’inteactivity API.","supports":{"interactivity":true},"example":{},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScriptModule":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/interactivity","version":"1.0","title":"Interactivity","category":"capitainewp","icon":"book","description":"Un bloc qui utilise l’inteactivity API.","supports":{"interactivity":true},"example":{},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScriptModule":"file:./view.js"}');
 
 /***/ }),
 
@@ -52,7 +52,7 @@ function Edit() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(),
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
-      children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Filter posts", "capitainewp")
+      children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Filter posts", "capitainewp-blocks")
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("ul", {
       className: "wp-block-capitainewp-interactivity__categories",
       children: categories?.map(category => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {

@@ -11,7 +11,7 @@
     "interactivity": true
   },
   "example": {},
-  "textdomain": "capitainewp",
+  "textdomain": "capitainewp-blocks",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",

@@ -8,7 +8,7 @@
   \*******************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/api","version":"1.0","title":"API Fetch","category":"capitainewp","icon":"category","description":"Un bloc qui récupère ses données via l’API REST de WordPress.","attributes":{"hideEmpty":{"type":"boolean","default":false},"showCount":{"type":"boolean","default":false}},"example":{"attributes":{"hideEmpty":false,"showCount":true}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/api","version":"1.0","title":"API Fetch","category":"capitainewp","icon":"category","description":"Un bloc qui récupère ses données via l’API REST de WordPress.","attributes":{"hideEmpty":{"type":"boolean","default":false},"showCount":{"type":"boolean","default":false}},"example":{"attributes":{"hideEmpty":false,"showCount":true}},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ }),
 
@@ -36,7 +36,7 @@ function CatList(props) {
   if (!categories) return null;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
-      children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Categories", "capitainewp")
+      children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Categories", "capitainewp-blocks")
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("ul", {
       children: categories.map(category => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
@@ -106,7 +106,7 @@ function Edit(props) {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
       ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(),
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_shared_loading__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Loading categories…", "capitainewp"),
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Loading categories…", "capitainewp-blocks"),
         show: categories === null
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_categories__WEBPACK_IMPORTED_MODULE_6__["default"], {
         categories: categories,
@@ -114,15 +114,15 @@ function Edit(props) {
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Settings", "capitainewp"),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Settings", "capitainewp-blocks"),
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Hide empty categories", "capitainewp"),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Hide empty categories", "capitainewp-blocks"),
           checked: hideEmpty,
           onChange: hideEmpty => setAttributes({
             hideEmpty
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Show count", "capitainewp"),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Show count", "capitainewp-blocks"),
           checked: showCount,
           onChange: showCount => setAttributes({
             showCount

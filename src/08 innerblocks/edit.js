@@ -10,8 +10,14 @@ export default function Edit() {
 	// Template de blocs
 	const BASE_TEMPLATE = [
 		["core/image", {}],
-		["core/heading", { placeholder: __("Your title here", "capitainewp") }],
-		["core/paragraph", { placeholder: __("Your content here", "capitainewp") }],
+		[
+			"core/heading",
+			{ placeholder: __("Your title here", "capitainewp-blocks") },
+		],
+		[
+			"core/paragraph",
+			{ placeholder: __("Your content here", "capitainewp-blocks") },
+		],
 	];
 
 	return (

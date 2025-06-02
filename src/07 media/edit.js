@@ -43,11 +43,11 @@ export default function Edit(props) {
 						render={({ open }) => (
 							<Placeholder
 								icon="images-alt"
-								label={__("Photo", "capitainewp")}
-								instructions={__("Select a picture", "capitainewp")}
+								label={__("Photo", "capitainewp-blocks")}
+								instructions={__("Select a picture", "capitainewp-blocks")}
 							>
 								<Button variant="primary" isLarge onClick={open} icon="upload">
-									{__("Import", "capitainewp")}
+									{__("Import", "capitainewp-blocks")}
 								</Button>
 							</Placeholder>
 						)}
@@ -63,7 +63,7 @@ export default function Edit(props) {
 							onClick={onRemoveImage}
 							icon="dismiss"
 						>
-							{__("Remove picture", "capitainewp")}
+							{__("Remove picture", "capitainewp-blocks")}
 						</Button>
 					)}
 				</p>

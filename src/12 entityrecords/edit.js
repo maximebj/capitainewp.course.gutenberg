@@ -23,16 +23,16 @@ export default function Edit(props) {
 		<>
 			<div {...useBlockProps()}>
 				<Loading
-					label={__("Loading posts…", "capitainewp")}
+					label={__("Loading posts…", "capitainewp-blocks")}
 					show={!hasResolved}
 				/>
 				<PostList posts={records} />
 			</div>
 
 			<InspectorControls>
-				<PanelBody title={__("Settings", "capitainewp")}>
+				<PanelBody title={__("Settings", "capitainewp-blocks")}>
 					<RangeControl
-						label={__("Number of posts", "capitainewp")}
+						label={__("Number of posts", "capitainewp-blocks")}
 						value={numberOfPosts}
 						onChange={(numberOfPosts) => setAttributes({ numberOfPosts })}
 						min={1}

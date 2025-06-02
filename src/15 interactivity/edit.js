@@ -17,7 +17,7 @@ export default function Edit() {
 
 	return (
 		<div {...useBlockProps()}>
-			<h2>{__("Filter posts", "capitainewp")}</h2>
+			<h2>{__("Filter posts", "capitainewp-blocks")}</h2>
 			<ul className="wp-block-capitainewp-interactivity__categories">
 				{categories?.map((category) => (
 					<li key={category.id}>{category.name}</li>

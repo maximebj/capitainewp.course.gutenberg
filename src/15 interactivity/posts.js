@@ -8,7 +8,7 @@ export default function PostList(props) {
 
 	return (
 		<>
-			<h2>{__("Latest posts", "capitainewp")}</h2>
+			<h2>{__("Latest posts", "capitainewp-blocks")}</h2>
 			<ul className="wp-block-capitainewp-entityrecords__list">
 				{posts.map((post) => (
 					<li
@@ -27,9 +27,9 @@ export default function PostList(props) {
 							}}
 						/>
 						<p className="wp-block-capitainewp-entityrecords__meta">
-							{__("Published on", "capitainewp")}{" "}
+							{__("Published on", "capitainewp-blocks")}{" "}
 							{dateI18n(getSettings().formats.date, post.date)}{" "}
-							{__("by", "capitainewp")} {post._embedded.author[0].name}
+							{__("by", "capitainewp-blocks")} {post._embedded.author[0].name}
 						</p>
 					</li>
 				))}

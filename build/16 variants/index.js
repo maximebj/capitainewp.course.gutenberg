@@ -8,7 +8,7 @@
   \************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/variants","version":"1.0","title":"Variants","category":"capitainewp","icon":"bell","description":"Un bloc d’alerte avec plusieurs variantes.","keywords":["attention","alerte","conseil","éviter","succès"],"attributes":{"content":{"type":"string","source":"html","selector":"p"},"type":{"type":"string","default":"advice"}},"textdomain":"capitainewp","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/variants","version":"1.0","title":"Variants","category":"capitainewp","icon":"bell","description":"Un bloc d’alerte avec plusieurs variantes.","keywords":["attention","alerte","conseil","éviter","succès"],"attributes":{"content":{"type":"string","source":"html","selector":"p"},"type":{"type":"string","default":"advice"}},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 
@@ -53,7 +53,7 @@ function Edit(props) {
       onChange: content => setAttributes({
         content
       }),
-      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your text here", "capitainewp")
+      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Your text here", "capitainewp-blocks")
     })
   });
 }

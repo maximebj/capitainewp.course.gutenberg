@@ -15,7 +15,7 @@ export default function Edit(props) {
 				tagName="p"
 				value={content}
 				onChange={(content) => setAttributes({ content })}
-				placeholder={__("Your text here", "capitainewp")}
+				placeholder={__("Your text here", "capitainewp-blocks")}
 			/>
 		</div>
 	);

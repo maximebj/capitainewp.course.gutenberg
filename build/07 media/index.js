@@ -68,14 +68,14 @@ function Edit(props) {
           open
         }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Placeholder, {
           icon: "images-alt",
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Photo", "capitainewp"),
-          instructions: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Select a picture", "capitainewp"),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Photo", "capitainewp-blocks"),
+          instructions: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Select a picture", "capitainewp-blocks"),
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
             variant: "primary",
             isLarge: true,
             onClick: open,
             icon: "upload",
-            children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Import", "capitainewp")
+            children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Import", "capitainewp-blocks")
           })
         })
       })
@@ -88,7 +88,7 @@ function Edit(props) {
         className: "capitaine-remove-image",
         onClick: onRemoveImage,
         icon: "dismiss",
-        children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Remove picture", "capitainewp")
+        children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Remove picture", "capitainewp-blocks")
       })]
     })
   });

@@ -7,7 +7,7 @@ import "./editor.scss";
 export default function Edit() {
 	return (
 		<p {...useBlockProps()}>
-			{__("Capitainewp – hello from the editor!", "capitainewp")}
+			{__("Capitainewp – hello from the editor!", "capitainewp-blocks")}
 		</p>
 	);
 }
