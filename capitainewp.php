@@ -20,7 +20,7 @@ defined('ABSPATH') || exit;
 
 
 # Déclarer automatiquement les blocs dans l'éditeur
-function capitainewp_register_blocks()
+function capitainewp_blocks_register_blocks()
 {
 	if (function_exists('wp_register_block_types_from_metadata_collection')) {
 		wp_register_block_types_from_metadata_collection(__DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php');
@@ -36,22 +36,22 @@ function capitainewp_register_blocks()
 		register_block_type(__DIR__ . "/build/{$block_type}");
 	}
 }
-add_action('init', 'capitainewp_register_blocks');
+add_action('init', 'capitainewp_blocks_register_blocks');
 
 
 # Déclarer une nouvelle catégorie pour mes blocs
-function capitainewp_register_block_categories($categories)
+function capitainewp_blocks_register_block_categories($categories)
 {
 	return array_merge(
 		[['slug' => 'capitainewp', 'title' => 'Blocs Capitaine WP']],
 		$categories,
 	);
 }
-add_filter('block_categories_all', 'capitainewp_register_block_categories');
+add_filter('block_categories_all', 'capitainewp_blocks_register_block_categories');
 
 
 # Hook le theme.json pour ajouter les styles
-function capitainewp_filter_theme_json($theme_json)
+function capitainewp_blocks_filter_theme_json($theme_json)
 {
 	# Récupérer les données du theme.json
 	$data = $theme_json->get_data();
@@ -67,4 +67,4 @@ function capitainewp_filter_theme_json($theme_json)
 	# Mettre à jour les données du theme.json
 	return $theme_json->update_with($data);
 }
-add_filter('wp_theme_json_data_theme', 'capitainewp_filter_theme_json');
+add_filter('wp_theme_json_data_theme', 'capitainewp_blocks_filter_theme_json');
