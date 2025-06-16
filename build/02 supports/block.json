@@ -8,10 +8,7 @@
   "icon": "art",
   "description": "Ajouter des fonctionnalités supplémentaires à un bloc.",
   "supports": {
-    "align": [
-      "wide",
-      "full"
-    ],
+    "align": true,
     "color": {
       "background": true,
       "text": true,
@@ -46,7 +43,9 @@
     "customClassName": false,
     "className": true,
     "html": false,
-    "reusable": true
+    "reusable": true,
+    "ariaLabel": true,
+    "renaming": true
   },
   "example": {},
   "textdomain": "capitainewp-blocks",

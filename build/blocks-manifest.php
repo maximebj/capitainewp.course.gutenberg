@@ -32,10 +32,7 @@ return array(
 		'icon' => 'art',
 		'description' => 'Ajouter des fonctionnalités supplémentaires à un bloc.',
 		'supports' => array(
-			'align' => array(
-				'wide',
-				'full'
-			),
+			'align' => true,
 			'color' => array(
 				'background' => true,
 				'text' => true,
@@ -70,7 +67,9 @@ return array(
 			'customClassName' => false,
 			'className' => true,
 			'html' => false,
-			'reusable' => true
+			'reusable' => true,
+			'ariaLabel' => true,
+			'renaming' => true
 		),
 		'example' => array(
 			
