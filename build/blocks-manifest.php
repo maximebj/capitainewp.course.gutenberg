@@ -62,14 +62,13 @@ return array(
 				'sticky' => true
 			),
 			'shadow' => true,
-			'multiple' => false,
 			'anchor' => true,
-			'customClassName' => false,
+			'customClassName' => true,
 			'className' => true,
 			'html' => false,
-			'reusable' => true,
-			'ariaLabel' => true,
-			'renaming' => true
+			'multiple' => true,
+			'renaming' => true,
+			'reusable' => false
 		),
 		'example' => array(
 			
