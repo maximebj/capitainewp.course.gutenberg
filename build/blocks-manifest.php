@@ -91,7 +91,8 @@ return array(
 			'content' => array(
 				'type' => 'string',
 				'source' => 'html',
-				'selector' => 'p'
+				'selector' => 'p',
+				'default' => '<p>Hello world!</p>'
 			)
 		),
 		'example' => array(
