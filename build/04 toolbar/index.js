@@ -46,19 +46,19 @@ function Edit(props) {
     type
   } = attributes;
   const options = [{
-    slug: "advice",
+    type: "advice",
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Advice", "capitainewp-blocks"),
     icon: "yes-alt"
   }, {
-    slug: "warning",
+    type: "warning",
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Warning", "capitainewp-blocks"),
     icon: "warning"
   }, {
-    slug: "avoid",
+    type: "avoid",
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Avoid", "capitainewp-blocks"),
     icon: "dismiss"
   }, {
-    slug: "info",
+    type: "info",
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Information", "capitainewp-blocks"),
     icon: "info"
   }];
@@ -70,14 +70,13 @@ function Edit(props) {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.ToolbarGroup, {
         children: options.map(option => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.ToolbarButton, {
           icon: option.icon,
-          label: option.label
-          // className={`capitainewp-toolbar-${option.slug}`}
-          ,
+          label: option.label,
+          className: `capitainewp-toolbar-${option.type}`,
           onClick: () => props.setAttributes({
-            type: option.slug
+            type: option.type
           }),
-          isPressed: type === option.slug
-        }, option.slug))
+          isPressed: type === option.type
+        }, option.type))
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       ...blockProps,

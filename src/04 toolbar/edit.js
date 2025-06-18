@@ -14,22 +14,22 @@ export default function Edit(props) {
 
 	const options = [
 		{
-			slug: "advice",
+			type: "advice",
 			label: __("Advice", "capitainewp-blocks"),
 			icon: "yes-alt",
 		},
 		{
-			slug: "warning",
+			type: "warning",
 			label: __("Warning", "capitainewp-blocks"),
 			icon: "warning",
 		},
 		{
-			slug: "avoid",
+			type: "avoid",
 			label: __("Avoid", "capitainewp-blocks"),
 			icon: "dismiss",
 		},
 		{
-			slug: "info",
+			type: "info",
 			label: __("Information", "capitainewp-blocks"),
 			icon: "info",
 		},
@@ -43,12 +43,12 @@ export default function Edit(props) {
 				<ToolbarGroup>
 					{options.map((option) => (
 						<ToolbarButton
-							key={option.slug}
+							key={option.type}
 							icon={option.icon}
 							label={option.label}
-							// className={`capitainewp-toolbar-${option.slug}`}
-							onClick={() => props.setAttributes({ type: option.slug })}
-							isPressed={type === option.slug}
+							className={`capitainewp-toolbar-${option.type}`}
+							onClick={() => props.setAttributes({ type: option.type })}
+							isPressed={type === option.type}
 						/>
 					))}
 				</ToolbarGroup>
