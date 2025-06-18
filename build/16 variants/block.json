@@ -7,13 +7,6 @@
   "category": "capitainewp",
   "icon": "bell",
   "description": "Un bloc d’alerte avec plusieurs variantes.",
-  "keywords": [
-    "attention",
-    "alerte",
-    "conseil",
-    "éviter",
-    "succès"
-  ],
   "attributes": {
     "content": {
       "type": "string",

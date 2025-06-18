@@ -1,10 +1,10 @@
-import { __ } from "@wordpress/i18n";
 import {
-	useBlockProps,
-	RichText,
 	BlockControls,
+	RichText,
+	useBlockProps,
 } from "@wordpress/block-editor";
-import { ToolbarGroup, ToolbarButton } from "@wordpress/components";
+import { ToolbarButton, ToolbarGroup } from "@wordpress/components";
+import { __ } from "@wordpress/i18n";
 
 import "./editor.scss";
 
@@ -46,7 +46,7 @@ export default function Edit(props) {
 							key={option.slug}
 							icon={option.icon}
 							label={option.label}
-							className={`capitainewp-toolbar-${option.slug}`}
+							// className={`capitainewp-toolbar-${option.slug}`}
 							onClick={() => props.setAttributes({ type: option.slug })}
 							isPressed={type === option.slug}
 						/>

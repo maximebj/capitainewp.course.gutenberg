@@ -572,13 +572,6 @@ return array(
 		'category' => 'capitainewp',
 		'icon' => 'bell',
 		'description' => 'Un bloc d’alerte avec plusieurs variantes.',
-		'keywords' => array(
-			'attention',
-			'alerte',
-			'conseil',
-			'éviter',
-			'succès'
-		),
 		'attributes' => array(
 			'content' => array(
 				'type' => 'string',
