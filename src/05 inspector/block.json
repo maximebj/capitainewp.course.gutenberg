@@ -47,6 +47,7 @@
 	},
 	"supports": {
 		"color": {
+			"text": true,
 			"background": true
 		}
 	},

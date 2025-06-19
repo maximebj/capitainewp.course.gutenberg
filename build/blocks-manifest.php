@@ -192,6 +192,7 @@ return array(
 		),
 		'supports' => array(
 			'color' => array(
+				'text' => true,
 				'background' => true
 			)
 		),

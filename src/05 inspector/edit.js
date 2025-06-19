@@ -1,17 +1,17 @@
-import { __ } from "@wordpress/i18n";
 import {
-	useBlockProps,
-	RichText,
 	InspectorControls,
 	PanelColorSettings,
+	RichText,
+	useBlockProps,
 } from "@wordpress/block-editor";
 import {
 	PanelBody,
+	RangeControl,
+	ToggleControl,
 	__experimentalToggleGroupControl as ToggleGroupControl,
 	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
-	ToggleControl,
-	RangeControl,
 } from "@wordpress/components";
+import { __ } from "@wordpress/i18n";
 
 import "./editor.scss";
 
