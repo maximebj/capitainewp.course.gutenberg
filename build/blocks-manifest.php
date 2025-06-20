@@ -282,6 +282,114 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
+	'06 media' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 2,
+		'name' => 'capitainewp/media',
+		'version' => '1.0',
+		'title' => 'Media',
+		'icon' => 'camera',
+		'category' => 'capitainewp',
+		'description' => 'Un bloc avec le composant Media',
+		'attributes' => array(
+			'pictureID' => array(
+				'type' => 'number',
+				'default' => null
+			),
+			'pictureURL' => array(
+				'type' => 'string',
+				'source' => 'attribute',
+				'attribute' => 'src',
+				'selector' => 'img'
+			),
+			'pictureAlt' => array(
+				'type' => 'string',
+				'source' => 'attribute',
+				'attribute' => 'alt',
+				'selector' => 'img'
+			)
+		),
+		'example' => array(
+			'attributes' => array(
+				'pictureID' => 73,
+				'pictureURL' => 'http://gutenberg.local/wp-content/uploads/2018/04/photo-1450696714834-bb5b4aee70d3.jpeg',
+				'pictureAlt' => 'Une feuille avec des gouttes d’eau'
+			)
+		),
+		'textdomain' => 'capitainewp-blocks',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
+	),
+	'07 components' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'capitainewp/components',
+		'version' => '1.0',
+		'title' => 'Components',
+		'category' => 'capitainewp',
+		'icon' => 'screenoptions',
+		'description' => 'Le bloc inspecteur mais avec des composants pour un code plus lisible.',
+		'attributes' => array(
+			'emoji' => array(
+				'type' => 'string',
+				'default' => '😃'
+			),
+			'title' => array(
+				'type' => 'string',
+				'source' => 'html',
+				'selector' => '.wp-block-capitainewp-components__title'
+			),
+			'description' => array(
+				'type' => 'string',
+				'source' => 'html',
+				'selector' => '.wp-block-capitainewp-components__description'
+			),
+			'hasTag' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'tag' => array(
+				'type' => 'string',
+				'source' => 'html',
+				'selector' => '.wp-block-capitainewp-components__tag',
+				'default' => 'New'
+			),
+			'tagColor' => array(
+				'type' => 'string',
+				'default' => 'var(--wp--preset--color--accent-2)'
+			),
+			'tagTextColor' => array(
+				'type' => 'string',
+				'default' => 'var(--wp--preset--color--accent-3)'
+			),
+			'tagRadius' => array(
+				'type' => 'number',
+				'default' => 5
+			)
+		),
+		'supports' => array(
+			'color' => array(
+				'background' => true
+			)
+		),
+		'example' => array(
+			'attributes' => array(
+				'emoji' => '♥️',
+				'title' => 'Le titre du bloc.',
+				'description' => 'Une description digne de ce nom.',
+				'hasTag' => true,
+				'tag' => 'Nouveau',
+				'tagColor' => 'var(--wp--preset--color--accent-3)',
+				'tagTextColor' => 'var(--wp--preset--color--accent-2)',
+				'tagRadius' => 10
+			)
+		),
+		'textdomain' => 'capitainewp-blocks',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
+	),
 	'07 media' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 2,
