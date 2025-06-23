@@ -1,10 +1,10 @@
-import { __ } from "@wordpress/i18n";
 import {
-	useBlockProps,
 	MediaUpload,
 	MediaUploadCheck,
+	useBlockProps,
 } from "@wordpress/block-editor";
-import { Placeholder, Button } from "@wordpress/components";
+import { Button, Placeholder } from "@wordpress/components";
+import { __ } from "@wordpress/i18n";
 
 import "./editor.scss";
 
@@ -54,7 +54,7 @@ export default function Edit(props) {
 					/>
 				</MediaUploadCheck>
 			) : (
-				<p className="capitaine-image-wrapper">
+				<figure className="capitaine-image-wrapper">
 					<img src={pictureURL} alt={pictureAlt} />
 
 					{isSelected && (
@@ -66,7 +66,7 @@ export default function Edit(props) {
 							{__("Remove picture", "capitainewp-blocks")}
 						</Button>
 					)}
-				</p>
+				</figure>
 			)}
 		</div>
 	);

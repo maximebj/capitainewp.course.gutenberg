@@ -1,15 +1,16 @@
-import { __ } from "@wordpress/i18n";
 import { useBlockProps } from "@wordpress/block-editor";
 
 export default function save(props) {
 	const { attributes } = props;
 	const { pictureID, pictureURL, pictureAlt } = attributes;
 
+	if (!pictureID) {
+		return null; // Si aucune image n'est sélectionnée, ne rien afficher
+	}
+
 	return (
-		pictureID && (
-			<p {...useBlockProps.save()}>
-				<img src={pictureURL} alt={pictureAlt} />
-			</p>
-		)
+		<figure {...useBlockProps.save()}>
+			<img src={pictureURL} alt={pictureAlt} />
+		</figure>
 	);
 }
