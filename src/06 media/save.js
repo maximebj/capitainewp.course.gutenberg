@@ -10,7 +10,11 @@ export default function save(props) {
 
 	return (
 		<figure {...useBlockProps.save()}>
-			<img src={pictureURL} alt={pictureAlt} />
+			<img
+				src={pictureURL}
+				alt={pictureAlt}
+				// className={`wp-image-${pictureID}`}
+			/>
 		</figure>
 	);
 }

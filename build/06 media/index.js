@@ -164,6 +164,7 @@ function save(props) {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       src: pictureURL,
       alt: pictureAlt
+      // className={`wp-image-${pictureID}`}
     })
   });
 }
