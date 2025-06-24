@@ -1,5 +1,5 @@
-import Block from "./block";
-import Inspector from "./inspector";
+import Block from "./components/block";
+import Inspector from "./components/inspector";
 
 import "./editor.scss";
 
