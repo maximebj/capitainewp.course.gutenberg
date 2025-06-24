@@ -1,9 +1,8 @@
-import { __ } from "@wordpress/i18n";
-import { useBlockProps, InnerBlocks } from "@wordpress/block-editor";
+import { InnerBlocks, useBlockProps } from "@wordpress/block-editor";
 
 import "./editor.scss";
 
-export default function Edit() {
+export default function Edit(props) {
 	const ALLOWED_BLOCKS = ["capitainewp/item"];
 
 	return (
