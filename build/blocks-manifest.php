@@ -333,6 +333,12 @@ return array(
 		'example' => array(
 			'innerBlocks' => array(
 				array(
+					'name' => 'core/image',
+					'attributes' => array(
+						
+					)
+				),
+				array(
 					'name' => 'core/heading',
 					'attributes' => array(
 						'content' => 'Un titre'

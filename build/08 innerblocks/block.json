@@ -10,6 +10,10 @@
   "example": {
     "innerBlocks": [
       {
+        "name": "core/image",
+        "attributes": {}
+      },
+      {
         "name": "core/heading",
         "attributes": {
           "content": "Un titre"
