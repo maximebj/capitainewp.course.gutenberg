@@ -213,75 +213,6 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'06 components' => array(
-		'$schema' => 'https://schemas.wp.org/trunk/block.json',
-		'apiVersion' => 3,
-		'name' => 'capitainewp/components',
-		'version' => '1.0',
-		'title' => 'Components',
-		'category' => 'capitainewp',
-		'icon' => 'screenoptions',
-		'description' => 'Le bloc inspecteur mais avec des composants pour un code plus lisible.',
-		'attributes' => array(
-			'emoji' => array(
-				'type' => 'string',
-				'default' => '😃'
-			),
-			'title' => array(
-				'type' => 'string',
-				'source' => 'html',
-				'selector' => '.wp-block-capitainewp-components__title'
-			),
-			'description' => array(
-				'type' => 'string',
-				'source' => 'html',
-				'selector' => '.wp-block-capitainewp-components__description'
-			),
-			'hasTag' => array(
-				'type' => 'boolean',
-				'default' => true
-			),
-			'tag' => array(
-				'type' => 'string',
-				'source' => 'html',
-				'selector' => '.wp-block-capitainewp-components__tag',
-				'default' => 'New'
-			),
-			'tagColor' => array(
-				'type' => 'string',
-				'default' => 'var(--wp--preset--color--accent-2)'
-			),
-			'tagTextColor' => array(
-				'type' => 'string',
-				'default' => 'var(--wp--preset--color--accent-3)'
-			),
-			'tagRadius' => array(
-				'type' => 'number',
-				'default' => 5
-			)
-		),
-		'supports' => array(
-			'color' => array(
-				'background' => true
-			)
-		),
-		'example' => array(
-			'attributes' => array(
-				'emoji' => '♥️',
-				'title' => 'Le titre du bloc.',
-				'description' => 'Une description digne de ce nom.',
-				'hasTag' => true,
-				'tag' => 'Nouveau',
-				'tagColor' => 'var(--wp--preset--color--accent-3)',
-				'tagTextColor' => 'var(--wp--preset--color--accent-2)',
-				'tagRadius' => 10
-			)
-		),
-		'textdomain' => 'capitainewp-blocks',
-		'editorScript' => 'file:./index.js',
-		'editorStyle' => 'file:./index.css',
-		'style' => 'file:./style-index.css'
-	),
 	'06 media' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 2,
@@ -390,45 +321,6 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'07 media' => array(
-		'$schema' => 'https://schemas.wp.org/trunk/block.json',
-		'apiVersion' => 2,
-		'name' => 'capitainewp/media',
-		'version' => '1.0',
-		'title' => 'Media',
-		'icon' => 'camera',
-		'category' => 'capitainewp',
-		'description' => 'Un bloc avec le composant Media',
-		'attributes' => array(
-			'pictureID' => array(
-				'type' => 'number',
-				'default' => null
-			),
-			'pictureURL' => array(
-				'type' => 'string',
-				'source' => 'attribute',
-				'attribute' => 'src',
-				'selector' => 'img'
-			),
-			'pictureAlt' => array(
-				'type' => 'string',
-				'source' => 'attribute',
-				'attribute' => 'alt',
-				'selector' => 'img'
-			)
-		),
-		'example' => array(
-			'attributes' => array(
-				'pictureID' => 73,
-				'pictureURL' => 'http://gutenberg.local/wp-content/uploads/2018/04/photo-1450696714834-bb5b4aee70d3.jpeg',
-				'pictureAlt' => 'Une feuille avec des gouttes d’eau'
-			)
-		),
-		'textdomain' => 'capitainewp-blocks',
-		'editorScript' => 'file:./index.js',
-		'editorStyle' => 'file:./index.css',
-		'style' => 'file:./style-index.css'
-	),
 	'08 innerblocks' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
@@ -524,59 +416,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'10 transforms' => array(
-		'$schema' => 'https://schemas.wp.org/trunk/block.json',
-		'apiVersion' => 3,
-		'name' => 'capitainewp/transforms',
-		'version' => '1.0',
-		'title' => 'Transforms',
-		'category' => 'capitainewp',
-		'icon' => 'update',
-		'description' => 'Un bloc qui se transforme en un autre.',
-		'attributes' => array(
-			'content' => array(
-				'type' => 'string',
-				'source' => 'html',
-				'selector' => 'p'
-			)
-		),
-		'example' => array(
-			'attributes' => array(
-				'content' => '<p>Je suis un bloc transformable.</p>'
-			)
-		),
-		'textdomain' => 'capitainewp-blocks',
-		'editorScript' => 'file:./index.js',
-		'editorStyle' => 'file:./index.css',
-		'style' => 'file:./style-index.css'
-	),
-	'11 deprecated' => array(
-		'$schema' => 'https://schemas.wp.org/trunk/block.json',
-		'apiVersion' => 3,
-		'name' => 'capitainewp/deprecated',
-		'version' => '1.0',
-		'title' => 'Deprecated',
-		'category' => 'capitainewp',
-		'icon' => 'migrate',
-		'description' => 'Un bloc qui a évolué avec le temps.',
-		'attributes' => array(
-			'item' => array(
-				'type' => 'string',
-				'source' => 'html',
-				'selector' => 'li'
-			)
-		),
-		'example' => array(
-			'attributes' => array(
-				'item' => 'Un bloc qui gère sa dépréciation.'
-			)
-		),
-		'textdomain' => 'capitainewp-blocks',
-		'editorScript' => 'file:./index.js',
-		'editorStyle' => 'file:./index.css',
-		'style' => 'file:./style-index.css'
-	),
-	'12 entityrecords' => array(
+	'10 entityrecords' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/entityrecords',
@@ -602,7 +442,7 @@ return array(
 		'style' => 'file:./style-index.css',
 		'render' => 'file:./render.php'
 	),
-	'13 api' => array(
+	'11 api' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/api',
@@ -633,7 +473,7 @@ return array(
 		'style' => 'file:./style-index.css',
 		'render' => 'file:./render.php'
 	),
-	'14 select' => array(
+	'12 select' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/select',
@@ -650,7 +490,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'15 interactivity' => array(
+	'13 interactivity' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/interactivity',
@@ -672,7 +512,7 @@ return array(
 		'render' => 'file:./render.php',
 		'viewScriptModule' => 'file:./view.js'
 	),
-	'16 variants' => array(
+	'14 variants' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/variants',
@@ -697,7 +537,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'17 context consumer' => array(
+	'15 context consumer' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/context-consumer',
@@ -717,7 +557,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'17 context provider' => array(
+	'15 context provider' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/context-provider',
@@ -737,6 +577,58 @@ return array(
 		'example' => array(
 			'attributes' => array(
 				'lastPostId' => 339
+			)
+		),
+		'textdomain' => 'capitainewp-blocks',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
+	),
+	'16 transforms' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'capitainewp/transforms',
+		'version' => '1.0',
+		'title' => 'Transforms',
+		'category' => 'capitainewp',
+		'icon' => 'update',
+		'description' => 'Un bloc qui se transforme en un autre.',
+		'attributes' => array(
+			'content' => array(
+				'type' => 'string',
+				'source' => 'html',
+				'selector' => 'p'
+			)
+		),
+		'example' => array(
+			'attributes' => array(
+				'content' => '<p>Je suis un bloc transformable.</p>'
+			)
+		),
+		'textdomain' => 'capitainewp-blocks',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
+	),
+	'17 deprecated' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'capitainewp/deprecated',
+		'version' => '1.0',
+		'title' => 'Deprecated',
+		'category' => 'capitainewp',
+		'icon' => 'migrate',
+		'description' => 'Un bloc qui a évolué avec le temps.',
+		'attributes' => array(
+			'item' => array(
+				'type' => 'string',
+				'source' => 'html',
+				'selector' => 'li'
+			)
+		),
+		'example' => array(
+			'attributes' => array(
+				'item' => 'Un bloc qui gère sa dépréciation.'
 			)
 		),
 		'textdomain' => 'capitainewp-blocks',

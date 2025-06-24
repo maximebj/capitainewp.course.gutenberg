@@ -1,1 +1,0 @@
-{"version":3,"file":"17 context provider/style-index.css","mappings":";;;AAAA;EACC;AACD,C","sources":["webpack://capitainewp.course.gutenberg.bases/./src/17 context provider/style.scss"],"sourcesContent":[".wp-block-capitainewp-context-provider {\n\tborder: 3px solid var(--wp--preset--color--accent-1);\n}\n"],"names":[],"sourceRoot":""}
