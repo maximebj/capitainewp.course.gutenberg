@@ -421,7 +421,24 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'10 entityrecords' => array(
+	'10 select' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'capitainewp/select',
+		'version' => '1.0',
+		'title' => 'Select',
+		'category' => 'capitainewp',
+		'icon' => 'superhero-alt',
+		'description' => 'Un bloc qui récupère des données depuis l’éditeur de blocs.',
+		'example' => array(
+			
+		),
+		'textdomain' => 'capitainewp-blocks',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
+	),
+	'11 entityrecords' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/entityrecords',
@@ -447,7 +464,7 @@ return array(
 		'style' => 'file:./style-index.css',
 		'render' => 'file:./render.php'
 	),
-	'11 api' => array(
+	'12 api' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/api',
@@ -477,23 +494,6 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
 		'render' => 'file:./render.php'
-	),
-	'12 select' => array(
-		'$schema' => 'https://schemas.wp.org/trunk/block.json',
-		'apiVersion' => 3,
-		'name' => 'capitainewp/select',
-		'version' => '1.0',
-		'title' => 'Select',
-		'category' => 'capitainewp',
-		'icon' => 'superhero-alt',
-		'description' => 'Un bloc qui récupère des données depuis l’éditeur de blocs.',
-		'example' => array(
-			
-		),
-		'textdomain' => 'capitainewp-blocks',
-		'editorScript' => 'file:./index.js',
-		'editorStyle' => 'file:./index.css',
-		'style' => 'file:./style-index.css'
 	),
 	'13 interactivity' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
