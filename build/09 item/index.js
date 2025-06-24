@@ -90,13 +90,13 @@ function Edit(props) {
     getBlockIndex
   } = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_2__.useSelect)(select => {
     return {
-      getBlockParents: select("core/block-editor").getBlockParents,
-      getBlockIndex: select("core/block-editor").getBlockIndex
+      getBlockParents: select(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.store).getBlockParents,
+      getBlockIndex: select(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.store).getBlockIndex
     };
   });
   const {
     insertBlock
-  } = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_2__.useDispatch)("core/block-editor");
+  } = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_2__.useDispatch)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.store);
   const handleKeyDown = event => {
     if (event.key === "Enter" && !event.shiftKey) {
       event.preventDefault();

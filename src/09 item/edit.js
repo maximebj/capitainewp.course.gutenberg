@@ -1,4 +1,8 @@
-import { RichText, useBlockProps } from "@wordpress/block-editor";
+import {
+	store as blockEditorStore,
+	RichText,
+	useBlockProps,
+} from "@wordpress/block-editor";
 import { createBlock } from "@wordpress/blocks";
 import { useDispatch, useSelect } from "@wordpress/data";
 import { __ } from "@wordpress/i18n";
@@ -13,11 +17,11 @@ export default function Edit(props) {
 	// On verra ça plus tard lorsqu'on abordera useSelect, ignorez pour l'instant
 	const { getBlockParents, getBlockIndex } = useSelect((select) => {
 		return {
-			getBlockParents: select("core/block-editor").getBlockParents,
-			getBlockIndex: select("core/block-editor").getBlockIndex,
+			getBlockParents: select(blockEditorStore).getBlockParents,
+			getBlockIndex: select(blockEditorStore).getBlockIndex,
 		};
 	});
-	const { insertBlock } = useDispatch("core/block-editor");
+	const { insertBlock } = useDispatch(blockEditorStore);
 
 	const handleKeyDown = (event) => {
 		if (event.key === "Enter" && !event.shiftKey) {
