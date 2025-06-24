@@ -1,3 +1,6 @@
+import { PanelBody, RangeControl, ToggleControl } from "@wordpress/components";
+import { __ } from "@wordpress/i18n";
+
 export default function TagPanel({ hasTag, setAttributes, tagRadius }) {
 	return (
 		<PanelBody title={__("Tag", "capitainewp-gut-bases")}>

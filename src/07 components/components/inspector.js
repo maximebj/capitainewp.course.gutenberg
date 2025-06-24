@@ -13,14 +13,14 @@ export default function Inspector(props) {
 			<EmojiPanel emoji={emoji} setAttributes={setAttributes} />
 			<TagPanel
 				hasTag={hasTag}
-				setAttributes={setAttributes}
 				tagRadius={tagRadius}
+				setAttributes={setAttributes}
 			/>
 			<TagColorPanel
 				hasTag={hasTag}
-				setAttributes={setAttributes}
 				tagColor={tagColor}
 				tagTextColor={tagTextColor}
+				setAttributes={setAttributes}
 			/>
 		</InspectorControls>
 	);

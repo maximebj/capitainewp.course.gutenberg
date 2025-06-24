@@ -7,6 +7,7 @@ export default function tagColorPanel({
 	tagColor,
 	tagTextColor,
 }) {
+	// On teste très tôt si hasTag est défini
 	if (!hasTag) {
 		return null;
 	}
