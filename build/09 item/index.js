@@ -84,7 +84,8 @@ function Edit(props) {
     content
   } = attributes;
 
-  // On verra ça plus tard lorsqu'on abordera useSelect, ignorez pour l'instant
+  // ⚠️ Ignorez pour l'instant : on verra cette partie dans le prochain cours lorsqu'on abordera useSelect
+  // On récupère les fonctions pour obtenir l'index du bloc et son parent
   const {
     getBlockParents,
     getBlockIndex
@@ -94,26 +95,33 @@ function Edit(props) {
       getBlockIndex: select(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.store).getBlockIndex
     };
   });
+
+  // On récupère la fonction permettant d'insérer un bloc
   const {
     insertBlock
   } = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_2__.useDispatch)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.store);
+
+  // On gère l'événement Keydown du RichText
   const handleKeyDown = event => {
+    // On continue uniquement si la touche Entrée a été pressée
     if (event.key === "Enter" && !event.shiftKey) {
+      // On empêche RichText de revenir à la ligne
       event.preventDefault();
 
-      // Create a new item block
+      // On créé un nouveau bloc "capitainewp/item"
       const newBlock = (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__.createBlock)("capitainewp/item", {
         content: ""
       });
 
-      // Get parent block
+      // On récupère l'index du bloc et le parent
       const parentBlock = getBlockParents(clientId, "capitainewp/repeater")[0];
+      const blockIndex = getBlockIndex(clientId);
 
-      // Insert the new block after the current one
-      insertBlock(newBlock, getBlockIndex(clientId) + 1, parentBlock);
+      // On insère le nouveau bloc après le bloc actuel
+      insertBlock(newBlock, blockIndex + 1, parentBlock);
     }
   };
-  // Fin de la partie à ignorer
+  //  ⚠️ Fin de la partie à ignorer
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)(),
