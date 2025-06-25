@@ -1,6 +1,8 @@
-import { __ } from "@wordpress/i18n";
-
-import { useBlockProps } from "@wordpress/block-editor";
+import {
+	store as blockEditorStore,
+	useBlockProps,
+} from "@wordpress/block-editor";
+import { store as coreDataStore } from "@wordpress/core-data";
 import { useSelect } from "@wordpress/data";
 
 import "./editor.scss";
@@ -8,18 +10,18 @@ import "./editor.scss";
 export default function Edit() {
 	const data = useSelect((select) => {
 		return {
-			site: select("core").getSite(),
-			plugins: select("core").getPlugins(),
-			theme: select("core").getCurrentTheme(),
-			postType: select("core").getPostType("post"),
-			user: select("core").getCurrentUser(),
-			posts: select("core").getEntityRecords("postType", "post"),
-			settings: select("core/block-editor").getSettings(),
-			blocks: select("core/block-editor").getBlocks(),
+			site: select(coreDataStore).getSite(),
+			plugins: select(coreDataStore).getPlugins(),
+			theme: select(coreDataStore).getCurrentTheme(),
+			postType: select(coreDataStore).getPostType("post"),
+			user: select(coreDataStore).getCurrentUser(),
+			posts: select(coreDataStore).getEntityRecords("postType", "post"),
+			settings: select(blockEditorStore).getSettings(),
+			blocks: select(blockEditorStore).getBlocks(),
 		};
 	}, []);
 
-	//console.log(data);
+	console.log(data);
 
 	return (
 		<>
