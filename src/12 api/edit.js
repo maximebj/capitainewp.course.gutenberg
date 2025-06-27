@@ -1,8 +1,8 @@
-import { __ } from "@wordpress/i18n";
 import apiFetch from "@wordpress/api-fetch";
-import { useBlockProps, InspectorControls } from "@wordpress/block-editor";
+import { InspectorControls, useBlockProps } from "@wordpress/block-editor";
 import { PanelBody, ToggleControl } from "@wordpress/components";
-import { useState, useEffect } from "@wordpress/element";
+import { useEffect, useState } from "@wordpress/element";
+import { __ } from "@wordpress/i18n";
 
 import Loading from "../shared/loading";
 import CatList from "./categories";
@@ -18,6 +18,7 @@ export default function Edit(props) {
 	useEffect(() => {
 		apiFetch({
 			path: `/wp/v2/categories?hide_empty=${hideEmpty}`,
+			method: "GET",
 		}).then((categories) => {
 			setCategories(categories);
 			//console.log(categories);
