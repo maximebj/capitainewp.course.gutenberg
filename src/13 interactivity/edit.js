@@ -1,6 +1,6 @@
-import { __ } from "@wordpress/i18n";
 import { useBlockProps } from "@wordpress/block-editor";
 import { useEntityRecords } from "@wordpress/core-data";
+import { __ } from "@wordpress/i18n";
 
 import "./editor.scss";
 
@@ -25,7 +25,9 @@ export default function Edit() {
 			</ul>
 			<ul className="wp-block-capitainewp-interactivity__posts">
 				{posts?.map((post) => (
-					<li key={post.id}>{post.title.rendered}</li>
+					<li key={post.id} className="is-shown">
+						{post.title.rendered}
+					</li>
 				))}
 			</ul>
 		</div>
