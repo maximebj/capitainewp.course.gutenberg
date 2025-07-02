@@ -18,8 +18,8 @@ $categories = get_categories([
   'hide_empty' => false,
 ]);
 
-# Récupérer le state
-wp_interactivity_state('capitainewp/filter-posts', [
+# Déclarer le state initial
+$state = wp_interactivity_state('capitainewp/filter-posts', [
   'selectedCategory' => 'all',
 ]);
 
@@ -27,27 +27,28 @@ wp_interactivity_state('capitainewp/filter-posts', [
 <div
   <?php echo get_block_wrapper_attributes(); ?>
   data-wp-interactive="capitainewp/filter-posts"
-  <?php echo wp_interactivity_data_wp_context(['selectedCategory' => 'all']); ?>>
+  data-wp-watch="callbacks.logChangeCategory"
+  <?php echo wp_interactivity_data_wp_context($state); ?>>
   <h2><?php _e('Filter posts', 'capitainewp'); ?></h2>
   <ul class="wp-block-capitainewp-interactivity__categories">
     <li
       role="button"
       data-wp-on--click="actions.selectCategory"
       data-wp-context='{"category": "all"}'
-      data-wp-class--is-hidden="callbacks.hasNoCategorySelected">✕</li>
+      data-wp-class--is-hidden="state.hasNoCategorySelected">✕</li>
     <?php foreach ($categories as $category) : ?>
       <li
         role="button"
         data-wp-on--click="actions.selectCategory"
         data-wp-context='{"category": "<?php echo esc_attr($category->slug); ?>"}'
-        data-wp-class--is-active="callbacks.isSelectedCategory"><?php echo $category->name; ?></li>
+        data-wp-class--is-active="state.isSelectedCategory"><?php echo $category->name; ?></li>
     <?php endforeach; ?>
   </ul>
   <ul class="wp-block-capitainewp-interactivity__posts">
     <?php while ($query->have_posts()) : $query->the_post(); ?>
       <li
         data-wp-context='{"category": "<?php echo esc_attr(get_the_category()[0]->slug); ?>"}'
-        data-wp-class--is-shown="callbacks.isPostDisplayed"><?php the_title(); ?></li>
+        data-wp-class--is-shown="state.isPostDisplayed"><?php the_title(); ?></li>
     <?php endwhile; ?>
   </ul>
 </div>

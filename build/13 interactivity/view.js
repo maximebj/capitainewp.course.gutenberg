@@ -63,15 +63,7 @@ const {
   state
 } = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.store)("capitainewp/filter-posts", {
   state: {
-    selectedCategory: "all"
-  },
-  actions: {
-    selectCategory: () => {
-      const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
-      state.selectedCategory = context.category;
-    }
-  },
-  callbacks: {
+    selectedCategory: "all",
     isSelectedCategory: () => {
       const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
       return state.selectedCategory === context.category;
@@ -82,6 +74,17 @@ const {
     },
     hasNoCategorySelected: () => {
       return state.selectedCategory === "all";
+    }
+  },
+  actions: {
+    selectCategory: () => {
+      const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
+      state.selectedCategory = context.category;
+    }
+  },
+  callbacks: {
+    logChangeCategory: () => {
+      console.log(`Category changed to ${state.selectedCategory}`);
     }
   }
 });
