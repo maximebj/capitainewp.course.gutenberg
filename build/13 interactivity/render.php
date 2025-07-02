@@ -18,17 +18,11 @@ $categories = get_categories([
   'hide_empty' => false,
 ]);
 
-# Déclarer le state initial
-$state = wp_interactivity_state('capitainewp/filter-posts', [
-  'selectedCategory' => 'all',
-]);
-
 ?>
 <div
   <?php echo get_block_wrapper_attributes(); ?>
   data-wp-interactive="capitainewp/filter-posts"
-  data-wp-watch="callbacks.logChangeCategory"
-  <?php echo wp_interactivity_data_wp_context($state); ?>>
+  data-wp-watch="callbacks.logChangeCategory">
   <h2><?php _e('Filter posts', 'capitainewp'); ?></h2>
   <ul class="wp-block-capitainewp-interactivity__categories">
     <li
