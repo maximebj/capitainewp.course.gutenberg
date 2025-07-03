@@ -8,16 +8,17 @@
   "icon": "star-filled",
   "description": "Un bloc parent qui fournit un contexte à ses enfants.",
   "attributes": {
-    "lastPostId": {
-      "type": "number"
+    "post": {
+      "type": "object",
+      "role": "local"
     }
   },
   "providesContext": {
-    "capitainewp/lastPostId": "lastPostId"
+    "capitainewp/last-post": "post"
   },
   "example": {
     "attributes": {
-      "lastPostId": 339
+      "title": "Titre de l'article"
     }
   },
   "textdomain": "capitainewp-blocks",

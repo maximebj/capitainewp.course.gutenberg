@@ -555,7 +555,7 @@ return array(
 			'capitainewp/context-provider'
 		),
 		'usesContext' => array(
-			'capitainewp/lastPostId'
+			'capitainewp/last-post'
 		),
 		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
@@ -572,16 +572,17 @@ return array(
 		'icon' => 'star-filled',
 		'description' => 'Un bloc parent qui fournit un contexte à ses enfants.',
 		'attributes' => array(
-			'lastPostId' => array(
-				'type' => 'number'
+			'post' => array(
+				'type' => 'object',
+				'role' => 'local'
 			)
 		),
 		'providesContext' => array(
-			'capitainewp/lastPostId' => 'lastPostId'
+			'capitainewp/last-post' => 'post'
 		),
 		'example' => array(
 			'attributes' => array(
-				'lastPostId' => 339
+				'title' => 'Titre de l\'article'
 			)
 		),
 		'textdomain' => 'capitainewp-blocks',

@@ -8,7 +8,7 @@
 	"category": "capitainewp",
 	"icon": "star-empty",
 	"parent": ["capitainewp/context-provider"],
-	"usesContext": ["capitainewp/lastPostId"],
+	"usesContext": ["capitainewp/last-post"],
 	"textdomain": "capitainewp-blocks",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",

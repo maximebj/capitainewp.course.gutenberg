@@ -11,7 +11,7 @@
     "capitainewp/context-provider"
   ],
   "usesContext": [
-    "capitainewp/lastPostId"
+    "capitainewp/last-post"
   ],
   "textdomain": "capitainewp-blocks",
   "editorScript": "file:./index.js",
