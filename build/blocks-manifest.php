@@ -560,7 +560,8 @@ return array(
 		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
-		'style' => 'file:./style-index.css'
+		'style' => 'file:./style-index.css',
+		'render' => 'file:./render.php'
 	),
 	'15 context provider' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
