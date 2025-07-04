@@ -1,19 +1,19 @@
+import { RichText, useBlockProps } from "@wordpress/block-editor";
 import { __ } from "@wordpress/i18n";
-import { useBlockProps, RichText } from "@wordpress/block-editor";
 
 import "./editor.scss";
 
 export default function Edit(props) {
 	const { attributes, setAttributes } = props;
-	const { content } = attributes;
+	const { description } = attributes;
 
 	return (
 		<div {...useBlockProps()}>
 			<RichText
 				tagName="p"
 				placeholder={__("Your text here", "capitainewp-blocks")}
-				value={content}
-				onChange={(content) => setAttributes({ content })}
+				value={description}
+				onChange={(description) => setAttributes({ description })}
 			/>
 		</div>
 	);

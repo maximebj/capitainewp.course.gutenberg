@@ -4,10 +4,10 @@ const transforms = {
 	from: [
 		{
 			type: "block",
-			blocks: ["core/paragraph"],
+			blocks: ["core/paragraph", "core/heading"],
 			transform: ({ content }) => {
 				return createBlock("capitainewp/transforms", {
-					content,
+					description: content,
 				});
 			},
 		},
@@ -16,9 +16,18 @@ const transforms = {
 		{
 			type: "block",
 			blocks: ["core/paragraph"],
-			transform: ({ content }) => {
+			transform: ({ description }) => {
 				return createBlock("core/paragraph", {
-					content,
+					content: description,
+				});
+			},
+		},
+		{
+			type: "block",
+			blocks: ["core/title"],
+			transform: ({ description }) => {
+				return createBlock("core/title", {
+					content: description,
 				});
 			},
 		},

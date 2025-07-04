@@ -8,7 +8,7 @@
 	"icon": "update",
 	"description": "Un bloc qui se transforme en un autre.",
 	"attributes": {
-		"content": {
+		"description": {
 			"type": "string",
 			"source": "html",
 			"selector": "p"
@@ -16,7 +16,7 @@
 	},
 	"example": {
 		"attributes": {
-			"content": "<p>Je suis un bloc transformable.</p>"
+			"description": "<p>Je suis un bloc transformable.</p>"
 		}
 	},
 	"textdomain": "capitainewp-blocks",

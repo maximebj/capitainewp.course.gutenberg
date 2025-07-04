@@ -601,7 +601,7 @@ return array(
 		'icon' => 'update',
 		'description' => 'Un bloc qui se transforme en un autre.',
 		'attributes' => array(
-			'content' => array(
+			'description' => array(
 				'type' => 'string',
 				'source' => 'html',
 				'selector' => 'p'
@@ -609,7 +609,7 @@ return array(
 		),
 		'example' => array(
 			'attributes' => array(
-				'content' => '<p>Je suis un bloc transformable.</p>'
+				'description' => '<p>Je suis un bloc transformable.</p>'
 			)
 		),
 		'textdomain' => 'capitainewp-blocks',
