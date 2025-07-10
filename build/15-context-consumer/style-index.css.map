@@ -1,0 +1,1 @@
+{"version":3,"file":"15-context-consumer/style-index.css","mappings":";;;AAAA;EACC;EACA;AACD,C","sources":["webpack://capitainewp.course.gutenberg.bases/./src/15-context-consumer/style.scss"],"sourcesContent":[".wp-block-capitainewp-context-provider {\n\tbackground: var(--wp--preset--color--accent-2);\n\tpadding: var(--wp--preset--spacing--30);\n}\n"],"names":[],"sourceRoot":""}

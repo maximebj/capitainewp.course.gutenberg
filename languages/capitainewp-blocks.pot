@@ -1,0 +1,505 @@
+# Copyright (C) 2025 Maxime BERNARD-JACQUET
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Capitaine WP • Blocs • Formation Gutenberg V4 4.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/capitainewp-course-gutenberg\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-07-10T08:01:43+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: capitainewp-blocks\n"
+
+#. Plugin Name of the plugin
+#: capitainewp-blocks.php
+msgid "Capitaine WP • Blocs • Formation Gutenberg V4"
+msgstr ""
+
+#. Description of the plugin
+#: capitainewp-blocks.php
+msgid "Les blocs de la formation Gutenberg 2025 de Capitaine WP"
+msgstr ""
+
+#. Author of the plugin
+#: capitainewp-blocks.php
+msgid "Maxime BERNARD-JACQUET"
+msgstr ""
+
+#: capitainewp-blocks.php:47
+msgid "Capitaine WP Blocks"
+msgstr ""
+
+#: build/01-first/index.js:72
+#: src/01-first/edit.js:10
+#: build/01-first/index.js:26
+msgid "Capitainewp – hello from the editor!"
+msgstr ""
+
+#: build/03-richtext/index.js:48
+#: build/05-inspector/index.js:78
+#: build/05-inspector/index.js:86
+#: build/07-components/index.js:71
+#: build/07-components/index.js:79
+#: build/09-item/index.js:130
+#: build/14-variants/index.js:56
+#: build/16-transforms/index.js:48
+#: build/17-deprecated/index.js:48
+#: src/03-richtext/edit.js:14
+#: src/05-inspector/edit.js:54
+#: src/05-inspector/edit.js:61
+#: src/07-components/components/block.js:37
+#: src/07-components/components/block.js:44
+#: src/09-item/edit.js:56
+#: src/14-variants/edit.js:18
+#: src/16-transforms/edit.js:14
+#: src/17-deprecated/edit.js:14
+#: build/03-richtext/index.js:14
+#: build/05-inspector/index.js:54
+#: build/05-inspector/index.js:61
+#: build/07-components/index.js:37
+#: build/07-components/index.js:44
+#: build/09-item/index.js:72
+#: build/14-variants/index.js:18
+#: build/16-transforms/index.js:14
+#: build/17-deprecated/index.js:14
+msgid "Your text here"
+msgstr ""
+
+#: build/04-toolbar/index.js:50
+#: src/04-toolbar/edit.js:18
+#: build/04-toolbar/index.js:18
+msgid "Advice"
+msgstr ""
+
+#: build/04-toolbar/index.js:54
+#: src/04-toolbar/edit.js:23
+#: build/04-toolbar/index.js:23
+msgid "Warning"
+msgstr ""
+
+#: build/04-toolbar/index.js:58
+#: src/04-toolbar/edit.js:28
+#: build/04-toolbar/index.js:28
+msgid "Avoid"
+msgstr ""
+
+#: build/04-toolbar/index.js:62
+#: src/04-toolbar/edit.js:33
+#: build/04-toolbar/index.js:33
+msgid "Information"
+msgstr ""
+
+#: build/04-toolbar/index.js:85
+#: src/04-toolbar/edit.js:60
+#: build/04-toolbar/index.js:60
+msgid "Your alert here"
+msgstr ""
+
+#: build/05-inspector/index.js:95
+#: src/05-inspector/edit.js:69
+#: build/05-inspector/index.js:69
+msgid "Emoji"
+msgstr ""
+
+#: build/05-inspector/index.js:108
+#: src/05-inspector/edit.js:81
+#: build/05-inspector/index.js:81
+msgid "Tag"
+msgstr ""
+
+#: build/05-inspector/index.js:110
+#: src/05-inspector/edit.js:83
+#: build/05-inspector/index.js:83
+msgid "Show tag"
+msgstr ""
+
+#: build/05-inspector/index.js:116
+#: src/05-inspector/edit.js:89
+#: build/05-inspector/index.js:89
+msgid "Radius"
+msgstr ""
+
+#: build/05-inspector/index.js:125
+#: src/05-inspector/edit.js:100
+#: build/05-inspector/index.js:100
+msgid "Tag colors"
+msgstr ""
+
+#: build/05-inspector/index.js:131
+#: src/05-inspector/edit.js:105
+#: build/05-inspector/index.js:105
+msgid "Tag color"
+msgstr ""
+
+#: build/05-inspector/index.js:137
+#: src/05-inspector/edit.js:110
+#: build/05-inspector/index.js:110
+msgid "Tag text color"
+msgstr ""
+
+#: build/06-media/index.js:71
+#: src/06-media/edit.js:46
+#: build/06-media/index.js:46
+msgid "Photo"
+msgstr ""
+
+#: build/06-media/index.js:72
+#: src/06-media/edit.js:47
+#: build/06-media/index.js:47
+msgid "Select a picture"
+msgstr ""
+
+#: build/06-media/index.js:78
+#: src/06-media/edit.js:50
+#: build/06-media/index.js:50
+msgid "Import"
+msgstr ""
+
+#: build/06-media/index.js:91
+#: src/06-media/edit.js:66
+#: build/06-media/index.js:66
+msgid "Remove picture"
+msgstr ""
+
+#: build/08-innerblocks/index.js:42
+#: src/08-innerblocks/edit.js:15
+#: build/08-innerblocks/index.js:15
+msgid "Your title here"
+msgstr ""
+
+#: build/08-innerblocks/index.js:44
+#: src/08-innerblocks/edit.js:19
+#: build/08-innerblocks/index.js:19
+msgid "Your content here"
+msgstr ""
+
+#: build/11-entityrecords/index.js:68
+#: src/11-entityrecords/edit.js:26
+#: build/11-entityrecords/index.js:26
+msgid "Loading posts…"
+msgstr ""
+
+#: build/11-entityrecords/index.js:75
+#: build/12-api/index.js:118
+#: src/11-entityrecords/edit.js:33
+#: src/12-api/edit.js:39
+#: build/11-entityrecords/index.js:33
+#: build/12-api/index.js:63
+msgid "Settings"
+msgstr ""
+
+#: build/11-entityrecords/index.js:77
+#: src/11-entityrecords/edit.js:35
+#: build/11-entityrecords/index.js:35
+msgid "Number of posts"
+msgstr ""
+
+#: build/11-entityrecords/index.js:155
+#: src/11-entityrecords/posts.js:11
+#: build/11-entityrecords/index.js:72
+msgid "Latest posts"
+msgstr ""
+
+#: build/11-entityrecords/index.js:172
+#: src/11-entityrecords/posts.js:30
+#: build/11-entityrecords/index.js:91
+msgid "Published on"
+msgstr ""
+
+#: build/11-entityrecords/index.js:172
+#: src/11-entityrecords/posts.js:32
+#: build/11-entityrecords/index.js:93
+msgid "by"
+msgstr ""
+
+#: build/12-api/index.js:39
+#: src/12-api/categories.js:10
+#: build/12-api/index.js:10
+msgid "Categories"
+msgstr ""
+
+#: build/12-api/index.js:110
+#: src/12-api/edit.js:32
+#: build/12-api/index.js:56
+msgid "Loading categories…"
+msgstr ""
+
+#: build/12-api/index.js:120
+#: src/12-api/edit.js:41
+#: build/12-api/index.js:65
+msgid "Hide empty categories"
+msgstr ""
+
+#: build/12-api/index.js:126
+#: src/12-api/edit.js:46
+#: build/12-api/index.js:70
+msgid "Show count"
+msgstr ""
+
+#: build/13-interactivity/index.js:55
+#: src/13-interactivity/edit.js:20
+#: build/13-interactivity/index.js:20
+msgid "Filter posts"
+msgstr ""
+
+#: build/01-first/block.json
+#: src/01-first/block.json
+msgctxt "block title"
+msgid "First"
+msgstr ""
+
+#: build/01-first/block.json
+#: src/01-first/block.json
+msgctxt "block description"
+msgid "Bloc de base fourni avec le package Create Block."
+msgstr ""
+
+#: build/02-supports/block.json
+#: src/02-supports/block.json
+msgctxt "block title"
+msgid "Supports"
+msgstr ""
+
+#: build/02-supports/block.json
+#: src/02-supports/block.json
+msgctxt "block description"
+msgid "Ajouter des fonctionnalités supplémentaires à un bloc."
+msgstr ""
+
+#: build/03-richtext/block.json
+#: src/03-richtext/block.json
+msgctxt "block title"
+msgid "Richtext"
+msgstr ""
+
+#: build/03-richtext/block.json
+#: src/03-richtext/block.json
+msgctxt "block description"
+msgid "Un bloc administrable grâce au composant RichText."
+msgstr ""
+
+#: build/04-toolbar/block.json
+#: src/04-toolbar/block.json
+msgctxt "block title"
+msgid "Toolbar"
+msgstr ""
+
+#: build/04-toolbar/block.json
+#: src/04-toolbar/block.json
+msgctxt "block description"
+msgid "Un bloc d’alerte avec plusieurs styles."
+msgstr ""
+
+#: build/04-toolbar/block.json
+#: src/04-toolbar/block.json
+msgctxt "block keyword"
+msgid "attention"
+msgstr ""
+
+#: build/04-toolbar/block.json
+#: src/04-toolbar/block.json
+msgctxt "block keyword"
+msgid "alerte"
+msgstr ""
+
+#: build/04-toolbar/block.json
+#: src/04-toolbar/block.json
+msgctxt "block keyword"
+msgid "conseil"
+msgstr ""
+
+#: build/04-toolbar/block.json
+#: src/04-toolbar/block.json
+msgctxt "block keyword"
+msgid "éviter"
+msgstr ""
+
+#: build/04-toolbar/block.json
+#: src/04-toolbar/block.json
+msgctxt "block keyword"
+msgid "succès"
+msgstr ""
+
+#: build/05-inspector/block.json
+#: src/05-inspector/block.json
+msgctxt "block title"
+msgid "Inspector"
+msgstr ""
+
+#: build/05-inspector/block.json
+#: src/05-inspector/block.json
+msgctxt "block description"
+msgid "Un bloc avec des options dans l’inspecteur."
+msgstr ""
+
+#: build/06-media/block.json
+#: src/06-media/block.json
+msgctxt "block title"
+msgid "Media"
+msgstr ""
+
+#: build/06-media/block.json
+#: src/06-media/block.json
+msgctxt "block description"
+msgid "Un bloc avec le composant Media"
+msgstr ""
+
+#: build/07-components/block.json
+#: src/07-components/block.json
+msgctxt "block title"
+msgid "Components"
+msgstr ""
+
+#: build/07-components/block.json
+#: src/07-components/block.json
+msgctxt "block description"
+msgid "Le bloc inspecteur mais avec des composants pour un code plus lisible."
+msgstr ""
+
+#: build/08-innerblocks/block.json
+#: src/08-innerblocks/block.json
+msgctxt "block title"
+msgid "Innerblocks"
+msgstr ""
+
+#: build/08-innerblocks/block.json
+#: src/08-innerblocks/block.json
+msgctxt "block description"
+msgid "Un bloc dans lequel on peut insérer d'autres blocs."
+msgstr ""
+
+#: build/09-item/block.json
+#: src/09-item/block.json
+msgctxt "block title"
+msgid "Enfant du répéteur"
+msgstr ""
+
+#: build/09-item/block.json
+#: src/09-item/block.json
+msgctxt "block description"
+msgid "bloc enfant du répéteur."
+msgstr ""
+
+#: build/09-repeater/block.json
+#: src/09-repeater/block.json
+msgctxt "block title"
+msgid "Répéteur"
+msgstr ""
+
+#: build/09-repeater/block.json
+#: src/09-repeater/block.json
+msgctxt "block description"
+msgid "Un bloc dans lequel on peut insérer un seul type de bloc plusieurs fois."
+msgstr ""
+
+#: build/10-select/block.json
+#: src/10-select/block.json
+msgctxt "block title"
+msgid "Select"
+msgstr ""
+
+#: build/10-select/block.json
+#: src/10-select/block.json
+msgctxt "block description"
+msgid "Un bloc qui récupère des données depuis l’éditeur de blocs."
+msgstr ""
+
+#: build/11-entityrecords/block.json
+#: src/11-entityrecords/block.json
+msgctxt "block title"
+msgid "Entity Records"
+msgstr ""
+
+#: build/11-entityrecords/block.json
+#: src/11-entityrecords/block.json
+msgctxt "block description"
+msgid "Un bloc qui récupère ses données dynamiquement."
+msgstr ""
+
+#: build/12-api/block.json
+#: src/12-api/block.json
+msgctxt "block title"
+msgid "API Fetch"
+msgstr ""
+
+#: build/12-api/block.json
+#: src/12-api/block.json
+msgctxt "block description"
+msgid "Un bloc qui récupère ses données via l’API REST de WordPress."
+msgstr ""
+
+#: build/13-interactivity/block.json
+#: src/13-interactivity/block.json
+msgctxt "block title"
+msgid "Interactivity"
+msgstr ""
+
+#: build/13-interactivity/block.json
+#: src/13-interactivity/block.json
+msgctxt "block description"
+msgid "Un bloc qui utilise l’inteactivity API."
+msgstr ""
+
+#: build/14-variants/block.json
+#: src/14-variants/block.json
+msgctxt "block title"
+msgid "Variants"
+msgstr ""
+
+#: build/14-variants/block.json
+#: src/14-variants/block.json
+msgctxt "block description"
+msgid "Un bloc d’alerte avec plusieurs variantes."
+msgstr ""
+
+#: build/15-context-consumer/block.json
+#: src/15-context-consumer/block.json
+msgctxt "block title"
+msgid "Context Consumer"
+msgstr ""
+
+#: build/15-context-consumer/block.json
+#: src/15-context-consumer/block.json
+msgctxt "block description"
+msgid "Un bloc enfant qui consomme le contexte du parent."
+msgstr ""
+
+#: build/15-context-provider/block.json
+#: src/15-context-provider/block.json
+msgctxt "block title"
+msgid "Context"
+msgstr ""
+
+#: build/15-context-provider/block.json
+#: src/15-context-provider/block.json
+msgctxt "block description"
+msgid "Un bloc parent qui fournit un contexte à ses enfants."
+msgstr ""
+
+#: build/16-transforms/block.json
+#: src/16-transforms/block.json
+msgctxt "block title"
+msgid "Transforms"
+msgstr ""
+
+#: build/16-transforms/block.json
+#: src/16-transforms/block.json
+msgctxt "block description"
+msgid "Un bloc qui se transforme en un autre."
+msgstr ""
+
+#: build/17-deprecated/block.json
+#: src/17-deprecated/block.json
+msgctxt "block title"
+msgid "Deprecated"
+msgstr ""
+
+#: build/17-deprecated/block.json
+#: src/17-deprecated/block.json
+msgctxt "block description"
+msgid "Un bloc qui a évolué avec le temps."
+msgstr ""

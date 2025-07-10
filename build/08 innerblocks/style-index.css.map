@@ -1,1 +1,0 @@
-{"version":3,"file":"08 innerblocks/style-index.css","mappings":";;;AAAA;EACC;EACA;AACD,C","sources":["webpack://capitainewp.course.gutenberg.bases/./src/08 innerblocks/style.scss"],"sourcesContent":[".wp-block-capitainewp-innerblocks {\n\tborder: 3px solid var(--wp--preset--color--accent-2);\n\tpadding: var(--wp--preset--spacing--30);\n}\n"],"names":[],"sourceRoot":""}

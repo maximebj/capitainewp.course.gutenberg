@@ -1,0 +1,293 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Capitaine WP • Blocs • Formation Gutenberg V4 4.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/capitainewp-course-gutenberg\n"
+"Last-Translator: Maxime BJ\n"
+"Language-Team: Français\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-07-10T08:01:43+00:00\n"
+"PO-Revision-Date: 2025-07-10 08:07+0000\n"
+"Language: fr_FR\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: capitainewp-blocks\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Loco-Version: 2.8.0; wp-6.8.1; php-8.4.4\n"
+
+#. Plugin Name of the plugin
+#: capitainewp-blocks.php
+msgid "Capitaine WP • Blocs • Formation Gutenberg V4"
+msgstr ""
+
+#. Description of the plugin
+#: capitainewp-blocks.php
+msgid "Les blocs de la formation Gutenberg 2025 de Capitaine WP"
+msgstr ""
+
+#. Author of the plugin
+#: capitainewp-blocks.php
+msgid "Maxime BERNARD-JACQUET"
+msgstr ""
+
+#: capitainewp-blocks.php:47
+msgid "Capitaine WP Blocks"
+msgstr ""
+
+#: build/01-first/block.json
+#: src/01-first/block.json
+msgctxt "block title"
+msgid "First"
+msgstr ""
+
+#: build/01-first/block.json
+#: src/01-first/block.json
+msgctxt "block description"
+msgid "Bloc de base fourni avec le package Create Block."
+msgstr ""
+
+#: build/02-supports/block.json
+#: src/02-supports/block.json
+msgctxt "block title"
+msgid "Supports"
+msgstr ""
+
+#: build/02-supports/block.json
+#: src/02-supports/block.json
+msgctxt "block description"
+msgid "Ajouter des fonctionnalités supplémentaires à un bloc."
+msgstr ""
+
+#: build/03-richtext/block.json
+#: src/03-richtext/block.json
+msgctxt "block title"
+msgid "Richtext"
+msgstr ""
+
+#: build/03-richtext/block.json
+#: src/03-richtext/block.json
+msgctxt "block description"
+msgid "Un bloc administrable grâce au composant RichText."
+msgstr ""
+
+#: build/04-toolbar/block.json
+#: src/04-toolbar/block.json
+msgctxt "block title"
+msgid "Toolbar"
+msgstr ""
+
+#: build/04-toolbar/block.json
+#: src/04-toolbar/block.json
+msgctxt "block description"
+msgid "Un bloc d’alerte avec plusieurs styles."
+msgstr ""
+
+#: build/04-toolbar/block.json
+#: src/04-toolbar/block.json
+msgctxt "block keyword"
+msgid "attention"
+msgstr ""
+
+#: build/04-toolbar/block.json
+#: src/04-toolbar/block.json
+msgctxt "block keyword"
+msgid "alerte"
+msgstr ""
+
+#: build/04-toolbar/block.json
+#: src/04-toolbar/block.json
+msgctxt "block keyword"
+msgid "conseil"
+msgstr ""
+
+#: build/04-toolbar/block.json
+#: src/04-toolbar/block.json
+msgctxt "block keyword"
+msgid "éviter"
+msgstr ""
+
+#: build/04-toolbar/block.json
+#: src/04-toolbar/block.json
+msgctxt "block keyword"
+msgid "succès"
+msgstr ""
+
+#: build/05-inspector/block.json
+#: src/05-inspector/block.json
+msgctxt "block title"
+msgid "Inspector"
+msgstr ""
+
+#: build/05-inspector/block.json
+#: src/05-inspector/block.json
+msgctxt "block description"
+msgid "Un bloc avec des options dans l’inspecteur."
+msgstr ""
+
+#: build/06-media/block.json
+#: src/06-media/block.json
+msgctxt "block title"
+msgid "Media"
+msgstr ""
+
+#: build/06-media/block.json
+#: src/06-media/block.json
+msgctxt "block description"
+msgid "Un bloc avec le composant Media"
+msgstr ""
+
+#: build/07-components/block.json
+#: src/07-components/block.json
+msgctxt "block title"
+msgid "Components"
+msgstr ""
+
+#: build/07-components/block.json
+#: src/07-components/block.json
+msgctxt "block description"
+msgid "Le bloc inspecteur mais avec des composants pour un code plus lisible."
+msgstr ""
+
+#: build/08-innerblocks/block.json
+#: src/08-innerblocks/block.json
+msgctxt "block title"
+msgid "Innerblocks"
+msgstr ""
+
+#: build/08-innerblocks/block.json
+#: src/08-innerblocks/block.json
+msgctxt "block description"
+msgid "Un bloc dans lequel on peut insérer d'autres blocs."
+msgstr ""
+
+#: build/09-item/block.json
+#: src/09-item/block.json
+msgctxt "block title"
+msgid "Enfant du répéteur"
+msgstr ""
+
+#: build/09-item/block.json
+#: src/09-item/block.json
+msgctxt "block description"
+msgid "bloc enfant du répéteur."
+msgstr ""
+
+#: build/09-repeater/block.json
+#: src/09-repeater/block.json
+msgctxt "block title"
+msgid "Répéteur"
+msgstr ""
+
+#: build/09-repeater/block.json
+#: src/09-repeater/block.json
+msgctxt "block description"
+msgid "Un bloc dans lequel on peut insérer un seul type de bloc plusieurs fois."
+msgstr ""
+
+#: build/10-select/block.json
+#: src/10-select/block.json
+msgctxt "block title"
+msgid "Select"
+msgstr ""
+
+#: build/10-select/block.json
+#: src/10-select/block.json
+msgctxt "block description"
+msgid "Un bloc qui récupère des données depuis l’éditeur de blocs."
+msgstr ""
+
+#: build/11-entityrecords/block.json
+#: src/11-entityrecords/block.json
+msgctxt "block title"
+msgid "Entity Records"
+msgstr ""
+
+#: build/11-entityrecords/block.json
+#: src/11-entityrecords/block.json
+msgctxt "block description"
+msgid "Un bloc qui récupère ses données dynamiquement."
+msgstr ""
+
+#: build/12-api/block.json
+#: src/12-api/block.json
+msgctxt "block title"
+msgid "API Fetch"
+msgstr ""
+
+#: build/12-api/block.json
+#: src/12-api/block.json
+msgctxt "block description"
+msgid "Un bloc qui récupère ses données via l’API REST de WordPress."
+msgstr ""
+
+#: build/13-interactivity/block.json
+#: src/13-interactivity/block.json
+msgctxt "block title"
+msgid "Interactivity"
+msgstr ""
+
+#: build/13-interactivity/block.json
+#: src/13-interactivity/block.json
+msgctxt "block description"
+msgid "Un bloc qui utilise l’inteactivity API."
+msgstr ""
+
+#: build/14-variants/block.json
+#: src/14-variants/block.json
+msgctxt "block title"
+msgid "Variants"
+msgstr ""
+
+#: build/14-variants/block.json
+#: src/14-variants/block.json
+msgctxt "block description"
+msgid "Un bloc d’alerte avec plusieurs variantes."
+msgstr ""
+
+#: build/15-context-consumer/block.json
+#: src/15-context-consumer/block.json
+msgctxt "block title"
+msgid "Context Consumer"
+msgstr ""
+
+#: build/15-context-consumer/block.json
+#: src/15-context-consumer/block.json
+msgctxt "block description"
+msgid "Un bloc enfant qui consomme le contexte du parent."
+msgstr ""
+
+#: build/15-context-provider/block.json
+#: src/15-context-provider/block.json
+msgctxt "block title"
+msgid "Context"
+msgstr ""
+
+#: build/15-context-provider/block.json
+#: src/15-context-provider/block.json
+msgctxt "block description"
+msgid "Un bloc parent qui fournit un contexte à ses enfants."
+msgstr ""
+
+#: build/16-transforms/block.json
+#: src/16-transforms/block.json
+msgctxt "block title"
+msgid "Transforms"
+msgstr ""
+
+#: build/16-transforms/block.json
+#: src/16-transforms/block.json
+msgctxt "block description"
+msgid "Un bloc qui se transforme en un autre."
+msgstr ""
+
+#: build/17-deprecated/block.json
+#: src/17-deprecated/block.json
+msgctxt "block title"
+msgid "Deprecated"
+msgstr ""
+
+#: build/17-deprecated/block.json
+#: src/17-deprecated/block.json
+msgctxt "block description"
+msgid "Un bloc qui a évolué avec le temps."
+msgstr ""

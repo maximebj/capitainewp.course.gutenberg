@@ -1,1 +1,0 @@
-{"version":3,"file":"12 api/style-index.css","mappings":";;;AAAA;EACC;EACA;AACD,C","sources":["webpack://capitainewp.course.gutenberg.bases/./src/12 api/style.scss"],"sourcesContent":[".wp-block-capitainewp-api {\n\tbackground-color: var(--wp--preset--color--accent-5);\n\tpadding: var(--wp--preset--spacing--30);\n}\n"],"names":[],"sourceRoot":""}

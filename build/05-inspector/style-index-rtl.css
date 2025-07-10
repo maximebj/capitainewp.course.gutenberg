@@ -1,0 +1,47 @@
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/05-inspector/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+.wp-block-capitainewp-inspector {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 50px;
+  background-color: var(--wp--preset--color--contrast);
+  color: var(--wp--preset--color--base);
+  padding: var(--wp--preset--spacing--40);
+  border-radius: 20px;
+}
+
+.wp-block-capitainewp-inspector__tag {
+  font-size: var(--wp--preset--font-size--small);
+  background-color: var(--wp--preset--color--accent-2);
+  color: var(--wp--preset--color--accent-3);
+  padding: var(--wp--preset--spacing--20);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.wp-block-capitainewp-inspector__icon {
+  align-self: flex-end;
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.wp-block-capitainewp-inspector__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--wp--preset--spacing--20);
+}
+
+.wp-block-capitainewp-inspector__title {
+  font-size: var(--wp--preset--font-size--xx-large);
+  margin: 0;
+}
+
+.wp-block-capitainewp-inspector__description {
+  font-size: var(--wp--preset--font-size--medium);
+  line-height: 1.8;
+  opacity: 0.8;
+  margin: 0;
+}

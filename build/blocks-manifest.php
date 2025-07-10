@@ -1,7 +1,7 @@
 <?php
 // This file is generated. Do not modify it manually.
 return array(
-	'01 first' => array(
+	'01-first' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/base',
@@ -22,7 +22,7 @@ return array(
 		'style' => 'file:./style-index.css',
 		'viewScript' => 'file:./view.js'
 	),
-	'02 supports' => array(
+	'02-supports' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/supports',
@@ -78,7 +78,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'03 richtext' => array(
+	'03-richtext' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/richtext',
@@ -105,7 +105,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'04 toolbar' => array(
+	'04-toolbar' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/toolbar',
@@ -143,7 +143,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'05 inspector' => array(
+	'05-inspector' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/inspector',
@@ -213,7 +213,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'06 media' => array(
+	'06-media' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 2,
 		'name' => 'capitainewp/media',
@@ -252,7 +252,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'07 components' => array(
+	'07-components' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/components',
@@ -321,7 +321,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'08 innerblocks' => array(
+	'08-innerblocks' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/innerblocks',
@@ -357,7 +357,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'09 item' => array(
+	'09-item' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/item',
@@ -385,7 +385,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'09 repeater' => array(
+	'09-repeater' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/repeater',
@@ -421,7 +421,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'10 select' => array(
+	'10-select' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/select',
@@ -438,7 +438,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'11 entityrecords' => array(
+	'11-entityrecords' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/entityrecords',
@@ -464,7 +464,7 @@ return array(
 		'style' => 'file:./style-index.css',
 		'render' => 'file:./render.php'
 	),
-	'12 api' => array(
+	'12-api' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/api',
@@ -495,7 +495,7 @@ return array(
 		'style' => 'file:./style-index.css',
 		'render' => 'file:./render.php'
 	),
-	'13 interactivity' => array(
+	'13-interactivity' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/interactivity',
@@ -517,7 +517,7 @@ return array(
 		'render' => 'file:./render.php',
 		'viewScriptModule' => 'file:./view.js'
 	),
-	'14 variants' => array(
+	'14-variants' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/variants',
@@ -542,7 +542,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'15 context consumer' => array(
+	'15-context-consumer' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/context-consumer',
@@ -563,7 +563,7 @@ return array(
 		'style' => 'file:./style-index.css',
 		'render' => 'file:./render.php'
 	),
-	'15 context provider' => array(
+	'15-context-provider' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/context-provider',
@@ -591,7 +591,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'16 transforms' => array(
+	'16-transforms' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/transforms',
@@ -617,7 +617,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'17 deprecated' => array(
+	'17-deprecated' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'capitainewp/deprecated',
