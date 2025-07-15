@@ -642,5 +642,45 @@ return array(
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
+	),
+	'18-table-of-contents' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 2,
+		'name' => 'capitainewp/table-of-contents',
+		'version' => '1.0',
+		'title' => 'Sommaire',
+		'category' => 'capitainewp',
+		'icon' => 'list-view',
+		'description' => 'Un sommaire généré automatiquement à partir des titres.',
+		'keywords' => array(
+			'table des matières',
+			'sommaire'
+		),
+		'supports' => array(
+			'html' => false,
+			'align' => true
+		),
+		'attributes' => array(
+			'title' => array(
+				'source' => 'text',
+				'type' => 'string',
+				'selector' => '.wp-block-capitainewp-table-of-contents__title',
+				'default' => 'Sommaire du cours'
+			),
+			'headings' => array(
+				'type' => 'array',
+				'default' => array(
+					
+				)
+			),
+			'ordered' => array(
+				'type' => 'boolean',
+				'default' => true
+			)
+		),
+		'textdomain' => 'capitainewp-blocks',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
 	)
 );

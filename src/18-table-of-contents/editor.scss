@@ -1,0 +1,27 @@
+.wp-block-capitainewp-table-of-contents {
+	box-sizing: border-box;
+
+	.wp-block-capitainewp-table-of-contents__title {
+		margin: 0;
+	}
+	.wp-block-capitainewp-table-of-contents__list {
+		margin: 20px 0 0 12px;
+		padding: 0;
+	}
+
+	ul ul,
+	ol ol {
+		padding: 0;
+	}
+
+	.wp-block-capitainewp-table-of-contents__list li {
+		font-size: 1rem;
+		line-height: 1.8;
+	}
+
+	.wp-block-capitainewp-table-of-contents__none {
+		margin: 0;
+		margin-top: 6px;
+		font-size: 1rem;
+	}
+}
