@@ -8,7 +8,7 @@
   \*********************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"capitainewp/table-of-contents","version":"1.0","title":"Sommaire","category":"capitainewp","icon":"list-view","description":"Un sommaire généré automatiquement à partir des titres.","keywords":["table des matières","sommaire"],"supports":{"html":false,"align":true},"attributes":{"title":{"source":"text","type":"string","selector":".wp-block-capitainewp-table-of-contents__title","default":"Sommaire du cours"},"headings":{"type":"array","default":[]},"ordered":{"type":"boolean","default":true}},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"capitainewp/table-of-contents","version":"1.0","title":"Sommaire","category":"capitainewp","icon":"list-view","description":"Un sommaire généré automatiquement à partir des titres.","keywords":["table des matières","sommaire"],"supports":{"html":false,"align":true},"attributes":{"title":{"source":"text","type":"string","selector":".wp-block-capitainewp-table-of-contents__title","default":"Sommaire du cours"},"headings":{"type":"array","default":[],"role":"local"},"ordered":{"type":"boolean","default":true}},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 
@@ -57,7 +57,6 @@ function Edit(props) {
   const blocks = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.useSelect)(select => {
     return select("core/block-editor").getBlocks();
   });
-  console.log(blocks);
 
   // Mettre à jour les attributs d'autres blocs
   const {
@@ -66,10 +65,6 @@ function Edit(props) {
 
   // Trouver et mettre à jour les ancres des titres
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {
-    if (!blocks || !updateBlockAttributes) {
-      return;
-    }
-
     // Extraire la liste des titres du contenu et construire la hiérarchie
     const newHeadingsList = (0,_utils__WEBPACK_IMPORTED_MODULE_3__.getHeadingsFromContent)(blocks);
     const newHeadingTree = (0,_utils__WEBPACK_IMPORTED_MODULE_3__.buildHeadingHierarchy)(newHeadingsList);
@@ -81,7 +76,7 @@ function Edit(props) {
         headings: newHeadingTree
       });
     }
-  }, [blocks, updateBlockAttributes]);
+  }, [blocks]);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_toolbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
       attributes,
@@ -334,7 +329,6 @@ function Toolbar(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   buildHeadingHierarchy: () => (/* binding */ buildHeadingHierarchy),
-/* harmony export */   cleanBlock: () => (/* binding */ cleanBlock),
 /* harmony export */   getHeadingsFromContent: () => (/* binding */ getHeadingsFromContent),
 /* harmony export */   updateHeadingsAnchors: () => (/* binding */ updateHeadingsAnchors)
 /* harmony export */ });
@@ -347,7 +341,12 @@ function getHeadingsFromContent(blocks) {
   const headings = [];
   blocks.map(block => {
     if (block.name === "core/heading" && block.attributes?.content.length > 0) {
-      headings.push(cleanBlock(block));
+      headings.push({
+        clientId: block.clientId,
+        level: block.attributes.level,
+        content: block.attributes.content.text,
+        slug: (0,_wordpress_url__WEBPACK_IMPORTED_MODULE_0__.cleanForSlug)(block.attributes.content.text)
+      });
     }
 
     // Récursion dans les blocs enfants
@@ -356,16 +355,7 @@ function getHeadingsFromContent(blocks) {
   return headings;
 }
 
-// 2. Mettre à jour les ancres des blocs de titre avec le slug du titre
-function updateHeadingsAnchors(headings, updateBlockAttributes) {
-  headings.map(block => {
-    updateBlockAttributes(block.clientId, {
-      anchor: block.slug
-    });
-  });
-}
-
-// 3. Définir la hiérarchie des titres
+// 2. Définir la hiérarchie des titres
 function buildHeadingHierarchy(headings) {
   const hierarchy = [];
   const levelMap = {};
@@ -402,14 +392,13 @@ function buildHeadingHierarchy(headings) {
   return hierarchy;
 }
 
-// Nettoyer le bloc pour ne garder que les données utiles
-function cleanBlock(block) {
-  return {
-    clientId: block.clientId,
-    level: block.attributes.level,
-    content: typeof block.attributes.content === "string" ? block.attributes.content : block.attributes.content.text,
-    slug: (0,_wordpress_url__WEBPACK_IMPORTED_MODULE_0__.cleanForSlug)(block.attributes.content)
-  };
+// 3. Mettre à jour les ancres des blocs de titre avec le slug du titre
+function updateHeadingsAnchors(headings, updateBlockAttributes) {
+  headings.map(block => {
+    updateBlockAttributes(block.clientId, {
+      anchor: block.slug
+    });
+  });
 }
 
 /***/ }),

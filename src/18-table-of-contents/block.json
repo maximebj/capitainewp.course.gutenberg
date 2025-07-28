@@ -21,7 +21,8 @@
 		},
 		"headings": {
 			"type": "array",
-			"default": []
+			"default": [],
+			"role": "local"
 		},
 		"ordered": {
 			"type": "boolean",

@@ -5,7 +5,12 @@ export function getHeadingsFromContent(blocks) {
 	const headings = [];
 	blocks.map((block) => {
 		if (block.name === "core/heading" && block.attributes?.content.length > 0) {
-			headings.push(cleanBlock(block));
+			headings.push({
+				clientId: block.clientId,
+				level: block.attributes.level,
+				content: block.attributes.content.text,
+				slug: cleanForSlug(block.attributes.content.text),
+			});
 		}
 
 		// Récursion dans les blocs enfants
@@ -14,16 +19,7 @@ export function getHeadingsFromContent(blocks) {
 	return headings;
 }
 
-// 2. Mettre à jour les ancres des blocs de titre avec le slug du titre
-export function updateHeadingsAnchors(headings, updateBlockAttributes) {
-	headings.map((block) => {
-		updateBlockAttributes(block.clientId, {
-			anchor: block.slug,
-		});
-	});
-}
-
-// 3. Définir la hiérarchie des titres
+// 2. Définir la hiérarchie des titres
 export function buildHeadingHierarchy(headings) {
 	const hierarchy = [];
 	const levelMap = {};
@@ -58,15 +54,11 @@ export function buildHeadingHierarchy(headings) {
 	return hierarchy;
 }
 
-// Nettoyer le bloc pour ne garder que les données utiles
-export function cleanBlock(block) {
-	return {
-		clientId: block.clientId,
-		level: block.attributes.level,
-		content:
-			typeof block.attributes.content === "string"
-				? block.attributes.content
-				: block.attributes.content.text,
-		slug: cleanForSlug(block.attributes.content),
-	};
+// 3. Mettre à jour les ancres des blocs de titre avec le slug du titre
+export function updateHeadingsAnchors(headings, updateBlockAttributes) {
+	headings.map((block) => {
+		updateBlockAttributes(block.clientId, {
+			anchor: block.slug,
+		});
+	});
 }

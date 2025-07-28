@@ -21,17 +21,12 @@ export default function Edit(props) {
 	const blocks = useSelect((select) => {
 		return select("core/block-editor").getBlocks();
 	});
-	console.log(blocks);
 
 	// Mettre à jour les attributs d'autres blocs
 	const { updateBlockAttributes } = useDispatch("core/block-editor");
 
 	// Trouver et mettre à jour les ancres des titres
 	useEffect(() => {
-		if (!blocks || !updateBlockAttributes) {
-			return;
-		}
-
 		// Extraire la liste des titres du contenu et construire la hiérarchie
 		const newHeadingsList = getHeadingsFromContent(blocks);
 		const newHeadingTree = buildHeadingHierarchy(newHeadingsList);
@@ -41,7 +36,7 @@ export default function Edit(props) {
 			updateHeadingsAnchors(newHeadingsList, updateBlockAttributes);
 			setAttributes({ headings: newHeadingTree });
 		}
-	}, [blocks, updateBlockAttributes]);
+	}, [blocks]);
 
 	return (
 		<Fragment>
