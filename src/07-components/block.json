@@ -15,12 +15,14 @@
 		"title": {
 			"type": "string",
 			"source": "html",
-			"selector": ".wp-block-capitainewp-components__title"
+			"selector": ".wp-block-capitainewp-components__title",
+			"role": "content"
 		},
 		"description": {
 			"type": "string",
 			"source": "html",
-			"selector": ".wp-block-capitainewp-components__description"
+			"selector": ".wp-block-capitainewp-components__description",
+			"role": "content"
 		},
 		"hasTag": {
 			"type": "boolean",
@@ -30,7 +32,8 @@
 			"type": "string",
 			"source": "html",
 			"selector": ".wp-block-capitainewp-components__tag",
-			"default": "New"
+			"default": "New",
+			"role": "content"
 		},
 		"tagColor": {
 			"type": "string",

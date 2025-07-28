@@ -12,7 +12,8 @@
       "type": "string",
       "source": "html",
       "selector": "p",
-      "default": "<p>Hello world!</p>"
+      "default": "<p>Hello world!</p>",
+      "role": "content"
     }
   },
   "example": {

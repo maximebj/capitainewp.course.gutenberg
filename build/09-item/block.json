@@ -13,7 +13,8 @@
     "content": {
       "type": "string",
       "source": "html",
-      "selector": "p"
+      "selector": "p",
+      "role": "content"
     }
   },
   "example": {

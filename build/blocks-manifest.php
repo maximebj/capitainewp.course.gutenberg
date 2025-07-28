@@ -92,7 +92,8 @@ return array(
 				'type' => 'string',
 				'source' => 'html',
 				'selector' => 'p',
-				'default' => '<p>Hello world!</p>'
+				'default' => '<p>Hello world!</p>',
+				'role' => 'content'
 			)
 		),
 		'example' => array(
@@ -160,12 +161,14 @@ return array(
 			'title' => array(
 				'type' => 'string',
 				'source' => 'html',
-				'selector' => '.wp-block-capitainewp-inspector__title'
+				'selector' => '.wp-block-capitainewp-inspector__title',
+				'role' => 'content'
 			),
 			'description' => array(
 				'type' => 'string',
 				'source' => 'html',
-				'selector' => '.wp-block-capitainewp-inspector__description'
+				'selector' => '.wp-block-capitainewp-inspector__description',
+				'role' => 'content'
 			),
 			'hasTag' => array(
 				'type' => 'boolean',
@@ -175,7 +178,8 @@ return array(
 				'type' => 'string',
 				'source' => 'html',
 				'selector' => '.wp-block-capitainewp-inspector__tag',
-				'default' => 'New'
+				'default' => 'New',
+				'role' => 'content'
 			),
 			'tagColor' => array(
 				'type' => 'string',
@@ -269,12 +273,14 @@ return array(
 			'title' => array(
 				'type' => 'string',
 				'source' => 'html',
-				'selector' => '.wp-block-capitainewp-components__title'
+				'selector' => '.wp-block-capitainewp-components__title',
+				'role' => 'content'
 			),
 			'description' => array(
 				'type' => 'string',
 				'source' => 'html',
-				'selector' => '.wp-block-capitainewp-components__description'
+				'selector' => '.wp-block-capitainewp-components__description',
+				'role' => 'content'
 			),
 			'hasTag' => array(
 				'type' => 'boolean',
@@ -284,7 +290,8 @@ return array(
 				'type' => 'string',
 				'source' => 'html',
 				'selector' => '.wp-block-capitainewp-components__tag',
-				'default' => 'New'
+				'default' => 'New',
+				'role' => 'content'
 			),
 			'tagColor' => array(
 				'type' => 'string',
@@ -372,7 +379,8 @@ return array(
 			'content' => array(
 				'type' => 'string',
 				'source' => 'html',
-				'selector' => 'p'
+				'selector' => 'p',
+				'role' => 'content'
 			)
 		),
 		'example' => array(
@@ -530,7 +538,8 @@ return array(
 			'content' => array(
 				'type' => 'string',
 				'source' => 'html',
-				'selector' => 'p'
+				'selector' => 'p',
+				'role' => 'content'
 			),
 			'type' => array(
 				'type' => 'string',
