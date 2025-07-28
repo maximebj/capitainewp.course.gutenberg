@@ -27,15 +27,22 @@ export default function Edit(props) {
 
 	// Trouver et mettre à jour les ancres des titres
 	useEffect(() => {
-		// Extraire la liste des titres du contenu et construire la hiérarchie
+		// Extraire la liste des titres du contenu
 		const newHeadingsList = getHeadingsFromContent(blocks);
+
+		// Construire un tableau hiérarchique des titres
 		const newHeadingTree = buildHeadingHierarchy(newHeadingsList);
 
-		// Mettre à jour l'état uniquement si la nouvelle hiérarchie est différente de l'actuelle
-		if (JSON.stringify(newHeadingTree) !== JSON.stringify(headings)) {
-			updateHeadingsAnchors(newHeadingsList, updateBlockAttributes);
-			setAttributes({ headings: newHeadingTree });
+		// Comparer la nouvelle hiérarchie à l'ancienne
+		if (JSON.stringify(newHeadingTree) === JSON.stringify(headings)) {
+			return;
 		}
+
+		// Mettre à jour les ancres des blocs titres
+		updateHeadingsAnchors(newHeadingsList, updateBlockAttributes);
+
+		// Stocker en attribut la hiérarchie pour l'affichage en HTML
+		setAttributes({ headings: newHeadingTree });
 	}, [blocks]);
 
 	return (

@@ -5,11 +5,16 @@ export function getHeadingsFromContent(blocks) {
 	const headings = [];
 	blocks.map((block) => {
 		if (block.name === "core/heading" && block.attributes?.content.length > 0) {
+			const content =
+				typeof block.attributes.content === "string"
+					? block.attributes.content
+					: block.attributes.content.text;
+
 			headings.push({
 				clientId: block.clientId,
 				level: block.attributes.level,
-				content: block.attributes.content.text,
-				slug: cleanForSlug(block.attributes.content.text),
+				content: content,
+				slug: cleanForSlug(content),
 			});
 		}
 
@@ -24,12 +29,11 @@ export function buildHeadingHierarchy(headings) {
 	const hierarchy = [];
 	const levelMap = {};
 
-	headings.forEach((heading) => {
-		const { clientId, ...headingWithoutClientId } = heading;
+	headings.map((heading) => {
 		const { level } = heading;
 
 		// Ajouter le titre au niveau actuel
-		levelMap[level] = headingWithoutClientId;
+		levelMap[level] = heading;
 
 		// Si le titre n'est pas au niveau supérieur, trouver son parent
 		if (level > 2) {
@@ -43,11 +47,11 @@ export function buildHeadingHierarchy(headings) {
 				if (!parent.children) {
 					parent.children = [];
 				}
-				parent.children.push(headingWithoutClientId);
+				parent.children.push(heading);
 			}
 		} else {
 			// Titre au niveau supérieur, ajouter à la hiérarchie
-			hierarchy.push(headingWithoutClientId);
+			hierarchy.push(heading);
 		}
 	});
 
@@ -57,8 +61,9 @@ export function buildHeadingHierarchy(headings) {
 // 3. Mettre à jour les ancres des blocs de titre avec le slug du titre
 export function updateHeadingsAnchors(headings, updateBlockAttributes) {
 	headings.map((block) => {
-		updateBlockAttributes(block.clientId, {
-			anchor: block.slug,
+		const { clientId, slug } = block;
+		updateBlockAttributes(clientId, {
+			anchor: slug,
 		});
 	});
 }

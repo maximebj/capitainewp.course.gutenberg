@@ -65,17 +65,24 @@ function Edit(props) {
 
   // Trouver et mettre à jour les ancres des titres
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {
-    // Extraire la liste des titres du contenu et construire la hiérarchie
+    // Extraire la liste des titres du contenu
     const newHeadingsList = (0,_utils__WEBPACK_IMPORTED_MODULE_3__.getHeadingsFromContent)(blocks);
+
+    // Construire un tableau hiérarchique des titres
     const newHeadingTree = (0,_utils__WEBPACK_IMPORTED_MODULE_3__.buildHeadingHierarchy)(newHeadingsList);
 
-    // Mettre à jour l'état uniquement si la nouvelle hiérarchie est différente de l'actuelle
-    if (JSON.stringify(newHeadingTree) !== JSON.stringify(headings)) {
-      (0,_utils__WEBPACK_IMPORTED_MODULE_3__.updateHeadingsAnchors)(newHeadingsList, updateBlockAttributes);
-      setAttributes({
-        headings: newHeadingTree
-      });
+    // Comparer la nouvelle hiérarchie à l'ancienne
+    if (JSON.stringify(newHeadingTree) === JSON.stringify(headings)) {
+      return;
     }
+
+    // Mettre à jour les ancres des blocs titres
+    (0,_utils__WEBPACK_IMPORTED_MODULE_3__.updateHeadingsAnchors)(newHeadingsList, updateBlockAttributes);
+
+    // Stocker en attribut la hiérarchie pour l'affichage en HTML
+    setAttributes({
+      headings: newHeadingTree
+    });
   }, [blocks]);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_toolbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -341,11 +348,12 @@ function getHeadingsFromContent(blocks) {
   const headings = [];
   blocks.map(block => {
     if (block.name === "core/heading" && block.attributes?.content.length > 0) {
+      const content = typeof block.attributes.content === "string" ? block.attributes.content : block.attributes.content.text;
       headings.push({
         clientId: block.clientId,
         level: block.attributes.level,
-        content: block.attributes.content.text,
-        slug: (0,_wordpress_url__WEBPACK_IMPORTED_MODULE_0__.cleanForSlug)(block.attributes.content.text)
+        content: content,
+        slug: (0,_wordpress_url__WEBPACK_IMPORTED_MODULE_0__.cleanForSlug)(content)
       });
     }
 
@@ -359,17 +367,13 @@ function getHeadingsFromContent(blocks) {
 function buildHeadingHierarchy(headings) {
   const hierarchy = [];
   const levelMap = {};
-  headings.forEach(heading => {
-    const {
-      clientId,
-      ...headingWithoutClientId
-    } = heading;
+  headings.map(heading => {
     const {
       level
     } = heading;
 
     // Ajouter le titre au niveau actuel
-    levelMap[level] = headingWithoutClientId;
+    levelMap[level] = heading;
 
     // Si le titre n'est pas au niveau supérieur, trouver son parent
     if (level > 2) {
@@ -382,11 +386,11 @@ function buildHeadingHierarchy(headings) {
         if (!parent.children) {
           parent.children = [];
         }
-        parent.children.push(headingWithoutClientId);
+        parent.children.push(heading);
       }
     } else {
       // Titre au niveau supérieur, ajouter à la hiérarchie
-      hierarchy.push(headingWithoutClientId);
+      hierarchy.push(heading);
     }
   });
   return hierarchy;
@@ -395,8 +399,12 @@ function buildHeadingHierarchy(headings) {
 // 3. Mettre à jour les ancres des blocs de titre avec le slug du titre
 function updateHeadingsAnchors(headings, updateBlockAttributes) {
   headings.map(block => {
-    updateBlockAttributes(block.clientId, {
-      anchor: block.slug
+    const {
+      clientId,
+      slug
+    } = block;
+    updateBlockAttributes(clientId, {
+      anchor: slug
     });
   });
 }
