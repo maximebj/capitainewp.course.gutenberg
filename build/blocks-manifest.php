@@ -680,8 +680,7 @@ return array(
 				'type' => 'array',
 				'default' => array(
 					
-				),
-				'role' => 'local'
+				)
 			),
 			'ordered' => array(
 				'type' => 'boolean',
