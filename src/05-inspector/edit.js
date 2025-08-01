@@ -15,6 +15,8 @@ import { __ } from "@wordpress/i18n";
 
 import "./editor.scss";
 
+const allowedEmojis = ["😃", "♥️", "✅", "⚠️", "🚀"];
+
 export default function Edit(props) {
 	const { attributes, setAttributes } = props;
 	const {
@@ -27,8 +29,6 @@ export default function Edit(props) {
 		tagTextColor,
 		tagRadius,
 	} = attributes;
-
-	const allowedEmojis = ["😃", "♥️", "✅", "⚠️", "🚀"];
 
 	return (
 		<>
