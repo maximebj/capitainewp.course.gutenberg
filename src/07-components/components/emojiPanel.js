@@ -5,9 +5,9 @@ import {
 } from "@wordpress/components";
 import { __ } from "@wordpress/i18n";
 
-export default function EmojiPanel({ emoji, setAttributes }) {
-	const allowedEmojis = ["😃", "♥️", "✅", "⚠️", "🚀"];
+const allowedEmojis = ["😃", "♥️", "✅", "⚠️", "🚀"];
 
+export default function EmojiPanel({ emoji, setAttributes }) {
 	return (
 		<PanelBody title={__("Emoji", "capitainewp-gut-bases")}>
 			<ToggleGroupControl
