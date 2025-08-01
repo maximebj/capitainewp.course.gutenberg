@@ -33,16 +33,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function Edit() {
-  // Liste des blocs autorisés
-  const ALLOWED_BLOCKS = ["core/image", "core/heading", "core/paragraph"];
+// Liste des blocs autorisés
 
-  // Template par défaut
-  const BASE_TEMPLATE = [["core/image", {}], ["core/heading", {
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Your title here", "capitainewp-blocks")
-  }], ["core/paragraph", {
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Your content here", "capitainewp-blocks")
-  }]];
+const ALLOWED_BLOCKS = ["core/image", "core/heading", "core/paragraph"];
+
+// Template par défaut
+const BASE_TEMPLATE = [["core/image", {}], ["core/heading", {
+  placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Your title here", "capitainewp-blocks")
+}], ["core/paragraph", {
+  placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Your content here", "capitainewp-blocks")
+}]];
+function Edit() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)(),
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InnerBlocks, {
