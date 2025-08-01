@@ -36,6 +36,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const options = [{
+  type: "advice",
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Advice", "capitainewp-blocks"),
+  icon: "yes-alt"
+}, {
+  type: "warning",
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Warning", "capitainewp-blocks"),
+  icon: "warning"
+}, {
+  type: "avoid",
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Avoid", "capitainewp-blocks"),
+  icon: "dismiss"
+}, {
+  type: "info",
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Information", "capitainewp-blocks"),
+  icon: "info"
+}];
 function Edit(props) {
   const {
     attributes,
@@ -45,23 +62,6 @@ function Edit(props) {
     content,
     type
   } = attributes;
-  const options = [{
-    type: "advice",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Advice", "capitainewp-blocks"),
-    icon: "yes-alt"
-  }, {
-    type: "warning",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Warning", "capitainewp-blocks"),
-    icon: "warning"
-  }, {
-    type: "avoid",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Avoid", "capitainewp-blocks"),
-    icon: "dismiss"
-  }, {
-    type: "info",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Information", "capitainewp-blocks"),
-    icon: "info"
-  }];
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)({
     className: `is-type-${type}`
   });

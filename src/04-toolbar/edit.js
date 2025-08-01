@@ -8,32 +8,32 @@ import { __ } from "@wordpress/i18n";
 
 import "./editor.scss";
 
+const options = [
+	{
+		type: "advice",
+		label: __("Advice", "capitainewp-blocks"),
+		icon: "yes-alt",
+	},
+	{
+		type: "warning",
+		label: __("Warning", "capitainewp-blocks"),
+		icon: "warning",
+	},
+	{
+		type: "avoid",
+		label: __("Avoid", "capitainewp-blocks"),
+		icon: "dismiss",
+	},
+	{
+		type: "info",
+		label: __("Information", "capitainewp-blocks"),
+		icon: "info",
+	},
+];
+
 export default function Edit(props) {
 	const { attributes, setAttributes } = props;
 	const { content, type } = attributes;
-
-	const options = [
-		{
-			type: "advice",
-			label: __("Advice", "capitainewp-blocks"),
-			icon: "yes-alt",
-		},
-		{
-			type: "warning",
-			label: __("Warning", "capitainewp-blocks"),
-			icon: "warning",
-		},
-		{
-			type: "avoid",
-			label: __("Avoid", "capitainewp-blocks"),
-			icon: "dismiss",
-		},
-		{
-			type: "info",
-			label: __("Information", "capitainewp-blocks"),
-			icon: "info",
-		},
-	];
 
 	const blockProps = useBlockProps({ className: `is-type-${type}` });
 
