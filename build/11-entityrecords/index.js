@@ -31,7 +31,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_core_data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/core-data */ "@wordpress/core-data");
 /* harmony import */ var _wordpress_core_data__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_core_data__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _shared_loading__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../shared/loading */ "./src/shared/loading.js");
-/* harmony import */ var _posts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./posts */ "./src/11-entityrecords/posts.js");
+/* harmony import */ var _postlist__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./postlist */ "./src/11-entityrecords/postlist.js");
 /* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./editor.scss */ "./src/11-entityrecords/editor.scss");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__);
@@ -67,7 +67,7 @@ function Edit(props) {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_shared_loading__WEBPACK_IMPORTED_MODULE_4__["default"], {
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Loading posts…", "capitainewp-blocks"),
         show: !hasResolved
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_posts__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_postlist__WEBPACK_IMPORTED_MODULE_5__["default"], {
         posts: records
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
@@ -126,10 +126,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/11-entityrecords/posts.js":
-/*!***************************************!*\
-  !*** ./src/11-entityrecords/posts.js ***!
-  \***************************************/
+/***/ "./src/11-entityrecords/postlist.js":
+/*!******************************************!*\
+  !*** ./src/11-entityrecords/postlist.js ***!
+  \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);

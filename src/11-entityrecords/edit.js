@@ -4,7 +4,7 @@ import { PanelBody, RangeControl } from "@wordpress/components";
 import { useEntityRecords } from "@wordpress/core-data";
 
 import Loading from "../shared/loading";
-import PostList from "./posts";
+import PostList from "./postlist";
 
 import "./editor.scss";
 
