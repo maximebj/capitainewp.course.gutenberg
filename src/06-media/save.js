@@ -13,7 +13,7 @@ export default function save(props) {
 			<img
 				src={pictureURL}
 				alt={pictureAlt}
-				// className={`wp-image-${pictureID}`}
+				className={`wp-image-${pictureID}`}
 			/>
 		</figure>
 	);

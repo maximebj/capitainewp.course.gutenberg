@@ -55,13 +55,13 @@ function Edit(props) {
 
   // Récupérer tous les blocs de l'éditeur
   const blocks = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.useSelect)(select => {
-    return select("core/block-editor").getBlocks();
+    return select(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.store).getBlocks();
   });
 
   // Mettre à jour les attributs d'autres blocs
   const {
     updateBlockAttributes
-  } = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.useDispatch)("core/block-editor");
+  } = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.useDispatch)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.store);
 
   // Trouver et mettre à jour les ancres des titres
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {

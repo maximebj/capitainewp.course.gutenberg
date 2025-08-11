@@ -1,4 +1,8 @@
-import { useBlockProps, RichText } from "@wordpress/block-editor";
+import {
+	store as blockEditorStore,
+	useBlockProps,
+	RichText,
+} from "@wordpress/block-editor";
 import { useSelect, useDispatch } from "@wordpress/data";
 import { Fragment, useEffect } from "@wordpress/element";
 
@@ -19,11 +23,11 @@ export default function Edit(props) {
 
 	// Récupérer tous les blocs de l'éditeur
 	const blocks = useSelect((select) => {
-		return select("core/block-editor").getBlocks();
+		return select(blockEditorStore).getBlocks();
 	});
 
 	// Mettre à jour les attributs d'autres blocs
-	const { updateBlockAttributes } = useDispatch("core/block-editor");
+	const { updateBlockAttributes } = useDispatch(blockEditorStore);
 
 	// Trouver et mettre à jour les ancres des titres
 	useEffect(() => {

@@ -371,6 +371,7 @@ return array(
 		'version' => '1.0',
 		'title' => 'Enfant du répéteur',
 		'icon' => 'yes-alt',
+		'category' => 'capitainewp',
 		'parent' => array(
 			'capitainewp/repeater'
 		),
