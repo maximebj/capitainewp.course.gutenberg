@@ -113,7 +113,7 @@ function EmojiPanel({
   setAttributes
 }) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Emoji", "capitainewp-gut-bases"),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Emoji", "capitainewp-blocks"),
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalToggleGroupControl, {
       onChange: emoji => setAttributes({
         emoji
@@ -213,19 +213,19 @@ function tagColorPanel({
     return null;
   }
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.PanelColorSettings, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Tag colors", "capitainewp-gut-bases"),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Tag colors", "capitainewp-blocks"),
     colorSettings: [{
       value: tagColor,
       onChange: tagColor => setAttributes({
         tagColor
       }),
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Tag color", "capitainewp-gut-bases")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Tag color", "capitainewp-blocks")
     }, {
       value: tagTextColor,
       onChange: tagTextColor => setAttributes({
         tagTextColor
       }),
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Tag text color", "capitainewp-gut-bases")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Tag text color", "capitainewp-blocks")
     }]
   });
 }
@@ -257,15 +257,15 @@ function TagPanel({
   tagRadius
 }) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Tag", "capitainewp-gut-bases"),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Tag", "capitainewp-blocks"),
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.ToggleControl, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Show tag", "capitainewp-gut-bases"),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Show tag", "capitainewp-blocks"),
       checked: hasTag,
       onChange: () => setAttributes({
         hasTag: !hasTag
       })
     }), hasTag && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.RangeControl, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Radius", "capitainewp-gut-bases"),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Radius", "capitainewp-blocks"),
       value: tagRadius,
       onChange: tagRadius => setAttributes({
         tagRadius

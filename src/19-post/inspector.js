@@ -10,30 +10,30 @@ export default function Inspector(props) {
 
 	return (
 		<InspectorControls>
-			<PanelBody title={__("Choose a post", "capitainewp-gut-bases")}>
+			<PanelBody title={__("Choose a post", "capitainewp-blocks")}>
 				<SearchPost
 					onChange={(postID) => setAttributes({ postID })}
 					postType="posts"
-					placeholder={__("Search post", "capitainewp-gut-bases")}
+					placeholder={__("Search post", "capitainewp-blocks")}
 				/>
 			</PanelBody>
 
 			{postID && (
-				<PanelBody title={__("Customize", "capitainewp-gut-bases")}>
+				<PanelBody title={__("Customize", "capitainewp-blocks")}>
 					<ToggleControl
-						label={__("Show Image?", "capitainewp-gut-bases")}
+						label={__("Show Image?", "capitainewp-blocks")}
 						checked={showImage}
 						onChange={() => setAttributes({ showImage: !showImage })}
 					/>
 
 					<ToggleControl
-						label={__("Show Author?", "capitainewp-gut-bases")}
+						label={__("Show Author?", "capitainewp-blocks")}
 						checked={showAuthor}
 						onChange={() => setAttributes({ showAuthor: !showAuthor })}
 					/>
 
 					<ToggleControl
-						label={__("Show Category?", "capitainewp-gut-bases")}
+						label={__("Show Category?", "capitainewp-blocks")}
 						checked={showCategory}
 						onChange={() => setAttributes({ showCategory: !showCategory })}
 					/>

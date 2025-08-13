@@ -722,7 +722,7 @@ return array(
 		'supports' => array(
 			'html' => false
 		),
-		'textdomain' => 'capitainewp-gut-bases',
+		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
@@ -750,6 +750,7 @@ return array(
 		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
-		'style' => 'file:./style-index.css'
+		'style' => 'file:./style-index.css',
+		'render' => 'file:./render.php'
 	)
 );

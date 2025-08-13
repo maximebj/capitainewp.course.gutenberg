@@ -27,7 +27,7 @@
 	"supports": {
 		"html": false
 	},
-	"textdomain": "capitainewp-gut-bases",
+	"textdomain": "capitainewp-blocks",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",

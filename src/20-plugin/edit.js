@@ -1,31 +1,31 @@
-import { __ } from "@wordpress/i18n";
 import { useBlockProps } from "@wordpress/block-editor";
 import { Placeholder } from "@wordpress/components";
+import { __ } from "@wordpress/i18n";
 
-import Block from "./block";
 import Inspector from "./inspector";
+import Block from "./block";
 
 import "./editor.scss";
 
 export default function Edit(props) {
 	const { attributes, setAttributes } = props;
-	const { postID } = attributes;
+	const { slug } = attributes;
 
 	const blockProps = useBlockProps();
 
 	return (
 		<>
-			<Inspector {...{ attributes, setAttributes }} />
+			<Inspector {...{ setAttributes }} />
 
 			<div {...blockProps}>
-				{postID ? (
-					<Block {...attributes} />
+				{slug ? (
+					<Block slug={slug} />
 				) : (
 					<Placeholder
 						icon="search"
-						label={__("Select a post", "capitainewp-blocks")}
+						label={__("Select a plugin", "capitainewp-blocks")}
 						instructions={__(
-							"Search for a post in the inspector",
+							"Search for a plugin in the inspector",
 							"capitainewp-blocks",
 						)}
 					/>

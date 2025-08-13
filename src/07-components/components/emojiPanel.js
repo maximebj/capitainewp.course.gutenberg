@@ -9,7 +9,7 @@ const allowedEmojis = ["😃", "♥️", "✅", "⚠️", "🚀"];
 
 export default function EmojiPanel({ emoji, setAttributes }) {
 	return (
-		<PanelBody title={__("Emoji", "capitainewp-gut-bases")}>
+		<PanelBody title={__("Emoji", "capitainewp-blocks")}>
 			<ToggleGroupControl
 				onChange={(emoji) => setAttributes({ emoji })}
 				value={emoji}

@@ -3,16 +3,16 @@ import { __ } from "@wordpress/i18n";
 
 export default function TagPanel({ hasTag, setAttributes, tagRadius }) {
 	return (
-		<PanelBody title={__("Tag", "capitainewp-gut-bases")}>
+		<PanelBody title={__("Tag", "capitainewp-blocks")}>
 			<ToggleControl
-				label={__("Show tag", "capitainewp-gut-bases")}
+				label={__("Show tag", "capitainewp-blocks")}
 				checked={hasTag}
 				onChange={() => setAttributes({ hasTag: !hasTag })}
 			/>
 
 			{hasTag && (
 				<RangeControl
-					label={__("Radius", "capitainewp-gut-bases")}
+					label={__("Radius", "capitainewp-blocks")}
 					value={tagRadius}
 					onChange={(tagRadius) => setAttributes({ tagRadius })}
 					min={0}

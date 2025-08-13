@@ -50,7 +50,7 @@ export default function Edit(props) {
 	}, [blocks]);
 
 	return (
-		<Fragment>
+		<>
 			<Toolbar {...{ attributes, setAttributes }} />
 
 			<div {...useBlockProps()}>
@@ -89,6 +89,6 @@ export default function Edit(props) {
 					className="wp-block-capitainewp-table-of-contents__list"
 				/>
 			</div>
-		</Fragment>
+		</>
 	);
 }

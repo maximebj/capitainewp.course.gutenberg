@@ -14,17 +14,17 @@ export default function tagColorPanel({
 
 	return (
 		<PanelColorSettings
-			title={__("Tag colors", "capitainewp-gut-bases")}
+			title={__("Tag colors", "capitainewp-blocks")}
 			colorSettings={[
 				{
 					value: tagColor,
 					onChange: (tagColor) => setAttributes({ tagColor }),
-					label: __("Tag color", "capitainewp-gut-bases"),
+					label: __("Tag color", "capitainewp-blocks"),
 				},
 				{
 					value: tagTextColor,
 					onChange: (tagTextColor) => setAttributes({ tagTextColor }),
-					label: __("Tag text color", "capitainewp-gut-bases"),
+					label: __("Tag text color", "capitainewp-blocks"),
 				},
 			]}
 		/>

@@ -1,6 +1,5 @@
 import apiFetch from "@wordpress/api-fetch";
 import { __ } from "@wordpress/i18n";
-import { Fragment } from "@wordpress/element";
 import { TextControl } from "@wordpress/components";
 import { debounce } from "throttle-debounce";
 import { useState } from "react";
@@ -23,7 +22,7 @@ export default function SearchPost(props) {
 			path: `/wp/v2/${postType}/?search=${encodeURI(search)}&per_page=20`,
 		}).then((posts) => {
 			if (posts.length == 0) {
-				posts = __("Aucun résultat", "capitainewp-gut-bases");
+				posts = __("Aucun résultat", "capitainewp-blocks");
 			}
 			setResults(posts);
 			setIsLoading(false);
@@ -31,7 +30,7 @@ export default function SearchPost(props) {
 	});
 
 	return (
-		<Fragment>
+		<>
 			<TextControl
 				type="search"
 				placeholder={placeholder}
@@ -50,8 +49,8 @@ export default function SearchPost(props) {
 						})}
 					</ul>
 				)}
-				{isLoading && <p>{__("Chargement…", "capitainewp-gut-bases")}</p>}
+				{isLoading && <p>{__("Chargement…", "capitainewp-blocks")}</p>}
 			</div>
-		</Fragment>
+		</>
 	);
 }

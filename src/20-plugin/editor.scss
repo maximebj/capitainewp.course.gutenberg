@@ -1,0 +1,20 @@
+.wp-block-capitainewp-plugin {
+	.wp-block-capitainewp-plugin__rating,
+	.wp-block-capitainewp-plugin__active {
+		margin: 0;
+		font-size: 16px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	a.wp-block-capitainewp-plugin__button {
+		color: white;
+		font-size: 16px;
+	}
+
+	.wp-block-capitainewp-plugin__stars {
+		color: rgb(245, 188, 65);
+	}
+}

@@ -19,7 +19,7 @@ export default function Block(props) {
 	if (!hasResolved) {
 		return (
 			<Placeholder>
-				<Spinner /> {__("Loading…", "capitainewp-gut-bases")}
+				<Spinner /> {__("Loading…", "capitainewp-blocks")}
 			</Placeholder>
 		);
 	}
@@ -44,7 +44,7 @@ export default function Block(props) {
 						{post.categories.length > 0 && showCategory && (
 							<span>
 								{" "}
-								{__("In", "capitainewp-gut-bases") +
+								{__("In", "capitainewp-blocks") +
 									" " +
 									post._embedded["wp:term"][0][0]?.name}{" "}
 							</span>
@@ -52,8 +52,7 @@ export default function Block(props) {
 						{post.author && showAuthor && (
 							<span>
 								{" "}
-								{__("By", "capitainewp-gut-bases")}{" "}
-								{post._embedded.author[0].name}
+								{__("By", "capitainewp-blocks")} {post._embedded.author[0].name}
 							</span>
 						)}
 					</em>
@@ -66,7 +65,7 @@ export default function Block(props) {
 				/>
 				<p className="wp-block-capitainewp-post__actions">
 					<a className="wp-block-capitainewp-post__button">
-						{__("Read more", "capitainewp-gut-bases")}
+						{__("Read more", "capitainewp-blocks")}
 					</a>
 				</p>
 			</div>
