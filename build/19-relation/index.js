@@ -179,10 +179,10 @@ function debounce (delay, callback, options) {
 
 /***/ }),
 
-/***/ "./src/19-post/block.js":
-/*!******************************!*\
-  !*** ./src/19-post/block.js ***!
-  \******************************/
+/***/ "./src/19-relation/block.js":
+/*!**********************************!*\
+  !*** ./src/19-relation/block.js ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -270,20 +270,20 @@ function Block(props) {
 
 /***/ }),
 
-/***/ "./src/19-post/block.json":
-/*!********************************!*\
-  !*** ./src/19-post/block.json ***!
-  \********************************/
+/***/ "./src/19-relation/block.json":
+/*!************************************!*\
+  !*** ./src/19-relation/block.json ***!
+  \************************************/
 /***/ ((module) => {
 
 module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"capitainewp/post","version":"1.0","title":"Single Post","icon":"sticky","category":"capitainewp","description":"Afficher un article selectionné","attributes":{"postID":{"type":"integer"},"showCategory":{"type":"boolean","default":true},"showAuthor":{"type":"boolean","default":true},"showImage":{"type":"boolean","default":true}},"supports":{"html":false},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ }),
 
-/***/ "./src/19-post/edit.js":
-/*!*****************************!*\
-  !*** ./src/19-post/edit.js ***!
-  \*****************************/
+/***/ "./src/19-relation/edit.js":
+/*!*********************************!*\
+  !*** ./src/19-relation/edit.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -296,9 +296,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _block__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block */ "./src/19-post/block.js");
-/* harmony import */ var _inspector__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./inspector */ "./src/19-post/inspector.js");
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./editor.scss */ "./src/19-post/editor.scss");
+/* harmony import */ var _block__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block */ "./src/19-relation/block.js");
+/* harmony import */ var _inspector__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./inspector */ "./src/19-relation/inspector.js");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./editor.scss */ "./src/19-relation/editor.scss");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
 
@@ -336,10 +336,10 @@ function Edit(props) {
 
 /***/ }),
 
-/***/ "./src/19-post/editor.scss":
-/*!*********************************!*\
-  !*** ./src/19-post/editor.scss ***!
-  \*********************************/
+/***/ "./src/19-relation/editor.scss":
+/*!*************************************!*\
+  !*** ./src/19-relation/editor.scss ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -348,10 +348,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/19-post/index.js":
-/*!******************************!*\
-  !*** ./src/19-post/index.js ***!
-  \******************************/
+/***/ "./src/19-relation/index.js":
+/*!**********************************!*\
+  !*** ./src/19-relation/index.js ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -360,10 +360,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/19-post/style.scss");
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./block.json */ "./src/19-post/block.json");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./edit */ "./src/19-post/edit.js");
-/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./save */ "./src/19-post/save.js");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/19-relation/style.scss");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./block.json */ "./src/19-relation/block.json");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./edit */ "./src/19-relation/edit.js");
+/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./save */ "./src/19-relation/save.js");
 
 
 
@@ -376,10 +376,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/19-post/inspector.js":
-/*!**********************************!*\
-  !*** ./src/19-post/inspector.js ***!
-  \**********************************/
+/***/ "./src/19-relation/inspector.js":
+/*!**************************************!*\
+  !*** ./src/19-relation/inspector.js ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -392,7 +392,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blockEditor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blockEditor__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _search_post__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./search-post */ "./src/19-post/search-post.js");
+/* harmony import */ var _search_post__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./search-post */ "./src/19-relation/search-post.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
 
@@ -448,10 +448,10 @@ function Inspector(props) {
 
 /***/ }),
 
-/***/ "./src/19-post/save.js":
-/*!*****************************!*\
-  !*** ./src/19-post/save.js ***!
-  \*****************************/
+/***/ "./src/19-relation/save.js":
+/*!*********************************!*\
+  !*** ./src/19-relation/save.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -464,10 +464,10 @@ function save() {
 
 /***/ }),
 
-/***/ "./src/19-post/search-post.js":
-/*!************************************!*\
-  !*** ./src/19-post/search-post.js ***!
-  \************************************/
+/***/ "./src/19-relation/search-post.js":
+/*!****************************************!*\
+  !*** ./src/19-relation/search-post.js ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -483,7 +483,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var throttle_debounce__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! throttle-debounce */ "./node_modules/throttle-debounce/esm/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./style.scss */ "./src/19-post/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./style.scss */ "./src/19-relation/style.scss");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
 
@@ -539,10 +539,10 @@ function SearchPost(props) {
 
 /***/ }),
 
-/***/ "./src/19-post/style.scss":
-/*!********************************!*\
-  !*** ./src/19-post/style.scss ***!
-  \********************************/
+/***/ "./src/19-relation/style.scss":
+/*!************************************!*\
+  !*** ./src/19-relation/style.scss ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -741,8 +741,8 @@ module.exports = window["ReactJSXRuntime"];
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"19-post/index": 0,
-/******/ 			"19-post/style-index": 0
+/******/ 			"19-relation/index": 0,
+/******/ 			"19-relation/style-index": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -792,7 +792,7 @@ module.exports = window["ReactJSXRuntime"];
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["19-post/style-index"], () => (__webpack_require__("./src/19-post/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["19-relation/style-index"], () => (__webpack_require__("./src/19-relation/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

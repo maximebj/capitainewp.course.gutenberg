@@ -1,6 +1,6 @@
-/*!***********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/19-post/style.scss ***!
-  \***********************************************************************************************************************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/19-relation/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
 @charset "UTF-8";
 .wp-block-capitainewp-post {
   display: flex;
@@ -14,7 +14,7 @@
 .wp-block-capitainewp-post__image {
   flex: 1;
   text-decoration: none;
-  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
   background-size: cover;
   background-position: center;
 }
@@ -70,3 +70,5 @@
   color: white;
   background-color: rgb(93.5, 93.5, 93.5);
 }
+
+/*# sourceMappingURL=style-index.css.map*/

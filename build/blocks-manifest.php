@@ -693,7 +693,7 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
-	'19-post' => array(
+	'19-relation' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 2,
 		'name' => 'capitainewp/post',
