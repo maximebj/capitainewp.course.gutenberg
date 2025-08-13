@@ -692,5 +692,64 @@ return array(
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
+	),
+	'19-post' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 2,
+		'name' => 'capitainewp/post',
+		'version' => '1.0',
+		'title' => 'Single Post',
+		'icon' => 'sticky',
+		'category' => 'capitainewp',
+		'description' => 'Afficher un article selectionné',
+		'attributes' => array(
+			'postID' => array(
+				'type' => 'integer'
+			),
+			'showCategory' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'showAuthor' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'showImage' => array(
+				'type' => 'boolean',
+				'default' => true
+			)
+		),
+		'supports' => array(
+			'html' => false
+		),
+		'textdomain' => 'capitainewp-gut-bases',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'render' => 'file:./render.php'
+	),
+	'20-plugin' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 2,
+		'name' => 'capitainewp/plugin',
+		'version' => '1.0',
+		'title' => 'Plugin',
+		'category' => 'capitainewp',
+		'icon' => 'admin-plugins',
+		'description' => 'Présentation d\'une extension du répertoire de plugins WordPress.org.',
+		'attributes' => array(
+			'slug' => array(
+				'type' => 'string',
+				'default' => false
+			)
+		),
+		'supports' => array(
+			'html' => false,
+			'align' => true
+		),
+		'textdomain' => 'capitainewp-blocks',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
 	)
 );
