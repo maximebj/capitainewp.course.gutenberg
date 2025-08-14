@@ -4,10 +4,8 @@ import { TextControl } from "@wordpress/components";
 import { debounce } from "throttle-debounce";
 import { useState } from "react";
 
-import "./style.scss";
-
 export default function SearchPost(props) {
-	const { postType, placeholder, onChange } = props;
+	const { postType, placeholder, onChange, resultsNumber = 20 } = props;
 	const [results, setResults] = useState(null);
 	const [isLoading, setIsLoading] = useState(false);
 
@@ -19,11 +17,10 @@ export default function SearchPost(props) {
 		setIsLoading(true);
 
 		apiFetch({
-			path: `/wp/v2/${postType}/?search=${encodeURI(search)}&per_page=20`,
+			path: `/wp/v2/${postType}/?search=${encodeURI(
+				search,
+			)}&per_page=${resultsNumber}`,
 		}).then((posts) => {
-			if (posts.length == 0) {
-				posts = __("Aucun résultat", "capitainewp-blocks");
-			}
 			setResults(posts);
 			setIsLoading(false);
 		});
@@ -38,7 +35,11 @@ export default function SearchPost(props) {
 			/>
 
 			<div className="capitainewp-results">
-				{results && Array.isArray(results) && (
+				{isLoading && <p>{__("Loading…", "capitainewp-blocks")}</p>}
+				{results?.length === 0 && (
+					<p>{__("No results", "capitainewp-blocks")}</p>
+				)}
+				{results?.length && (
 					<ul>
 						{results.map((result) => {
 							return (
@@ -49,7 +50,6 @@ export default function SearchPost(props) {
 						})}
 					</ul>
 				)}
-				{isLoading && <p>{__("Chargement…", "capitainewp-blocks")}</p>}
 			</div>
 		</>
 	);

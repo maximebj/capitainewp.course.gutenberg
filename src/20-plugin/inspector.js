@@ -1,5 +1,6 @@
 import { InspectorControls } from "@wordpress/block-editor";
 import { PanelBody } from "@wordpress/components";
+import { __ } from "@wordpress/i18n";
 
 import SearchPlugin from "./search-plugin";
 
@@ -8,7 +9,7 @@ export default function Inspector(props) {
 
 	return (
 		<InspectorControls>
-			<PanelBody title="Sélection de l’extension">
+			<PanelBody title={__("Select a plugin", "capitainewp-blocks")}>
 				<SearchPlugin
 					onChange={(plugin) => setAttributes({ slug: plugin.slug })}
 				/>

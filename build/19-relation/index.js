@@ -276,7 +276,7 @@ function Block(props) {
   \************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"capitainewp/post","version":"1.0","title":"Single Post","icon":"sticky","category":"capitainewp","description":"Afficher un article selectionné","attributes":{"postID":{"type":"integer"},"showCategory":{"type":"boolean","default":true},"showAuthor":{"type":"boolean","default":true},"showImage":{"type":"boolean","default":true}},"supports":{"html":false},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"capitainewp/post","version":"1.0","title":"Relation","icon":"sticky","category":"capitainewp","description":"Afficher un article selectionné","attributes":{"postID":{"type":"integer"},"showCategory":{"type":"boolean","default":true},"showAuthor":{"type":"boolean","default":true},"showImage":{"type":"boolean","default":true}},"supports":{"align":["wide","full"],"html":false},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ }),
 
@@ -392,7 +392,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blockEditor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blockEditor__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _search_post__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./search-post */ "./src/19-relation/search-post.js");
+/* harmony import */ var _shared_search_post__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/search-post */ "./src/shared/search-post.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
 
@@ -414,11 +414,12 @@ function Inspector(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_blockEditor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
       title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Choose a post", "capitainewp-blocks"),
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_search_post__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_shared_search_post__WEBPACK_IMPORTED_MODULE_3__["default"], {
         onChange: postID => setAttributes({
           postID
         }),
         postType: "posts",
+        resultsNumber: 20,
         placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Search post", "capitainewp-blocks")
       })
     }), postID && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
@@ -464,10 +465,22 @@ function save() {
 
 /***/ }),
 
-/***/ "./src/19-relation/search-post.js":
-/*!****************************************!*\
-  !*** ./src/19-relation/search-post.js ***!
-  \****************************************/
+/***/ "./src/19-relation/style.scss":
+/*!************************************!*\
+  !*** ./src/19-relation/style.scss ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/shared/search-post.js":
+/*!***********************************!*\
+  !*** ./src/shared/search-post.js ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -483,10 +496,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var throttle_debounce__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! throttle-debounce */ "./node_modules/throttle-debounce/esm/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./style.scss */ "./src/19-relation/style.scss");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
-
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
@@ -497,7 +508,8 @@ function SearchPost(props) {
   const {
     postType,
     placeholder,
-    onChange
+    onChange,
+    resultsNumber = 20
   } = props;
   const [results, setResults] = (0,react__WEBPACK_IMPORTED_MODULE_4__.useState)(null);
   const [isLoading, setIsLoading] = (0,react__WEBPACK_IMPORTED_MODULE_4__.useState)(false);
@@ -507,47 +519,34 @@ function SearchPost(props) {
     }
     setIsLoading(true);
     _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_0___default()({
-      path: `/wp/v2/${postType}/?search=${encodeURI(search)}&per_page=20`
+      path: `/wp/v2/${postType}/?search=${encodeURI(search)}&per_page=${resultsNumber}`
     }).then(posts => {
-      if (posts.length == 0) {
-        posts = (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Aucun résultat", "capitainewp-blocks");
-      }
       setResults(posts);
       setIsLoading(false);
     });
   });
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
       type: "search",
       placeholder: placeholder,
       onChange: value => search(value)
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
       className: "capitainewp-results",
-      children: [results && Array.isArray(results) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("ul", {
+      children: [isLoading && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+        children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Loading…", "capitainewp-blocks")
+      }), results?.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+        children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("No results", "capitainewp-blocks")
+      }), results?.length && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("ul", {
         children: results.map(result => {
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("li", {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
             onClick: () => onChange(result.id),
             children: result.title.rendered
           }, result.id);
         })
-      }), isLoading && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
-        children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Chargement…", "capitainewp-blocks")
       })]
     })]
   });
 }
-
-/***/ }),
-
-/***/ "./src/19-relation/style.scss":
-/*!************************************!*\
-  !*** ./src/19-relation/style.scss ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
 
 /***/ }),
 

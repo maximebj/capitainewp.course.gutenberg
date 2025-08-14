@@ -1,5 +1,6 @@
 <?php
 
+# WP Query pour récupérer la publication
 $args = [
   'p' => $attributes['postID'],
 ];
@@ -33,7 +34,7 @@ if ($query->have_posts()):
     }
 
 ?>
-    <div class="wp-block-capitainewp-post">
+    <div <?php echo get_block_wrapper_attributes(); ?>>
       <?php if ($image): ?>
         <a href="<?php the_permalink(); ?>" class="wp-block-capitainewp-post__image" style="background-image: url('<?php echo $image; ?>')">
         </a>

@@ -22,7 +22,7 @@ export default function SearchPlugin(props) {
 			if (plugins.length) {
 				setResults(plugins);
 			} else {
-				setResults("Aucun résultat");
+				setResults(__("No results", "capitainewp-blocks"));
 			}
 		});
 	});
@@ -31,7 +31,7 @@ export default function SearchPlugin(props) {
 		<>
 			<TextControl
 				type="search"
-				placeholder="Chercher une extension"
+				placeholder={__("Search for a plugin", "capitainewp-blocks")}
 				onChange={(value) => onSearch(value)}
 			/>
 

@@ -698,7 +698,7 @@ return array(
 		'apiVersion' => 2,
 		'name' => 'capitainewp/post',
 		'version' => '1.0',
-		'title' => 'Single Post',
+		'title' => 'Relation',
 		'icon' => 'sticky',
 		'category' => 'capitainewp',
 		'description' => 'Afficher un article selectionné',
@@ -720,6 +720,10 @@ return array(
 			)
 		),
 		'supports' => array(
+			'align' => array(
+				'wide',
+				'full'
+			),
 			'html' => false
 		),
 		'textdomain' => 'capitainewp-blocks',
@@ -744,8 +748,11 @@ return array(
 			)
 		),
 		'supports' => array(
-			'html' => false,
-			'align' => true
+			'align' => array(
+				'wide',
+				'full'
+			),
+			'html' => false
 		),
 		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',

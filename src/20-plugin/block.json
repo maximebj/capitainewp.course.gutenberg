@@ -14,8 +14,8 @@
 		}
 	},
 	"supports": {
-		"html": false,
-		"align": true
+		"align": ["wide", "full"],
+		"html": false
 	},
 	"textdomain": "capitainewp-blocks",
 	"editorScript": "file:./index.js",

@@ -31,7 +31,7 @@ $plugin = capitainewp_prepare_plugins_data($result);
 
 ?>
 
-<div class="wp-block-capitainewp-plugin">
+<div <?php echo get_block_wrapper_attributes(); ?>>
   <div class="wp-block-capitainewp-plugin__content">
     <a href="<?php echo $plugin->downloadLink ?>" class="wp-block-capitainewp-plugin__picture">
       <img src="<?php echo $plugin->icon ?>" alt="<?php echo $plugin->name ?>" />

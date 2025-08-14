@@ -2,7 +2,7 @@ import { __ } from "@wordpress/i18n";
 import { InspectorControls } from "@wordpress/blockEditor";
 import { PanelBody, ToggleControl } from "@wordpress/components";
 
-import SearchPost from "./search-post";
+import SearchPost from "../shared/search-post";
 
 export default function Inspector(props) {
 	const { attributes, setAttributes } = props;
@@ -14,6 +14,7 @@ export default function Inspector(props) {
 				<SearchPost
 					onChange={(postID) => setAttributes({ postID })}
 					postType="posts"
+					resultsNumber={20}
 					placeholder={__("Search post", "capitainewp-blocks")}
 				/>
 			</PanelBody>

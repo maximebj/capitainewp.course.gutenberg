@@ -3,7 +3,7 @@
 	"apiVersion": 2,
 	"name": "capitainewp/post",
 	"version": "1.0",
-	"title": "Single Post",
+	"title": "Relation",
 	"icon": "sticky",
 	"category": "capitainewp",
 	"description": "Afficher un article selectionné",
@@ -25,6 +25,7 @@
 		}
 	},
 	"supports": {
+		"align": ["wide", "full"],
 		"html": false
 	},
 	"textdomain": "capitainewp-blocks",
