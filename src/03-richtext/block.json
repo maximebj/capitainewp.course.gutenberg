@@ -12,13 +12,13 @@
 			"type": "string",
 			"source": "html",
 			"selector": "p",
-			"default": "<p>Hello world!</p>",
+			"default": "Hello world!",
 			"role": "content"
 		}
 	},
 	"example": {
 		"attributes": {
-			"content": "<p>Un bloc Richtext</p>"
+			"content": "Un bloc Richtext"
 		}
 	},
 	"textdomain": "capitainewp-blocks",

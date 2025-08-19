@@ -8,7 +8,7 @@
   \************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/richtext","version":"1.0","title":"Richtext","category":"capitainewp","icon":"edit","description":"Un bloc administrable grâce au composant RichText.","attributes":{"content":{"type":"string","source":"html","selector":"p","default":"<p>Hello world!</p>","role":"content"}},"example":{"attributes":{"content":"<p>Un bloc Richtext</p>"}},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/richtext","version":"1.0","title":"Richtext","category":"capitainewp","icon":"edit","description":"Un bloc administrable grâce au composant RichText.","attributes":{"content":{"type":"string","source":"html","selector":"p","default":"Hello world!","role":"content"}},"example":{"attributes":{"content":"Un bloc Richtext"}},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ }),
 

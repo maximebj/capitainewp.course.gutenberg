@@ -91,13 +91,13 @@ return array(
 				'type' => 'string',
 				'source' => 'html',
 				'selector' => 'p',
-				'default' => '<p>Hello world!</p>',
+				'default' => 'Hello world!',
 				'role' => 'content'
 			)
 		),
 		'example' => array(
 			'attributes' => array(
-				'content' => '<p>Un bloc Richtext</p>'
+				'content' => 'Un bloc Richtext'
 			)
 		),
 		'textdomain' => 'capitainewp-blocks',
