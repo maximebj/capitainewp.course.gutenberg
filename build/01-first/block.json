@@ -5,7 +5,6 @@
   "version": "1.0",
   "title": "First",
   "category": "capitainewp",
-  "icon": "smiley",
   "description": "Bloc de base fourni avec le package Create Block.",
   "example": {},
   "supports": {

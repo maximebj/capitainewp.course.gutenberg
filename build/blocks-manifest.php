@@ -8,7 +8,6 @@ return array(
 		'version' => '1.0',
 		'title' => 'First',
 		'category' => 'capitainewp',
-		'icon' => 'smiley',
 		'description' => 'Bloc de base fourni avec le package Create Block.',
 		'example' => array(
 			
@@ -655,7 +654,7 @@ return array(
 	),
 	'18-table-of-contents' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
-		'apiVersion' => 2,
+		'apiVersion' => 3,
 		'name' => 'capitainewp/table-of-contents',
 		'version' => '1.0',
 		'title' => 'Sommaire',
@@ -695,7 +694,7 @@ return array(
 	),
 	'19-relation' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
-		'apiVersion' => 2,
+		'apiVersion' => 3,
 		'name' => 'capitainewp/post',
 		'version' => '1.0',
 		'title' => 'Relation',
@@ -734,7 +733,7 @@ return array(
 	),
 	'20-plugin' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
-		'apiVersion' => 2,
+		'apiVersion' => 3,
 		'name' => 'capitainewp/plugin',
 		'version' => '1.0',
 		'title' => 'Plugin',

@@ -276,7 +276,7 @@ function Block(props) {
   \************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"capitainewp/post","version":"1.0","title":"Relation","icon":"sticky","category":"capitainewp","description":"Afficher un article selectionné","attributes":{"postID":{"type":"integer"},"showCategory":{"type":"boolean","default":true},"showAuthor":{"type":"boolean","default":true},"showImage":{"type":"boolean","default":true}},"supports":{"align":["wide","full"],"html":false},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/post","version":"1.0","title":"Relation","icon":"sticky","category":"capitainewp","description":"Afficher un article selectionné","attributes":{"postID":{"type":"integer"},"showCategory":{"type":"boolean","default":true},"showAuthor":{"type":"boolean","default":true},"showImage":{"type":"boolean","default":true}},"supports":{"align":["wide","full"],"html":false},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ }),
 

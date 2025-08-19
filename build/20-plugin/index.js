@@ -309,7 +309,7 @@ function Block(props) {
   \**********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"capitainewp/plugin","version":"1.0","title":"Plugin","category":"capitainewp","icon":"admin-plugins","description":"Présentation d\'une extension du répertoire de plugins WordPress.org.","attributes":{"slug":{"type":"string","default":false}},"supports":{"align":["wide","full"],"html":false},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"capitainewp/plugin","version":"1.0","title":"Plugin","category":"capitainewp","icon":"admin-plugins","description":"Présentation d\'une extension du répertoire de plugins WordPress.org.","attributes":{"slug":{"type":"string","default":false}},"supports":{"align":["wide","full"],"html":false},"textdomain":"capitainewp-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ }),
 
