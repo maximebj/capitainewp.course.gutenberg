@@ -125,7 +125,8 @@ return array(
 			'content' => array(
 				'type' => 'string',
 				'source' => 'html',
-				'selector' => 'p'
+				'selector' => 'p',
+				'role' => 'content'
 			),
 			'type' => array(
 				'type' => 'string',
@@ -134,8 +135,8 @@ return array(
 		),
 		'example' => array(
 			'attributes' => array(
-				'content' => '<p>Un bloc d’alerte avec plusieurs styles.</p>',
-				'type' => 'advice'
+				'content' => 'Un bloc d’alerte avec plusieurs styles.',
+				'type' => 'warning'
 			)
 		),
 		'textdomain' => 'capitainewp-blocks',

@@ -18,7 +18,8 @@
     "content": {
       "type": "string",
       "source": "html",
-      "selector": "p"
+      "selector": "p",
+      "role": "content"
     },
     "type": {
       "type": "string",
@@ -27,8 +28,8 @@
   },
   "example": {
     "attributes": {
-      "content": "<p>Un bloc d’alerte avec plusieurs styles.</p>",
-      "type": "advice"
+      "content": "Un bloc d’alerte avec plusieurs styles.",
+      "type": "warning"
     }
   },
   "textdomain": "capitainewp-blocks",
