@@ -4,7 +4,7 @@ import {
 	RichText,
 } from "@wordpress/block-editor";
 import { useSelect, useDispatch } from "@wordpress/data";
-import { Fragment, useEffect } from "@wordpress/element";
+import { useEffect } from "@wordpress/element";
 
 import {
 	getHeadingsFromContent,
