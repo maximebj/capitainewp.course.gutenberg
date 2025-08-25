@@ -157,7 +157,7 @@ function PostList(props) {
       className: "wp-block-capitainewp-entityrecords__list",
       children: posts.map(post => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("li", {
         className: "wp-block-capitainewp-entityrecords__post",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+        children: [post._embedded["wp:featuredmedia"]?.length && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
           src: post._embedded["wp:featuredmedia"][0].source_url,
           alt: post._embedded["wp:featuredmedia"][0].alt
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {

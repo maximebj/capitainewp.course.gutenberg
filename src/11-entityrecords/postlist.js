@@ -15,10 +15,12 @@ export default function PostList(props) {
 						key={post.id}
 						className="wp-block-capitainewp-entityrecords__post"
 					>
-						<img
-							src={post._embedded["wp:featuredmedia"][0].source_url}
-							alt={post._embedded["wp:featuredmedia"][0].alt}
-						/>
+						{post._embedded["wp:featuredmedia"]?.length && (
+							<img
+								src={post._embedded["wp:featuredmedia"][0].source_url}
+								alt={post._embedded["wp:featuredmedia"][0].alt}
+							/>
+						)}
 						<h3>{post.title.raw}</h3>
 						<div
 							className="wp-block-capitainewp-entityrecords__excerpt"
