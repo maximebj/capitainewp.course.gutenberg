@@ -24,9 +24,9 @@ const transforms = {
 		},
 		{
 			type: "block",
-			blocks: ["core/title"],
+			blocks: ["core/heading"],
 			transform: ({ description }) => {
-				return createBlock("core/title", {
+				return createBlock("core/heading", {
 					content: description,
 				});
 			},

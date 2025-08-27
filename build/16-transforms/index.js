@@ -179,11 +179,11 @@ const transforms = {
     }
   }, {
     type: "block",
-    blocks: ["core/title"],
+    blocks: ["core/heading"],
     transform: ({
       description
     }) => {
-      return (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.createBlock)("core/title", {
+      return (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.createBlock)("core/heading", {
         content: description
       });
     }
