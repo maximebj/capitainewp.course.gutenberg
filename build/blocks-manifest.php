@@ -675,7 +675,8 @@ return array(
 				'source' => 'text',
 				'type' => 'string',
 				'selector' => '.wp-block-capitainewp-table-of-contents__title',
-				'default' => 'Sommaire du cours'
+				'default' => 'Sommaire du cours',
+				'role' => 'content'
 			),
 			'headings' => array(
 				'type' => 'array',
