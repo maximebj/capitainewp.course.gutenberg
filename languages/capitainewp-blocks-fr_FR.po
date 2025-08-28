@@ -10,13 +10,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-07-10T09:32:46+00:00\n"
-"PO-Revision-Date: 2025-07-10 10:16+0000\n"
+"POT-Creation-Date: 2025-08-27T13:52:15+00:00\n"
+"PO-Revision-Date: 2025-08-27 14:06+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: capitainewp-blocks\n"
 "Language: fr_FR\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Loco-Version: 2.8.0; wp-6.8.1; php-8.4.4"
+"X-Loco-Version: 2.8.0; wp-6.8.2; php-8.4.4"
 
 #. Plugin Name of the plugin
 #: capitainewp-blocks.php
@@ -33,14 +33,33 @@ msgstr ""
 msgid "Maxime BERNARD-JACQUET"
 msgstr ""
 
+#: build/20-plugin/render.php:46 src/20-plugin/render.php:46
+#: build/11-entityrecords/index.js:172 build/20-plugin/index.js:267
+#: src/11-entityrecords/postlist.js:34 src/20-plugin/block.js:66
+#: build/11-entityrecords/index.js:95 build/20-plugin/index.js:229
+msgid "by"
+msgstr ""
+
+#: build/20-plugin/render.php:64 src/20-plugin/render.php:64
+#: build/20-plugin/index.js:291 src/20-plugin/block.js:85
+#: build/20-plugin/index.js:248
+msgid "active installs"
+msgstr "Installations actives"
+
+#: build/20-plugin/render.php:72 src/20-plugin/render.php:72
+#: build/20-plugin/index.js:297 src/20-plugin/block.js:90
+#: build/20-plugin/index.js:253
+msgid "Official page"
+msgstr ""
+
 #: capitainewp-blocks.php:47
 msgid "Capitaine WP Blocks"
-msgstr "Les blocs Capitaine WP"
+msgstr ""
 
 #: build/01-first/index.js:72 src/01-first/edit.js:10
 #: build/01-first/index.js:26
 msgid "Capitainewp – hello from the editor!"
-msgstr "Capitainewp - Bonjour depuis l'éditeur"
+msgstr ""
 
 #: build/03-richtext/index.js:48 build/05-inspector/index.js:78
 #: build/05-inspector/index.js:86 build/07-components/index.js:71
@@ -59,23 +78,23 @@ msgstr "Capitainewp - Bonjour depuis l'éditeur"
 msgid "Your text here"
 msgstr ""
 
-#: build/04-toolbar/index.js:50 src/04-toolbar/edit.js:18
-#: build/04-toolbar/index.js:18
+#: build/04-toolbar/index.js:41 src/04-toolbar/edit.js:14
+#: build/04-toolbar/index.js:14
 msgid "Advice"
-msgstr ""
+msgstr "Conseil"
 
-#: build/04-toolbar/index.js:54 src/04-toolbar/edit.js:23
-#: build/04-toolbar/index.js:23
+#: build/04-toolbar/index.js:45 src/04-toolbar/edit.js:19
+#: build/04-toolbar/index.js:19
 msgid "Warning"
 msgstr ""
 
-#: build/04-toolbar/index.js:58 src/04-toolbar/edit.js:28
-#: build/04-toolbar/index.js:28
+#: build/04-toolbar/index.js:49 src/04-toolbar/edit.js:24
+#: build/04-toolbar/index.js:24
 msgid "Avoid"
-msgstr ""
+msgstr "À éviter"
 
-#: build/04-toolbar/index.js:62 src/04-toolbar/edit.js:33
-#: build/04-toolbar/index.js:33
+#: build/04-toolbar/index.js:53 src/04-toolbar/edit.js:29
+#: build/04-toolbar/index.js:29
 msgid "Information"
 msgstr ""
 
@@ -84,38 +103,48 @@ msgstr ""
 msgid "Your alert here"
 msgstr ""
 
-#: build/05-inspector/index.js:95 src/05-inspector/edit.js:69
-#: build/05-inspector/index.js:69
+#: build/05-inspector/index.js:95 build/07-components/index.js:116
+#: src/05-inspector/edit.js:69 src/07-components/components/emojiPanel.js:12
+#: build/05-inspector/index.js:69 build/07-components/index.js:64
 msgid "Emoji"
 msgstr ""
 
-#: build/05-inspector/index.js:108 src/05-inspector/edit.js:81
-#: build/05-inspector/index.js:81
+#: build/05-inspector/index.js:108 build/07-components/index.js:260
+#: src/05-inspector/edit.js:81 src/07-components/components/tagPanel.js:6
+#: build/05-inspector/index.js:81 build/07-components/index.js:144
 msgid "Tag"
 msgstr ""
 
-#: build/05-inspector/index.js:110 src/05-inspector/edit.js:83
-#: build/05-inspector/index.js:83
+#: build/05-inspector/index.js:110 build/07-components/index.js:262
+#: src/05-inspector/edit.js:83 src/07-components/components/tagPanel.js:8
+#: build/05-inspector/index.js:83 build/07-components/index.js:146
 msgid "Show tag"
 msgstr ""
 
-#: build/05-inspector/index.js:116 src/05-inspector/edit.js:89
-#: build/05-inspector/index.js:89
+#: build/05-inspector/index.js:116 build/07-components/index.js:268
+#: src/05-inspector/edit.js:89 src/07-components/components/tagPanel.js:15
+#: build/05-inspector/index.js:89 build/07-components/index.js:153
 msgid "Radius"
 msgstr ""
 
-#: build/05-inspector/index.js:125 src/05-inspector/edit.js:100
-#: build/05-inspector/index.js:100
+#: build/05-inspector/index.js:125 build/07-components/index.js:216
+#: src/05-inspector/edit.js:100
+#: src/07-components/components/tagColorPanel.js:17
+#: build/05-inspector/index.js:100 build/07-components/index.js:122
 msgid "Tag colors"
 msgstr ""
 
-#: build/05-inspector/index.js:131 src/05-inspector/edit.js:105
-#: build/05-inspector/index.js:105
+#: build/05-inspector/index.js:131 build/07-components/index.js:222
+#: src/05-inspector/edit.js:105
+#: src/07-components/components/tagColorPanel.js:22
+#: build/05-inspector/index.js:105 build/07-components/index.js:127
 msgid "Tag color"
 msgstr ""
 
-#: build/05-inspector/index.js:137 src/05-inspector/edit.js:110
-#: build/05-inspector/index.js:110
+#: build/05-inspector/index.js:137 build/07-components/index.js:228
+#: src/05-inspector/edit.js:110
+#: src/07-components/components/tagColorPanel.js:27
+#: build/05-inspector/index.js:110 build/07-components/index.js:132
 msgid "Tag text color"
 msgstr ""
 
@@ -139,13 +168,13 @@ msgstr ""
 msgid "Remove picture"
 msgstr ""
 
-#: build/08-innerblocks/index.js:42 src/08-innerblocks/edit.js:15
-#: build/08-innerblocks/index.js:15
+#: build/08-innerblocks/index.js:42 src/08-innerblocks/edit.js:14
+#: build/08-innerblocks/index.js:14
 msgid "Your title here"
 msgstr ""
 
-#: build/08-innerblocks/index.js:44 src/08-innerblocks/edit.js:19
-#: build/08-innerblocks/index.js:19
+#: build/08-innerblocks/index.js:44 src/08-innerblocks/edit.js:18
+#: build/08-innerblocks/index.js:18
 msgid "Your content here"
 msgstr ""
 
@@ -165,19 +194,14 @@ msgstr ""
 msgid "Number of posts"
 msgstr ""
 
-#: build/11-entityrecords/index.js:155 src/11-entityrecords/posts.js:11
+#: build/11-entityrecords/index.js:155 src/11-entityrecords/postlist.js:11
 #: build/11-entityrecords/index.js:72
 msgid "Latest posts"
 msgstr ""
 
-#: build/11-entityrecords/index.js:172 src/11-entityrecords/posts.js:30
-#: build/11-entityrecords/index.js:91
-msgid "Published on"
-msgstr ""
-
-#: build/11-entityrecords/index.js:172 src/11-entityrecords/posts.js:32
+#: build/11-entityrecords/index.js:172 src/11-entityrecords/postlist.js:32
 #: build/11-entityrecords/index.js:93
-msgid "by"
+msgid "Published on"
 msgstr ""
 
 #: build/12-api/index.js:39 src/12-api/categories.js:10
@@ -200,6 +224,102 @@ msgstr ""
 #: build/13-interactivity/index.js:55 src/13-interactivity/edit.js:20
 #: build/13-interactivity/index.js:20
 msgid "Filter posts"
+msgstr ""
+
+#: build/19-relation/index.js:228 build/19-relation/index.js:536
+#: build/20-plugin/index.js:503 src/19-relation/block.js:22
+#: src/20-plugin/search-plugin.js:18 src/shared/search-post.js:38
+#: build/19-relation/index.js:185 build/19-relation/index.js:380
+#: build/20-plugin/index.js:354
+msgid "Loading…"
+msgstr ""
+
+#: build/19-relation/index.js:250 src/19-relation/block.js:47
+#: build/19-relation/index.js:210
+msgid "In"
+msgstr ""
+
+#: build/19-relation/index.js:252 src/19-relation/block.js:55
+#: build/19-relation/index.js:218
+msgid "By"
+msgstr ""
+
+#: build/19-relation/index.js:264 src/19-relation/block.js:68
+#: build/19-relation/index.js:231
+msgid "Read more"
+msgstr ""
+
+#: build/19-relation/index.js:330 src/19-relation/edit.js:26
+#: build/19-relation/index.js:264
+msgid "Select a post"
+msgstr ""
+
+#: build/19-relation/index.js:331 src/19-relation/edit.js:27
+#: build/19-relation/index.js:265
+msgid "Search for a post in the inspector"
+msgstr ""
+
+#: build/19-relation/index.js:416 src/19-relation/inspector.js:13
+#: build/19-relation/index.js:303
+msgid "Choose a post"
+msgstr "Sélectionnez une publication"
+
+#: build/19-relation/index.js:423 src/19-relation/inspector.js:18
+#: build/19-relation/index.js:308
+msgid "Search post"
+msgstr ""
+
+#: build/19-relation/index.js:426 src/19-relation/inspector.js:23
+#: build/19-relation/index.js:313
+msgid "Customize"
+msgstr ""
+
+#: build/19-relation/index.js:428 src/19-relation/inspector.js:25
+#: build/19-relation/index.js:315
+msgid "Show Image?"
+msgstr ""
+
+#: build/19-relation/index.js:434 src/19-relation/inspector.js:31
+#: build/19-relation/index.js:321
+msgid "Show Author?"
+msgstr ""
+
+#: build/19-relation/index.js:440 src/19-relation/inspector.js:37
+#: build/19-relation/index.js:327
+msgid "Show Category?"
+msgstr ""
+
+#: build/19-relation/index.js:538 build/20-plugin/index.js:510
+#: src/20-plugin/search-plugin.js:25 src/shared/search-post.js:40
+#: build/19-relation/index.js:382 build/20-plugin/index.js:361
+msgid "No results"
+msgstr ""
+
+#: build/20-plugin/index.js:224 build/20-plugin/index.js:243
+#: src/20-plugin/block.js:24 src/20-plugin/block.js:46
+#: build/20-plugin/index.js:187 build/20-plugin/index.js:209
+msgid "Plugin not found"
+msgstr ""
+
+#: build/20-plugin/index.js:231 src/20-plugin/block.js:33
+#: build/20-plugin/index.js:196
+msgid "Loading plugin…"
+msgstr ""
+
+#: build/20-plugin/index.js:362 build/20-plugin/index.js:438
+#: src/20-plugin/edit.js:26 src/20-plugin/inspector.js:12
+#: build/20-plugin/index.js:286 build/20-plugin/index.js:324
+msgid "Select a plugin"
+msgstr ""
+
+#: build/20-plugin/index.js:363 src/20-plugin/edit.js:27
+#: build/20-plugin/index.js:287
+msgid "Search for a plugin in the inspector"
+msgstr ""
+
+#: build/20-plugin/index.js:517 src/20-plugin/search-plugin.js:34
+#: build/20-plugin/index.js:370
+msgid "Search for a plugin"
 msgstr ""
 
 #: build/01-first/block.json src/01-first/block.json
@@ -416,4 +536,44 @@ msgstr ""
 #: build/17-deprecated/block.json src/17-deprecated/block.json
 msgctxt "block description"
 msgid "Un bloc qui a évolué avec le temps."
+msgstr ""
+
+#: build/18-table-of-contents/block.json src/18-table-of-contents/block.json
+msgctxt "block title"
+msgid "Sommaire"
+msgstr ""
+
+#: build/18-table-of-contents/block.json src/18-table-of-contents/block.json
+msgctxt "block description"
+msgid "Un sommaire généré automatiquement à partir des titres."
+msgstr ""
+
+#: build/18-table-of-contents/block.json src/18-table-of-contents/block.json
+msgctxt "block keyword"
+msgid "table des matières"
+msgstr ""
+
+#: build/18-table-of-contents/block.json src/18-table-of-contents/block.json
+msgctxt "block keyword"
+msgid "sommaire"
+msgstr ""
+
+#: build/19-relation/block.json src/19-relation/block.json
+msgctxt "block title"
+msgid "Relation"
+msgstr ""
+
+#: build/19-relation/block.json src/19-relation/block.json
+msgctxt "block description"
+msgid "Afficher un article selectionné"
+msgstr ""
+
+#: build/20-plugin/block.json src/20-plugin/block.json
+msgctxt "block title"
+msgid "Plugin"
+msgstr ""
+
+#: build/20-plugin/block.json src/20-plugin/block.json
+msgctxt "block description"
+msgid "Présentation d'une extension du répertoire de plugins WordPress.org."
 msgstr ""
