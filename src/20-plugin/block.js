@@ -7,13 +7,13 @@ export default function Block(props) {
 	const { slug } = props;
 	const [plugin, setPlugin] = useState(null);
 	const [loading, setLoading] = useState(true);
-	const [error, setError] = useState(null);
+	const [error, setError] = useState(false);
 
 	useEffect(() => {
 		if (!slug) return;
 
 		setLoading(true);
-		setError(null);
+		setError(false);
 
 		// Search plugin via WordPress.org API
 		getPlugin(slug).then((plugin) => {
@@ -21,7 +21,7 @@ export default function Block(props) {
 			if (plugin) {
 				setPlugin(plugin);
 			} else {
-				setError(__("Plugin not found", "capitainewp-blocks"));
+				setError(true);
 			}
 		});
 	}, [slug]);
@@ -36,7 +36,12 @@ export default function Block(props) {
 	}
 
 	if (error) {
-		return <Placeholder icon="warning" label={error} />;
+		return (
+			<Placeholder
+				icon="warning"
+				label={__("Unable to connect to WP.org", "capitainewp-blocks")}
+			/>
+		);
 	}
 
 	if (!plugin) {

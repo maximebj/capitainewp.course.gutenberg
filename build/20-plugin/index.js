@@ -209,11 +209,11 @@ function Block(props) {
   } = props;
   const [plugin, setPlugin] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
   const [loading, setLoading] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useState)(true);
-  const [error, setError] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  const [error, setError] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {
     if (!slug) return;
     setLoading(true);
-    setError(null);
+    setError(false);
 
     // Search plugin via WordPress.org API
     (0,_wp_org_api_utils__WEBPACK_IMPORTED_MODULE_3__.getPlugin)(slug).then(plugin => {
@@ -221,7 +221,7 @@ function Block(props) {
       if (plugin) {
         setPlugin(plugin);
       } else {
-        setError((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Plugin not found", "capitainewp-blocks"));
+        setError(true);
       }
     });
   }, [slug]);
@@ -234,7 +234,7 @@ function Block(props) {
   if (error) {
     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Placeholder, {
       icon: "warning",
-      label: error
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Unable to connect to WP.org", "capitainewp-blocks")
     });
   }
   if (!plugin) {
