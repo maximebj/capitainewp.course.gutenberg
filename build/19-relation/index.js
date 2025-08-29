@@ -506,7 +506,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function SearchPost(props) {
   const {
-    postType,
+    postType = "posts",
     placeholder,
     onChange,
     resultsNumber = 20

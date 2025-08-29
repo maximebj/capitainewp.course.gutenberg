@@ -5,7 +5,12 @@ import { debounce } from "throttle-debounce";
 import { useState } from "react";
 
 export default function SearchPost(props) {
-	const { postType, placeholder, onChange, resultsNumber = 20 } = props;
+	const {
+		postType = "posts",
+		placeholder,
+		onChange,
+		resultsNumber = 20,
+	} = props;
 	const [results, setResults] = useState(null);
 	const [isLoading, setIsLoading] = useState(false);
 
