@@ -11,6 +11,10 @@ function capitainewp_prepare_plugins_data($data)
     $data = (object) $data;
   }
 
+  if (is_wp_error($data)) {
+    return;
+  }
+
   // On prépare les données
   return (object) [
     'slug' => $data->slug,
