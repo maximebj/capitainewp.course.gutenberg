@@ -565,17 +565,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_html_entities__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/html-entities */ "@wordpress/html-entities");
 /* harmony import */ var _wordpress_html_entities__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_html_entities__WEBPACK_IMPORTED_MODULE_0__);
 
+const apiUrl = "https://api.wordpress.org/plugins/info/1.2/";
 const fields = ["slug", "name", "short_description", "icons", "rating", "num_ratings", "active_installs", "author", "homepage"];
 function getFields(fields) {
   return fields.map(field => `request[fields][${field}]=1`).join("&");
 }
 async function searchPlugin(search, perPage = 20) {
-  const response = await fetch(`https://api.wordpress.org/plugins/info/1.2/?action=query_plugins&request[search]=${encodeURIComponent(search)}&request[per_page]=${perPage}&${getFields(fields)}`);
+  const response = await fetch(`${apiUrl}?action=query_plugins&request[search]=${encodeURIComponent(search)}&request[per_page]=${perPage}&${getFields(fields)}`);
   const data = await response.json();
   return data.plugins.map(formatPluginData);
 }
 async function getPlugin(slug) {
-  const response = await fetch(`https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=${encodeURIComponent(slug)}&${getFields(fields)}`);
+  const response = await fetch(`${apiUrl}?action=plugin_information&request[slug]=${encodeURIComponent(slug)}&${getFields(fields)}`);
   const data = await response.json();
   return formatPluginData(data);
 }

@@ -1,5 +1,7 @@
 import { decodeEntities } from "@wordpress/html-entities";
 
+const apiUrl = "https://api.wordpress.org/plugins/info/1.2/";
+
 const fields = [
 	"slug",
 	"name",
@@ -18,7 +20,7 @@ function getFields(fields) {
 
 export async function searchPlugin(search, perPage = 20) {
 	const response = await fetch(
-		`https://api.wordpress.org/plugins/info/1.2/?action=query_plugins&request[search]=${encodeURIComponent(
+		`${apiUrl}?action=query_plugins&request[search]=${encodeURIComponent(
 			search,
 		)}&request[per_page]=${perPage}&${getFields(fields)}`,
 	);
@@ -30,7 +32,7 @@ export async function searchPlugin(search, perPage = 20) {
 
 export async function getPlugin(slug) {
 	const response = await fetch(
-		`https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=${encodeURIComponent(
+		`${apiUrl}?action=plugin_information&request[slug]=${encodeURIComponent(
 			slug,
 		)}&${getFields(fields)}`,
 	);
