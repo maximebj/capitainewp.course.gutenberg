@@ -50,6 +50,14 @@ function Edit() {
     };
   }, []);
   console.log(data);
+
+  // Raccourci pour les settings
+  const colors = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useSettings)("color.palette");
+  console.log(colors);
+
+  // Raccourci pour les posts (détaillé dans le prochain cours)
+  const results = (0,_wordpress_core_data__WEBPACK_IMPORTED_MODULE_1__.useEntityRecords)("postType", "post");
+  console.log(results);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)(),

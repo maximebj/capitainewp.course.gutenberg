@@ -1,8 +1,9 @@
 import {
 	store as blockEditorStore,
 	useBlockProps,
+	useSettings,
 } from "@wordpress/block-editor";
-import { store as coreDataStore } from "@wordpress/core-data";
+import { store as coreDataStore, useEntityRecords } from "@wordpress/core-data";
 import { useSelect } from "@wordpress/data";
 
 import "./editor.scss";
@@ -22,6 +23,14 @@ export default function Edit() {
 	}, []);
 
 	console.log(data);
+
+	// Raccourci pour les settings
+	const colors = useSettings("color.palette");
+	console.log(colors);
+
+	// Raccourci pour les posts (détaillé dans le prochain cours)
+	const results = useEntityRecords("postType", "post");
+	console.log(results);
 
 	return (
 		<>
