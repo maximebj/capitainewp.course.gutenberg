@@ -26,11 +26,11 @@ export default function Edit() {
 
 	// Raccourci pour les settings
 	const colors = useSettings("color.palette");
-	console.log(colors);
+	//console.log(colors);
 
 	// Raccourci pour les posts (détaillé dans le prochain cours)
 	const results = useEntityRecords("postType", "post");
-	console.log(results);
+	// console.log(results);
 
 	return (
 		<>
