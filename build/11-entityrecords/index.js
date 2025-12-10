@@ -159,7 +159,8 @@ function PostList(props) {
         className: "wp-block-capitainewp-entityrecords__post",
         children: [post._embedded["wp:featuredmedia"]?.length && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
           src: post._embedded["wp:featuredmedia"][0].source_url,
-          alt: post._embedded["wp:featuredmedia"][0].alt
+          alt: post._embedded["wp:featuredmedia"][0].alt,
+          className: `wp-image-${post._embedded["wp:featuredmedia"][0].id}`
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
           children: post.title.raw
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {

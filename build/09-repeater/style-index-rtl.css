@@ -9,7 +9,6 @@
   margin: 0;
   font-size: var(--wp--preset--font-size--large);
   font-weight: 600;
-  color: var(--wp--preset--color--base);
 }
 .wp-block-capitainewp-repeater ul {
   list-style: none;

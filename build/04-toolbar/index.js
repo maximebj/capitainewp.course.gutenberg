@@ -72,7 +72,7 @@ function Edit(props) {
           icon: option.icon,
           label: option.label,
           className: `capitainewp-toolbar-${option.type}`,
-          onClick: () => props.setAttributes({
+          onClick: () => setAttributes({
             type: option.type
           }),
           isPressed: type === option.type

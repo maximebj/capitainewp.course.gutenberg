@@ -18,6 +18,7 @@
   height: 128px;
   margin-left: 20px;
 }
+
 .wp-block-capitainewp-plugin__picture img {
   display: block;
   max-width: 100%;
@@ -27,18 +28,22 @@
 .wp-block-capitainewp-plugin__main {
   flex: 1;
 }
+
 .wp-block-capitainewp-plugin__main .wp-block-capitainewp-plugin__title {
   margin: 0 0 8px 0;
 }
+
 .wp-block-capitainewp-plugin__main .wp-block-capitainewp-plugin__title a {
   text-decoration: none;
   color: #444;
   font-weight: bold;
 }
+
 .wp-block-capitainewp-plugin__main .wp-block-capitainewp-plugin__desc {
   font-size: 0.9em;
   margin: 8px 0;
 }
+
 .wp-block-capitainewp-plugin__main .wp-block-capitainewp-plugin__author {
   font-size: 0.9em;
   margin: 8px 0 0 0;
@@ -53,6 +58,7 @@
 .wp-block-capitainewp-plugin__meta {
   flex: 1;
 }
+
 .wp-block-capitainewp-plugin__meta p {
   margin: 0;
   font-size: 0.9em;
@@ -77,6 +83,7 @@
   padding: 0.5em 1em;
   transition: 0.3s background-color linear;
 }
+
 .wp-block-capitainewp-plugin__download a:hover {
   background-color: #006ba1;
   color: white;

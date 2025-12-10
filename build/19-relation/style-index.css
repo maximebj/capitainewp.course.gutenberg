@@ -10,7 +10,6 @@
   border-radius: 4px;
   overflow: hidden;
 }
-
 .wp-block-capitainewp-post__image {
   flex: 1;
   text-decoration: none;
@@ -22,7 +21,6 @@
   display: block;
   margin: 0 auto;
 }
-
 .wp-block-capitainewp-post__content {
   flex: 2;
   padding: 1em;

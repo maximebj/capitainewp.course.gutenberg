@@ -21,6 +21,9 @@
 			"content": "Un élément de la liste"
 		}
 	},
+	"supports": {
+		"splitting": true
+	},
 	"textdomain": "capitainewp-blocks",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",

@@ -15,7 +15,7 @@
 		"start": "wp-scripts start --blocks-manifest --experimental-modules"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^30.16.0"
+		"@wordpress/scripts": "^31.1.0"
 	},
 	"dependencies": {
 		"throttle-debounce": "^5.0.2"

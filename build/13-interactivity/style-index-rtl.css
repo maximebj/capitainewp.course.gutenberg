@@ -25,7 +25,6 @@
 .wp-block-capitainewp-interactivity__categories li.is-hidden {
   display: none;
 }
-
 .wp-block-capitainewp-interactivity__posts li:not(.is-shown) {
   display: none;
 }

@@ -19,6 +19,7 @@ export default function PostList(props) {
 							<img
 								src={post._embedded["wp:featuredmedia"][0].source_url}
 								alt={post._embedded["wp:featuredmedia"][0].alt}
+								className={`wp-image-${post._embedded["wp:featuredmedia"][0].id}`}
 							/>
 						)}
 						<h3>{post.title.raw}</h3>

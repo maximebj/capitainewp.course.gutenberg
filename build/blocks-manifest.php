@@ -219,7 +219,7 @@ return array(
 	),
 	'06-media' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
-		'apiVersion' => 2,
+		'apiVersion' => 3,
 		'name' => 'capitainewp/media',
 		'version' => '1.0',
 		'title' => 'Media',
@@ -388,6 +388,9 @@ return array(
 			'attributes' => array(
 				'content' => 'Un élément de la liste'
 			)
+		),
+		'supports' => array(
+			'splitting' => true
 		),
 		'textdomain' => 'capitainewp-blocks',
 		'editorScript' => 'file:./index.js',
