@@ -1,5 +1,8 @@
 <?php
 
+# Récupérer les attributs du bloc (équivalent PHP de useBlockProps())
+$block_props = get_block_wrapper_attributes();
+
 # Créer une requête pour récupérer les posts
 $args = [
   'post_type' => 'post',
@@ -20,7 +23,7 @@ $categories = get_categories([
 
 ?>
 <div
-  <?php echo get_block_wrapper_attributes(); ?>
+  <?php echo wp_kses_data($block_props); ?>
   data-wp-interactive="capitainewp/filter-posts"
   data-wp-watch="callbacks.logChangeCategory">
   <h2><?php _e('Filter posts', 'capitainewp'); ?></h2>

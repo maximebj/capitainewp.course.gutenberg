@@ -12,6 +12,6 @@ $args = [
 $post = get_posts($args)[0] ?? null;
 
 ?>
-<div <?php echo $block_props; ?>>
+<div <?php echo wp_kses_data($block_props); ?>>
   <?php echo $post->post_title; ?>
 </div>

@@ -11,6 +11,9 @@ if (is_null($attributes['slug'])) {
   return '';
 }
 
+# Récupérer les attributs du bloc (équivalent PHP de useBlockProps())
+$block_props = get_block_wrapper_attributes();
+
 # On prépare la requête pour wp.org
 $request = [
   'slug' => $attributes['slug'],
@@ -31,7 +34,7 @@ $plugin = capitainewp_prepare_plugins_data($result);
 
 ?>
 
-<div <?php echo get_block_wrapper_attributes(); ?>>
+<div <?php echo wp_kses_data($block_props); ?>>
   <div class="wp-block-capitainewp-plugin__content">
     <a href="<?php echo $plugin->downloadLink ?>" class="wp-block-capitainewp-plugin__picture">
       <img src="<?php echo $plugin->icon ?>" alt="<?php echo $plugin->name ?>" />

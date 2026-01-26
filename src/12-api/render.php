@@ -20,7 +20,7 @@ if (empty($categories)) {
 }
 
 ?>
-<div <?php echo $block_props; ?>>
+<div <?php echo wp_kses_data($block_props); ?>>
   <h2><?php _e('Categories', 'capitainewp'); ?></h2>
   <ul>
     <?php foreach ($categories as $category) : ?>

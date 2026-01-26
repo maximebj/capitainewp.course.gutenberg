@@ -20,7 +20,7 @@ if (!$query->have_posts()) {
 }
 
 ?>
-<div <?php echo $block_props; ?>>
+<div <?php echo wp_kses_data($block_props); ?>>
   <h2><?php _e('Latest posts', 'capitainewp'); ?></h2>
   <ul class="wp-block-capitainewp-entityrecords__list">
     <?php while ($query->have_posts()) : $query->the_post(); ?>
