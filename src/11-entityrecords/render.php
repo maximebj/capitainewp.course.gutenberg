@@ -4,7 +4,7 @@
 $block_props = get_block_wrapper_attributes();
 
 # Récupérer le nombre de posts à afficher
-$number_of_posts = $attributes['numberOfPosts'];
+$number_of_posts = absint($attributes['numberOfPosts']);
 
 # Créer une requête pour récupérer les posts
 $args = [

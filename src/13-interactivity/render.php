@@ -38,8 +38,9 @@ $categories = get_categories([
         role="button"
         data-wp-on--click="actions.selectCategory"
         data-wp-context='{"category": "<?php echo esc_attr($category->slug); ?>"}'
-        data-wp-class--is-active="state.isSelectedCategory"><?php echo $category->name; ?></li>
-    <?php endforeach; ?>
+        data-wp-class--is-active="state.isSelectedCategory"><?php echo esc_html($category->name); ?></li>
+    <?php endforeach;
+    wp_reset_postdata(); ?>
   </ul>
   <ul class="wp-block-capitainewp-interactivity__posts">
     <?php while ($query->have_posts()) : $query->the_post(); ?>
