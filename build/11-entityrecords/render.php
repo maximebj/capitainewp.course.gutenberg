@@ -4,7 +4,7 @@
 $block_props = get_block_wrapper_attributes();
 
 # Récupérer le nombre de posts à afficher
-$number_of_posts = $attributes['numberOfPosts'];
+$number_of_posts = absint($attributes['numberOfPosts']);
 
 # Créer une requête pour récupérer les posts
 $args = [
@@ -20,7 +20,7 @@ if (!$query->have_posts()) {
 }
 
 ?>
-<div <?php echo $block_props; ?>>
+<div <?php echo wp_kses_data($block_props); ?>>
   <h2><?php _e('Latest posts', 'capitainewp'); ?></h2>
   <ul class="wp-block-capitainewp-entityrecords__list">
     <?php while ($query->have_posts()) : $query->the_post(); ?>

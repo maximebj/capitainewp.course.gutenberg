@@ -3,6 +3,7 @@
   \***************************************************************************************************************************************************************************************************************************************************/
 .wp-block-capitainewp-repeater {
   background: var(--wp--preset--color--accent-3);
+  color: var(--wp--preset--color--base);
   padding: var(--wp--preset--spacing--30);
 }
 .wp-block-capitainewp-repeater h2 {

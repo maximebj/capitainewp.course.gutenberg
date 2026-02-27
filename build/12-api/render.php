@@ -4,8 +4,8 @@
 $block_props = get_block_wrapper_attributes();
 
 # Récupérer le nombre de posts à afficher
-$show_count = $attributes['showCount'];
-$hide_empty = $attributes['hideEmpty'];
+$show_count = (bool) $attributes['showCount'];
+$hide_empty = (bool) $attributes['hideEmpty'];
 
 # Créer une requête pour récupérer les catégories
 $args = [
@@ -20,7 +20,7 @@ if (empty($categories)) {
 }
 
 ?>
-<div <?php echo $block_props; ?>>
+<div <?php echo wp_kses_data($block_props); ?>>
   <h2><?php _e('Categories', 'capitainewp'); ?></h2>
   <ul>
     <?php foreach ($categories as $category) : ?>

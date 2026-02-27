@@ -1,8 +1,11 @@
 <?php
 
+# Récupérer les attributs du bloc (équivalent PHP de useBlockProps())
+$block_props = get_block_wrapper_attributes();
+
 # WP Query pour récupérer la publication
 $args = [
-  'p' => $attributes['postID'],
+  'p' => absint($attributes['postID']),
 ];
 
 $query = new WP_Query($args);
@@ -16,16 +19,16 @@ if ($query->have_posts()):
     $author = false;
     $category = false;
 
-    if ($attributes['showImage'] !== false) {
+    if ((bool) $attributes['showImage']) {
       $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium');
       $image = $image[0];
     }
 
-    if ($attributes['showAuthor'] !== false) {
+    if ((bool) $attributes['showAuthor']) {
       $author = get_the_author_meta('display_name');
     }
 
-    if ($attributes['showCategory'] !== false) {
+    if ((bool) $attributes['showCategory']) {
       $categories = get_the_category();
 
       if (!empty($categories)) {
@@ -34,7 +37,7 @@ if ($query->have_posts()):
     }
 
 ?>
-    <div <?php echo get_block_wrapper_attributes(); ?>>
+    <div <?php echo wp_kses_data($block_props); ?>>
       <?php if ($image): ?>
         <a href="<?php the_permalink(); ?>" class="wp-block-capitainewp-post__image" style="background-image: url('<?php echo $image; ?>')">
         </a>

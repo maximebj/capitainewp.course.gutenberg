@@ -1,5 +1,8 @@
 <?php
 
+# Récupérer les attributs du bloc (équivalent PHP de useBlockProps())
+$block_props = get_block_wrapper_attributes();
+
 # Créer une requête pour récupérer les posts
 $args = [
   'post_type' => 'post',
@@ -20,7 +23,7 @@ $categories = get_categories([
 
 ?>
 <div
-  <?php echo get_block_wrapper_attributes(); ?>
+  <?php echo wp_kses_data($block_props); ?>
   data-wp-interactive="capitainewp/filter-posts"
   data-wp-watch="callbacks.logChangeCategory">
   <h2><?php _e('Filter posts', 'capitainewp'); ?></h2>
@@ -35,8 +38,9 @@ $categories = get_categories([
         role="button"
         data-wp-on--click="actions.selectCategory"
         data-wp-context='{"category": "<?php echo esc_attr($category->slug); ?>"}'
-        data-wp-class--is-active="state.isSelectedCategory"><?php echo $category->name; ?></li>
-    <?php endforeach; ?>
+        data-wp-class--is-active="state.isSelectedCategory"><?php echo esc_html($category->name); ?></li>
+    <?php endforeach;
+    wp_reset_postdata(); ?>
   </ul>
   <ul class="wp-block-capitainewp-interactivity__posts">
     <?php while ($query->have_posts()) : $query->the_post(); ?>
