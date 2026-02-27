@@ -73,7 +73,7 @@ export default function Edit(props) {
 						isBlock
 					>
 						{allowedEmojis.map((option) => (
-							<ToggleGroupControlOption label={option} value={option} />
+							<ToggleGroupControlOption key={option} label={option} value={option} />
 						))}
 					</ToggleGroupControl>
 				</PanelBody>
